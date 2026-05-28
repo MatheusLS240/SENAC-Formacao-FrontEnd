@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SITE AQUI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container-logo">
+            <img src="assets/imgs/logo-temp.jpg" alt="">
+        </div>
+        <div class="container-menu">
+            <button type="button" onclick="openMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <nav id="menu">
+        <ul>
+            <li><a href="">Categorias</a></li>
+            <li><a href="">Pedidos</a></li>
+            <li><a href="">Trabalhe Conosco</a></li>
+            <li><a href="">Configurações</a></li>
+            <li><a href="">Crie sua Conta</a></li>
+            <li><a href="">Login</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section class="container-search">
+            <div class="titulo-busca">
+                <p>O melhor da culinária para <span style="color: #859b48;">você</span></p>
+            </div>
+            <div class="busca">
+                <button type="button"><img src="assets/icons/search.svg"></button>
+                <input type="text" name="" id="">
+            </div>
+        </section>
+
+        <section class="container-categorias">
+            <div class="titulo-secao">
+                <p>Categorias</p>
+            </div>
+
+            <div class="blocos-categorias">
+                <a href="" class="bloco">
+                    <img src="assets/imgs/logo-temp.jpg" alt="">
+                    <p>Nome 1</p>
+                </a>
+                <a href="" class="bloco">
+                    <img src="assets/imgs/logo-temp.jpg" alt="">
+                    <p>Nome 2</p>
+                </a>
+                <a href="" class="bloco">
+                    <img src="assets/imgs/logo-temp.jpg" alt="">
+                    <p>Nome 3</p>
+                </a>
+                <a href="" class="bloco">
+                    <img src="assets/imgs/logo-temp.jpg" alt="">
+                    <p>Nome 4</p>
+                </a>
+            </div>
+            <div class="blocos-categorias">
+                <a href="" class="bloco">
+                    <img src="assets/imgs/logo-temp.jpg" alt="">
+                    <p>Nome 5</p>
+                </a>
+                <a href="" class="bloco">
+                    <img src="assets/imgs/logo-temp.jpg" alt="">
+                    <p>Nome 6</p>
+                </a>
+                <a href="" class="bloco">
+                    <img src="assets/imgs/logo-temp.jpg" alt="">
+                    <p>Nome 7</p>
+                </a>
+                <a href="" class="bloco">
+                    <img src="assets/imgs/logo-temp.jpg" alt="">
+                    <p>Nome 8</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="container-oferta">
+            <div class="titulo-secao">
+                <p>Ofertas do Dia</p>
+            </div>
+
+            <div class="conteudo-container-ofertas">
+                <button onclick="voltarOfertas()" class="prev-next-ofertas">
+                    <i class="fa-solid fa-angle-left"></i>
+                </button>
+
+                <div class="blocos-ofertas" id="scroll-ofertas">
+                    <div class="oferta">
+                        <img src="assets/imgs/logo-temp.jpg" alt="">
+                        <div class="conteudo-oferta">
+                            <p>Nome 1</p>
+                            <p>R$ 999,99</p>
+                            <button class="button-oferta">Acessar</button>
+                        </div>
+                    </div>
+                    <div class="oferta">
+                        <img src="assets/imgs/logo-temp.jpg" alt="">
+                        <div class="conteudo-oferta">
+                            <p>Nome 2</p>
+                            <p>R$ 999,99</p>
+                            <button class="button-oferta">Acessar</button>
+                        </div>
+                    </div>
+                    <div class="oferta">
+                        <img src="assets/imgs/logo-temp.jpg" alt="">
+                        <div class="conteudo-oferta">
+                            <p>Nome 3</p>
+                            <p>R$ 999,99</p>
+                            <button class="button-oferta">Acessar</button>
+                        </div>
+                    </div>
+                    <div class="oferta">
+                        <img src="assets/imgs/logo-temp.jpg" alt="">
+                        <div class="conteudo-oferta">
+                            <p>Nome 4</p>
+                            <p>R$ 999,99</p>
+                            <button class="button-oferta">Acessar</button>
+                        </div>
+                    </div>
+                    <div class="oferta">
+                        <img src="assets/imgs/logo-temp.jpg" alt="">
+                        <div class="conteudo-oferta">
+                            <p>Nome 5</p>
+                            <p>R$ 999,99</p>
+                            <button class="button-oferta">Acessar</button>
+                        </div>
+                    </div>
+                    <div class="oferta">
+                        <img src="assets/imgs/logo-temp.jpg" alt="">
+                        <div class="conteudo-oferta">
+                            <p>Nome 6</p>
+                            <p>R$ 999,99</p>
+                            <button class="button-oferta">Acessar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <button onclick="avancarOfertas()" class="prev-next-ofertas">
+                    <i class="fa-solid fa-angle-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <section class="container-avaliacoes">
+            <div class="titulo-secao">
+                <p>Melhores Avaliações</p>
+            </div>
+
+            <div class="bloco-avaliacoes">
+                <div class="avaliacao item-avaliacao">
+                    <img src="assets/imgs/logo-temp.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam reprehenderit neque</p>
+                </div>
+                <div class="avaliacao">
+                    <img src="assets/imgs/logo-temp.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam reprehenderit neque</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="assets/script/script.js"></script>
+</body>
+
+</html>
