@@ -1,5 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
+
+/* ========================= VARIÁVEIS ========================= */
+:root {
+    --cor-preta: #000;
+    --cor-branca: #fff;
+    --cor-fundo-header: #ECE5DF;
+    --cor-fundo-nav: #C3CEA3;
+    --cor-verde-principal: #1D361F;
+    --cor-verde-transparente: #1D361F66;
+    --cor-verde-oferta: #859B48;
+    --cor-overlay: rgba(0, 0, 0, 0.555);
+
+    --sombra-header: 0 -3px 10px;
+
+    --transition-padrao: transform 0.3s ease;
+}
+
 /* ========================= RESET ========================= */
 * {
     margin: 0;
@@ -15,7 +32,7 @@ html {
 .titulo-secao {
     width: 70%;
     padding-bottom: 20px;
-    color: #000;
+    color: var(--cor-preta);
     font-size: 2rem;
     text-align: center;
     text-transform: uppercase;
@@ -35,8 +52,8 @@ header {
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    background-color: #ECE5DF;
-    box-shadow: 0 -3px 10px;
+    background-color: var(--cor-fundo-header);
+    box-shadow: var(--sombra-header);
 }
 
 .container-logo {
@@ -66,7 +83,7 @@ header {
     border-radius: 10px;
     font-size: 1.5rem;
     cursor: pointer;
-    background-color: #1D361F66;
+    background-color: var(--cor-verde-transparente);
 }
 
 /* ========================= NAV ========================= */
@@ -77,7 +94,7 @@ nav {
     width: 200px;
     padding-top: 100px;
     display: none;
-    background-color: #C3CEA3;
+    background-color: var(--cor-fundo-nav);
     z-index: 9998;
 }
 
@@ -95,12 +112,12 @@ nav li {
 nav li a {
     display: block;
     padding: 10px 20px;
-    color: #000;
+    color: var(--cor-preta);
     text-align: center;
     text-decoration: none;
     border: solid;
     border-radius: 20px;
-    background-color: #fff;
+    background-color: var(--cor-branca);
 }
 
 .active {
@@ -123,7 +140,7 @@ main {
     justify-content: center;
     gap: 20px;
     background:
-        linear-gradient(rgba(0, 0, 0, 0.555), rgba(0, 0, 0, 0.555)),
+        linear-gradient(var(--cor-overlay), var(--cor-overlay)),
         url(../imgs/logo-temp.jpg);
     background-size: cover;
     background-position: center;
@@ -132,7 +149,7 @@ main {
 
 .container-search .titulo-busca {
     max-width: 500px;
-    color: #fff;
+    color: var(--cor-branca);
     font-size: 2rem;
     text-align: center;
     text-transform: uppercase;
@@ -145,7 +162,7 @@ main {
     overflow: hidden;
     border: solid;
     border-radius: 20px;
-    background-color: #fff;
+    background-color: var(--cor-branca);
 }
 
 .container-search .busca input[type="text"] {
@@ -167,7 +184,7 @@ main {
     border: none;
     border-right: solid;
     cursor: pointer;
-    background-color: #1D361F66;
+    background-color: var(--cor-verde-transparente);
 }
 
 .container-search .busca button img {
@@ -183,7 +200,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #ECE5DF;
+    background-color: var(--cor-fundo-header);
 }
 
 .blocos-categorias {
@@ -197,14 +214,14 @@ main {
 .blocos-categorias a.bloco {
     flex: 1;
     padding: 20px;
-    color: #fff;
+    color: var(--cor-branca);
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
     border-radius: 10px;
-    background-color: #1D361F;
+    background-color: var(--cor-verde-principal);
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: var(--transition-padrao);
 }
 
 .blocos-categorias a.bloco:hover {
@@ -238,7 +255,7 @@ main {
     border: none;
     font-size: 32px;
     background-color: transparent;
-    transition: transform 0.3s ease;
+    transition: var(--transition-padrao);
 }
 
 .prev-next-ofertas:hover {
@@ -259,7 +276,7 @@ main {
 .oferta {
     overflow: hidden;
     border-radius: 10px;
-    background: #859B48;
+    background: var(--cor-verde-oferta);
 }
 
 .oferta img {
@@ -280,27 +297,25 @@ main {
     align-self: center;
     border: none;
     border-radius: 10px;
-    color: #fff;
+    color: var(--cor-branca);
     cursor: pointer;
-    background-color: #1D361F;
-    transition: transform 0.3s ease;
+    background-color: var(--cor-verde-principal);
+    transition: var(--transition-padrao);
 }
 
 .button-oferta:hover {
     transform: scale(1.1);
 }
 
-/* ========================= AVALICAÇÕES ========================= */
-
+/* ========================= AVALIAÇÕES ========================= */
 .container-avaliacoes {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ECE5DF;
+    background-color: var(--cor-fundo-header);
     height: calc(100vh - 70px);
     flex-direction: column;
     gap: 20px;
-    height: calc(100vh - 70px);
 }
 
 .bloco-avaliacoes {
@@ -312,11 +327,11 @@ main {
 
 .avaliacao {
     display: flex;
-    flex-direction: row;    
+    flex-direction: row;
     width: 50%;
     border-radius: 20px;
     overflow: hidden;
-    background-color: #1D361F;
+    background-color: var(--cor-verde-principal);
 }
 
 .avaliacao img {
@@ -326,7 +341,27 @@ main {
 .avaliacao p {
     margin: 20px;
     font-size: 1.5rem;
-    color: #fff;
+    color: var(--cor-branca);
+}
+
+/* ========================= RODAPÉ ========================= */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(50vh - 70px);
+    flex-direction: column;
+}
+
+.container-footer {
+    border-style: solid;
+    width: 80%;
+}
+
+.creditos {
+    width: 100%;
+    border-style: solid;
+    background-color: var(--cor-fundo-header);
 }
 
 /* ========================= TABLET ========================= */
