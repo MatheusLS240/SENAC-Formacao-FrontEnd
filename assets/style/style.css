@@ -365,11 +365,20 @@ footer {
 .info-site,
 .midia-contato {
     flex: 1;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 100%;
+}
+
+.midia, 
+.contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
 }
 
 .info-site ul,
