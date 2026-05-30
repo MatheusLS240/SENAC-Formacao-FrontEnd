@@ -253,7 +253,7 @@ main {
 
 .prev-next-ofertas {
     border: none;
-    font-size: 32px;
+    font-size: 2rem;
     background-color: transparent;
     transition: var(--transition-padrao);
 }
@@ -349,24 +349,48 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: calc(50vh - 70px);
     flex-direction: column;
+    font-size: 1.5rem;
 }
 
 .container-footer {
-    border-style: solid;
+    padding: 10px;
     width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-site,
+.midia-contato {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.info-site ul,
+.contato ul,
+.info-site a, 
+.midia-contato a  {
+    list-style-type: none;
+    color: #000;
+    text-decoration: none;
 }
 
 .creditos {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
     width: 100%;
-    border-style: solid;
     background-color: var(--cor-fundo-header);
 }
 
 /* ========================= TABLET ========================= */
 @media (max-width: 880px) {
-
     header {
         padding: 10px 15px;
         gap: 10px;
@@ -437,7 +461,6 @@ footer {
 
 /* ========================= MOBILE ========================= */
 @media (max-width: 550px) {
-
     header {
         padding: 10px;
     }
