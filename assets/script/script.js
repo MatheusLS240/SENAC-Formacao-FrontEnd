@@ -4,9 +4,14 @@ function openMenu() {
     menu.classList.toggle("active");
 }
 
+// ------------------------------------------------
+
 const containerScroll = document.getElementById('scroll-ofertas');
-const blocoOferta = document.getElementsByClassName('oferta')[0];
-const larguraBlocoOferta = (blocoOferta.clientWidth) + 20;
+let larguraBlocoOferta = 0;
+
+window.addEventListener("load", () => {
+    larguraBlocoOferta = (document.getElementsByClassName('oferta')[0].clientWidth) + 20;
+})
 
 function voltarOfertas() {
     containerScroll.scrollBy({
@@ -21,6 +26,8 @@ function avancarOfertas() {
         behavior: 'smooth'
     });
 }
+
+
 // ------------------------------------------------
 
 // let nota1 = prompt("Insira a primeira nota");

@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
-
 /* ========================= VARIÁVEIS ========================= */
 :root {
     --cor-preta: #000;
@@ -185,11 +184,7 @@ main {
     border-right: solid;
     cursor: pointer;
     background-color: var(--cor-verde-transparente);
-}
-
-.container-search .busca button img {
-    width: 28px;
-    height: 28px;
+    font-size: 1.5rem;
 }
 
 /* ========================= CATEGORIAS ========================= */
@@ -266,7 +261,8 @@ main {
     width: 80%;
     margin-top: 20px;
     display: grid;
-    grid-template-columns: repeat(6, 30%);
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 20px);
     gap: 20px;
     overflow-y: hidden;
     scrollbar-width: none;
@@ -309,53 +305,71 @@ main {
 
 /* ========================= AVALIAÇÕES ========================= */
 .container-avaliacoes {
+    height: calc(100vh - 70px);
+    padding: 20px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--cor-fundo-header);
-    height: calc(100vh - 70px);
-    flex-direction: column;
     gap: 20px;
+    background-color: var(--cor-fundo-header);
 }
 
 .bloco-avaliacoes {
     width: 80%;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
 .avaliacao {
     display: flex;
-    flex-direction: row;
-    width: 50%;
-    border-radius: 20px;
-    overflow: hidden;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    color: var(--cor-branca);
+    border-radius: 10px;
     background-color: var(--cor-verde-principal);
 }
 
-.avaliacao img {
-    width: 50%;
+.header-avaliacao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-avaliacao img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.user-stars {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .avaliacao p {
-    margin: 20px;
-    font-size: 1.5rem;
-    color: var(--cor-branca);
+    font-size: 1.2rem;
 }
 
 /* ========================= RODAPÉ ========================= */
 footer {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     font-size: 1.5rem;
 }
 
 .container-footer {
-    padding: 10px;
     width: 80%;
+    padding: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -367,42 +381,49 @@ footer {
     flex: 1;
     height: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
 }
 
-.midia, 
+.midia,
 .contato {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .info-site ul,
 .contato ul,
-.info-site a, 
-.midia-contato a  {
-    list-style-type: none;
+.info-site a,
+.midia-contato a {
     color: #000;
+    text-align: center;
     text-decoration: none;
+    list-style-type: none;
 }
 
 .creditos {
-    text-align: center;
+    width: 100%;
+    padding: 2px;
+    color: var(--cor-preta);
     font-weight: bold;
     font-size: 1.2rem;
-    width: 100%;
+    text-align: center;
     background-color: var(--cor-fundo-header);
 }
 
 /* ========================= TABLET ========================= */
-@media (max-width: 880px) {
+@media (max-width: 920px) {
     header {
         padding: 10px 15px;
         gap: 10px;
+    }
+
+    .titulo-busca p {
+        font-size: 1.8rem;
     }
 
     .container-logo img {
@@ -464,14 +485,41 @@ footer {
     }
 
     .blocos-ofertas {
-        grid-template-columns: repeat(6, 50%);
+        grid-auto-columns: calc((100% / 2) - 20px);
+    }
+
+    .container-avaliacoes {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .bloco-avaliacoes {
+        width: 90%;
+        grid-auto-flow: row;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .avaliacao p {
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 1.3rem;
+    }
+
+    .creditos {
+        font-size: 1.1rem;
     }
 }
 
 /* ========================= MOBILE ========================= */
-@media (max-width: 550px) {
+@media (max-width: 640px) {
     header {
         padding: 10px;
+    }
+
+    .titulo-busca {
+        font-size: 1.6rem;
     }
 
     .container-logo img {
@@ -524,6 +572,38 @@ footer {
     }
 
     .blocos-ofertas {
-        grid-template-columns: repeat(6, 100%);
+        grid-auto-columns: calc(100% - 20px);
+    }
+
+    .container-avaliacoes {
+        height: auto;
+        padding: 40px 15px;
+    }
+
+    .bloco-avaliacoes {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .header-avaliacao img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .avaliacao {
+        padding: 15px;
+    }
+
+    .avaliacao p {
+        font-size: 0.95rem;
+    }
+
+    footer {
+        font-size: 1.2rem;
+    }
+
+    .creditos {
+        font-size: 1rem;
     }
 }
