@@ -450,54 +450,87 @@ footer {
 
 /* ========================= FORMULARIO ========================= */
 .container-tc {
+    height: calc(100vh - 70px);
+    padding: 20px;
+    background-color: var(--cor-verde-oferta);
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.bloco-campos {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloco-campos form {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    height: calc(100vh - 70px);
-    background-color: var(--cor-verde-oferta);
+    width: 700px;
+    padding: 40px;
     gap: 40px;
 }
 
-.container-tc form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 30px;
-    width: 400px;
-}
-
-.inner-box {
+.campos {
     position: relative;
     width: 100%;
 }
 
-.inner-box input,
-.inner-box textarea {
+.campos label {
+    position: absolute;
+    top: -35px;
+    left: 15px;
+    font-size: 1.5rem;
+    padding: 0 4px;
+}
+
+.campos input,
+.campos textarea {
     width: 100%;
+    padding: 15px 20px;
+    font-size: 1.2rem;
     outline: none;
     border: 2px solid #000;
-    padding: 8px 10px;
-    border-radius: 20px;
+    border-radius: 30px;
     background-color: #fff;
 }
 
+.campos textarea {
+    min-height: 180px;
+    resize: vertical;
+}
+
+.campos input::placeholder,
+.campos textarea::placeholder {
+    font-size: 1rem;
+    transform: translateX(10px);
+}
+
+.campos input:focus::placeholder,
+.campos textarea:focus::placeholder {
+    color: transparent;
+}
+
 .submit-reset {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: row;
     width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .submit-reset input[type="submit"],
 .submit-reset input[type="reset"] {
+    padding: 12px 60px;
+    font-size: 1.2rem;
+    border: 1px solid #000;
+    border-radius: 8px;
     outline: none;
-    border: none;
-    padding: 5px 30px;
-    border-radius: 5px;
-    font-size: 1rem;
+    cursor: pointer;
     transition: 0.3s ease;
 }
 
@@ -511,25 +544,6 @@ footer {
     background-color: rgb(255, 0, 0);
     color: #000;
     transform: scale(1.1);
-}
-
-.inner-box input::placeholder {
-    font-size: 0.8rem;
-    transform: translateX(10px);
-}
-
-.inner-box input:focus::placeholder {
-    color: transparent;
-}
-
-.inner-box label {
-    position: absolute;
-    top: -20px;
-    left: 10px;
-    font-size: 1rem;
-    background-color: transparent;
-    padding: 0px 4px;
-    display: block;
 }
 
 /* ========================= PEDIDOS ========================= */
