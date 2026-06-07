@@ -1,8 +1,21 @@
 const menu = document.getElementById('menu');
+const buttonMenu = document.getElementById('buttonMenu');
 
-function openMenu() {
-    menu.classList.toggle("active");
-}
+buttonMenu.addEventListener("click", () => {
+    if (menu.classList.contains("active")) {
+        menu.classList.remove("active");
+        menu.classList.add("desactive");
+
+        menu.addEventListener("animationend", function hide() {
+            menu.style.display = "none";
+            menu.removeEventListener("animationend", hide);
+        });
+    } else {
+        menu.style.display = "block";
+        menu.classList.remove("desactive");
+        menu.classList.add("active");
+    }
+});
 
 // ------------------------------------------------
 

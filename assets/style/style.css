@@ -117,10 +117,39 @@ nav li a {
     border: solid;
     border-radius: 20px;
     background-color: var(--cor-branca);
+    transition: transform 0.2s ease;
+}
+
+nav li a:hover {
+    transform: scale(1.035);
 }
 
 .active {
-    display: block;
+    animation: mostarMenu 0.3s ease;
+}
+
+.desactive {
+    animation: fecharMenu 0.3s ease;
+}
+
+@keyframes mostarMenu {
+    0% {
+        right: -200px;
+    }
+
+    100% {
+        right: 0;
+    }
+}
+
+@keyframes fecharMenu {
+    0% {
+        right: 0;
+    }
+
+    100% {
+        right: -200px;
+    }
 }
 
 /* ========================= MAIN ========================= */
@@ -297,6 +326,9 @@ main {
     cursor: pointer;
     background-color: var(--cor-verde-principal);
     transition: var(--transition-padrao);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .button-oferta:hover {
@@ -439,6 +471,27 @@ footer {
         width: 100%;
         height: 100vh;
     }
+
+    @keyframes mostarMenu {
+        0% {
+            right: -100%;
+        }
+
+        100% {
+            right: 0;
+        }
+    }
+
+    @keyframes fecharMenu {
+        0% {
+            right: 0;
+        }
+
+        100% {
+            right: -100%;
+        }
+    }
+
 
     main {
         overflow-x: hidden;
@@ -605,5 +658,25 @@ footer {
 
     .creditos {
         font-size: 1rem;
+    }
+
+    @keyframes mostarMenu {
+        0% {
+            right: -100%;
+        }
+
+        100% {
+            right: 0;
+        }
+    }
+
+    @keyframes fecharMenu {
+        0% {
+            right: 0;
+        }
+
+        100% {
+            right: -100%;
+        }
     }
 }
