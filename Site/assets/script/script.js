@@ -176,3 +176,37 @@ function avancarOfertas() {
 //     default:
 //         console.log("Dia inexistente!")
 // }
+
+// // ------------------------------------------------
+
+// for(let i = 1; i <= 20; i++) {
+//     console.log(i);
+// }
+
+// console.log("------------------------------------------------")
+
+// for(let i = 20; i >= 1; i--) {
+//     console.log(i);
+// }
+
+// console.log("------------------------------------------------")
+
+// for(let i = 0; i <= 50; i += 2) {
+//     console.log(i);
+// }
+
+// console.log("------------------------------------------------")
+
+// let num = prompt("Insira um número para tabuada");
+
+// for(let i = 0; i <= 10; i++) {
+//     console.log(num * i);
+// }
+
+// console.log("------------------------------------------------")
+
+// let piramide = "*";
+// for(i = 0; i <= 5; i++) {
+//     console.log(piramide)
+//     piramide += "*";
+// }
