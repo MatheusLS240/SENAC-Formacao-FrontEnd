@@ -118,3 +118,61 @@ function avancarOfertas() {
 // }
 
 // alert(`O maior valor é ${maior}`);
+
+// ------------------------------------------------
+
+// var fruta = 'mamao';
+
+// if (fruta == 'morango') {
+//     console.log("Morango!");
+// } else if (fruta == 'mamao') {
+//     console.log("Mamão");
+// } else {
+//     console.log("Fruta não encontrada!");
+// }
+
+// ------------------------------------------------
+
+// var fruta = 'mamao';
+
+// switch (fruta) {
+//     case 'morango':
+//         console.log('Morango!');
+//         break;
+//     case 'mamao':
+//         console.log('Mamão');
+//         break;
+//     default:
+//         console.log('Fruta não encontrada');
+// }
+
+// ------------------------------------------------
+
+// dia = new Date().getDay();
+// console.log(dia);
+
+// switch (dia) {
+//     case 0:
+//         console.log("Domingo");
+//         break
+//     case 1:
+//         console.log("Segunda");
+//         break;
+//     case 2:
+//         console.log("Terça");
+//         break;
+//     case 3:
+//         console.log("Quarta");
+//         break;
+//     case 4:
+//         console.log("Quinta");
+//         break;
+//     case 5:
+//         console.log("Sexta");
+//         break;
+//     case 6:
+//         console.log("Sabado");
+//         break;
+//     default:
+//         console.log("Dia inexistente!")
+// }
