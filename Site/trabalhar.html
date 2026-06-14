@@ -1,24 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kiwa - Trabalhe Conosco</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="assets/style/style.css">
 </head>
-
 <body>
+
     <header>
         <div class="container-logo">
             <a href="index.html">
-                <img src="assets/imgs/logo-temp.jpg" alt="">
+                <img src="assets/imgs/logo-temp.jpg" alt="Kiwa Culinária Logo">
             </a>
         </div>
         <div class="container-menu">
-            <button type="button" id="buttonMenu">
+            <button type="button" id="buttonMenu" aria-label="Abrir menu de navegação">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </div>
@@ -40,25 +38,27 @@
             <div class="titulo-secao">
                 <h1>Trabalhe Conosco</h1>
             </div>
+            
             <div class="bloco-campos">
-                <form method="post">
+                <form method="post" enctype="multipart/form-data">
+                    
                     <div class="campos">
-                        <input type="text" name="nome" required>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
                         <label for="nome">Nome</label>
                     </div>
 
                     <div class="campos">
-                        <input type="email" name="email" required>
+                        <input type="email" id="email" name="email" placeholder="seuemail@provedor.com" required>
                         <label for="email">Email</label>
                     </div>
 
                     <div class="campos">
-                        <input type="file" name="curriculo" required>
-                        <label for="curriculo">Curriculo</label>
+                        <input type="file" id="curriculo" name="curriculo" accept=".pdf,.doc,.docx" required>
+                        <label for="curriculo">Currículo</label>
                     </div>
 
                     <div class="campos">
-                        <textarea type="file" name="adicionais" rows="5"></textarea>
+                        <textarea id="adicionais" name="adicionais" rows="5" placeholder="Conte-nos um pouco sobre suas experiências profissionais anteriores..."></textarea>
                         <label for="adicionais">Adicionais (Opcional)</label>
                     </div>
 
@@ -66,6 +66,7 @@
                         <input type="submit" value="Enviar">
                         <input type="reset" value="Limpar">
                     </div>
+                    
                 </form>
             </div>
         </section>
@@ -74,27 +75,27 @@
     <footer>
         <div class="container-footer">
             <div class="info-site">
+                <h3>Site</h3>
                 <ul>
-                    <h3>Site</h3>
-                    <li><a href="">Categorias</a></li>
-                    <li><a href="">Pedidos</a></li>
-                    <li><a href="">Configurações</a></li>
-                    <li><a href="">Politica de Privacidade</a></li>
+                    <li><a href="categorias.html">Categorias</a></li>
+                    <li><a href="pedidos.html">Pedidos</a></li>
+                    <li><a href="config.html">Configurações</a></li>
+                    <li><a href="privacidade.html">Política de Privacidade</a></li>
                 </ul>
             </div>
             <div class="midia-contato">
                 <div class="midia">
                     <h3>Redes</h3>
                     <div class="content-midia">
-                        <a href=""><i class="fa-brands fa-instagram"></i></a>
-                        <a href=""><i class="fa-brands fa-tiktok"></i></a>
-                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://tiktok.com" target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
                     </div>
                 </div>
                 <div class="contato">
                     <h3>Contato</h3>
                     <ul>
-                        <li>11 99999-9999</li>
+                        <li>(11) 99999-9999</li>
                         <li>Rua Tuiuti - Nº 9998</li>
                     </ul>
                 </div>
@@ -107,5 +108,4 @@
 
     <script src="assets/script/script.js"></script>
 </body>
-
 </html>

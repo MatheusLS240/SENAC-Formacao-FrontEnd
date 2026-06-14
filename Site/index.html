@@ -12,10 +12,12 @@
 <body>
     <header>
         <div class="container-logo">
-            <img src="assets/imgs/logo-temp.jpg" alt="">
+            <a href="index.html">
+                <img src="assets/imgs/logo-temp.jpg" alt="Kiwa Culinária Logo">
+            </a>
         </div>
         <div class="container-menu">
-            <button type="button" id="buttonMenu">
+            <button type="button" id="buttonMenu" aria-label="Abrir menu de navegação">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </div>
@@ -35,55 +37,52 @@
     <main>
         <section class="container-search">
             <div class="titulo-busca">
-                <p>O melhor da culinária para <span style="color: #859b48;">você</span></p>
+                <h1>O melhor da culinária para <span style="color: #859b48;">você</span></h1>
             </div>
-            <div class="busca">
-                <button type="button">
+            <form class="busca" role="search">
+                <button type="submit" aria-label="Buscar">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
-                <input type="text" name="" id="">
-            </div>
+                <input type="text" placeholder="Busque por pratos ou restaurantes..." aria-label="Campo de busca">
+            </form>
         </section>
 
         <section class="container-categorias">
             <div class="titulo-secao">
-                <p>Categorias</p>
+                <h2>Categorias</h2>
             </div>
 
             <div class="blocos-categorias">
-                <a href="" class="bloco">
-                    <img src="assets/imgs/logo-temp.jpg" alt="">
+                <a href="categorias.html?tipo=1" class="bloco">
+                    <img src="assets/imgs/logo-temp.jpg" alt="Categoria Nome 1">
                     <p>Nome 1</p>
                 </a>
-                <a href="" class="bloco">
-                    <img src="assets/imgs/logo-temp.jpg" alt="">
+                <a href="categorias.html?tipo=2" class="bloco">
+                    <img src="assets/imgs/logo-temp.jpg" alt="Categoria Nome 2">
                     <p>Nome 2</p>
                 </a>
-                <a href="" class="bloco">
-                    <img src="assets/imgs/logo-temp.jpg" alt="">
+                <a href="categorias.html?tipo=3" class="bloco">
+                    <img src="assets/imgs/logo-temp.jpg" alt="Categoria Nome 3">
                     <p>Nome 3</p>
                 </a>
-                <a href="" class="bloco">
-                    <img src="assets/imgs/logo-temp.jpg" alt="">
+                <a href="categorias.html?tipo=4" class="bloco">
+                    <img src="assets/imgs/logo-temp.jpg" alt="Categoria Nome 4">
                     <p>Nome 4</p>
                 </a>
-            </div>
-
-            <div class="blocos-categorias">
-                <a href="" class="bloco">
-                    <img src="assets/imgs/logo-temp.jpg" alt="">
+                <a href="categorias.html?tipo=5" class="bloco">
+                    <img src="assets/imgs/logo-temp.jpg" alt="Categoria Nome 5">
                     <p>Nome 5</p>
                 </a>
-                <a href="" class="bloco">
-                    <img src="assets/imgs/logo-temp.jpg" alt="">
+                <a href="categorias.html?tipo=6" class="bloco">
+                    <img src="assets/imgs/logo-temp.jpg" alt="Categoria Nome 6">
                     <p>Nome 6</p>
                 </a>
-                <a href="" class="bloco">
-                    <img src="assets/imgs/logo-temp.jpg" alt="">
+                <a href="categorias.html?tipo=7" class="bloco">
+                    <img src="assets/imgs/logo-temp.jpg" alt="Categoria Nome 7">
                     <p>Nome 7</p>
                 </a>
-                <a href="" class="bloco">
-                    <img src="assets/imgs/logo-temp.jpg" alt="">
+                <a href="categorias.html?tipo=8" class="bloco">
+                    <img src="assets/imgs/logo-temp.jpg" alt="Categoria Nome 8">
                     <p>Nome 8</p>
                 </a>
             </div>
@@ -91,90 +90,92 @@
 
         <section class="container-oferta">
             <div class="titulo-secao">
-                <p>Ofertas do Dia</p>
+                <h2>Ofertas do Dia</h2>
             </div>
 
             <div class="conteudo-container-ofertas">
-                <button onclick="voltarOfertas()" class="prev-next-ofertas">
+                <button type="button" onclick="voltarOfertas()" class="prev-next-ofertas"
+                    aria-label="Ofertas anteriores">
                     <i class="fa-solid fa-angle-left"></i>
                 </button>
 
                 <div class="blocos-ofertas" id="scroll-ofertas">
                     <div class="oferta">
-                        <img src="assets/imgs/logo-temp.jpg" alt="">
+                        <img src="assets/imgs/logo-temp.jpg" alt="Oferta Prato 1">
                         <div class="conteudo-oferta">
                             <p>Nome 1</p>
                             <p>R$ 999,99</p>
-                            <button class="button-oferta">Acessar</button>
+                            <button type="button" class="button-oferta">Acessar</button>
                         </div>
                     </div>
                     <div class="oferta">
-                        <img src="assets/imgs/logo-temp.jpg" alt="">
+                        <img src="assets/imgs/logo-temp.jpg" alt="Oferta Prato 2">
                         <div class="conteudo-oferta">
                             <p>Nome 2</p>
                             <p>R$ 999,99</p>
-                            <button class="button-oferta">Acessar</button>
+                            <button type="button" class="button-oferta">Acessar</button>
                         </div>
                     </div>
                     <div class="oferta">
-                        <img src="assets/imgs/logo-temp.jpg" alt="">
+                        <img src="assets/imgs/logo-temp.jpg" alt="Oferta Prato 3">
                         <div class="conteudo-oferta">
                             <p>Nome 3</p>
                             <p>R$ 999,99</p>
-                            <button class="button-oferta">Acessar</button>
+                            <button type="button" class="button-oferta">Acessar</button>
                         </div>
                     </div>
                     <div class="oferta">
-                        <img src="assets/imgs/logo-temp.jpg" alt="">
+                        <img src="assets/imgs/logo-temp.jpg" alt="Oferta Prato 4">
                         <div class="conteudo-oferta">
                             <p>Nome 4</p>
                             <p>R$ 999,99</p>
-                            <button class="button-oferta">Acessar</button>
+                            <button type="button" class="button-oferta">Acessar</button>
                         </div>
                     </div>
                     <div class="oferta">
-                        <img src="assets/imgs/logo-temp.jpg" alt="">
+                        <img src="assets/imgs/logo-temp.jpg" alt="Oferta Prato 5">
                         <div class="conteudo-oferta">
                             <p>Nome 5</p>
                             <p>R$ 999,99</p>
-                            <button class="button-oferta">Acessar</button>
+                            <button type="button" class="button-oferta">Acessar</button>
                         </div>
                     </div>
                     <div class="oferta">
-                        <img src="assets/imgs/logo-temp.jpg" alt="">
+                        <img src="assets/imgs/logo-temp.jpg" alt="Oferta Prato 5">
                         <div class="conteudo-oferta">
                             <p>Nome 6</p>
                             <p>R$ 999,99</p>
-                            <button class="button-oferta">Acessar</button>
+                            <button type="button" class="button-oferta">Acessar</button>
                         </div>
                     </div>
                     <div class="oferta">
-                        <img src="assets/imgs/logo-temp.jpg" alt="">
+                        <img src="assets/imgs/logo-temp.jpg" alt="Oferta Prato 5">
                         <div class="conteudo-oferta">
                             <p>Nome 7</p>
                             <p>R$ 999,99</p>
-                            <button class="button-oferta">Acessar</button>
+                            <button type="button" class="button-oferta">Acessar</button>
                         </div>
                     </div>
                     <div class="oferta">
-                        <img src="assets/imgs/logo-temp.jpg" alt="">
+                        <img src="assets/imgs/logo-temp.jpg" alt="Oferta Prato 5">
                         <div class="conteudo-oferta">
                             <p>Nome 8</p>
                             <p>R$ 999,99</p>
-                            <button class="button-oferta">Acessar</button>
+                            <button type="button" class="button-oferta">Acessar</button>
                         </div>
                     </div>
                     <div class="oferta">
-                        <img src="assets/imgs/logo-temp.jpg" alt="">
+                        <img src="assets/imgs/logo-temp.jpg" alt="Oferta Prato 5">
                         <div class="conteudo-oferta">
                             <p>Nome 9</p>
                             <p>R$ 999,99</p>
-                            <button class="button-oferta">Acessar</button>
+                            <button type="button" class="button-oferta">Acessar</button>
                         </div>
                     </div>
                 </div>
 
-                <button onclick="avancarOfertas()" class="prev-next-ofertas">
+                <button type="button" onclick="avancarOfertas()" class="prev-next-ofertas"
+                    aria-label="Próximas ofertas">
                     <i class="fa-solid fa-angle-right"></i>
                 </button>
             </div>
@@ -182,16 +183,16 @@
 
         <section class="container-avaliacoes">
             <div class="titulo-secao">
-                <p>Melhores Avaliações</p>
+                <h2>Melhores Avaliações</h2>
             </div>
 
             <div class="bloco-avaliacoes">
                 <div class="avaliacao">
                     <div class="header-avaliacao">
-                        <img src="assets/imgs/logo-temp.jpg" alt="">
+                        <img src="assets/imgs/logo-temp.jpg" alt="Foto do usuário">
                         <div class="user-stars">
-                            <p>FODASE</p>
-                            <div class="stars">
+                            <p>Cliente Kiwa</p>
+                            <div class="stars" style="color: #ffc107;">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -205,10 +206,10 @@
 
                 <div class="avaliacao">
                     <div class="header-avaliacao">
-                        <img src="assets/imgs/logo-temp.jpg" alt="">
+                        <img src="assets/imgs/logo-temp.jpg" alt="Foto do usuário">
                         <div class="user-stars">
-                            <p>FODASE</p>
-                            <div class="stars">
+                            <p>Cliente Kiwa</p>
+                            <div class="stars" style="color: #ffc107;">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -222,10 +223,10 @@
 
                 <div class="avaliacao">
                     <div class="header-avaliacao">
-                        <img src="assets/imgs/logo-temp.jpg" alt="">
+                        <img src="assets/imgs/logo-temp.jpg" alt="Foto do usuário">
                         <div class="user-stars">
-                            <p>FODASE</p>
-                            <div class="stars">
+                            <p>Cliente Kiwa</p>
+                            <div class="stars" style="color: #ffc107;">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -239,10 +240,10 @@
 
                 <div class="avaliacao">
                     <div class="header-avaliacao">
-                        <img src="assets/imgs/logo-temp.jpg" alt="">
+                        <img src="assets/imgs/logo-temp.jpg" alt="Foto do usuário">
                         <div class="user-stars">
-                            <p>FODASE</p>
-                            <div class="stars">
+                            <p>Cliente Kiwa</p>
+                            <div class="stars" style="color: #ffc107;">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -256,10 +257,10 @@
 
                 <div class="avaliacao">
                     <div class="header-avaliacao">
-                        <img src="assets/imgs/logo-temp.jpg" alt="">
+                        <img src="assets/imgs/logo-temp.jpg" alt="Foto do usuário">
                         <div class="user-stars">
-                            <p>FODASE</p>
-                            <div class="stars">
+                            <p>Cliente Kiwa</p>
+                            <div class="stars" style="color: #ffc107;">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -273,10 +274,10 @@
 
                 <div class="avaliacao">
                     <div class="header-avaliacao">
-                        <img src="assets/imgs/logo-temp.jpg" alt="">
+                        <img src="assets/imgs/logo-temp.jpg" alt="Foto do usuário">
                         <div class="user-stars">
-                            <p>FODASE</p>
-                            <div class="stars">
+                            <p>Cliente Kiwa</p>
+                            <div class="stars" style="color: #ffc107;">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -294,27 +295,30 @@
     <footer>
         <div class="container-footer">
             <div class="info-site">
+                <h3>Site</h3>
                 <ul>
-                    <h3>Site</h3>
-                    <li><a href="">Categorias</a></li>
-                    <li><a href="">Pedidos</a></li>
-                    <li><a href="">Configurações</a></li>
-                    <li><a href="">Politica de Privacidade</a></li>
+                    <li><a href="categorias.html">Categorias</a></li>
+                    <li><a href="pedidos.html">Pedidos</a></li>
+                    <li><a href="config.html">Configurações</a></li>
+                    <li><a href="privacidade.html">Política de Privacidade</a></li>
                 </ul>
             </div>
             <div class="midia-contato">
                 <div class="midia">
                     <h3>Redes</h3>
                     <div class="content-midia">
-                        <a href=""><i class="fa-brands fa-instagram"></i></a>
-                        <a href=""><i class="fa-brands fa-tiktok"></i></a>
-                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://tiktok.com" target="_blank" rel="noopener" aria-label="TikTok"><i
+                                class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i
+                                class="fa-brands fa-facebook"></i></a>
                     </div>
                 </div>
                 <div class="contato">
                     <h3>Contato</h3>
                     <ul>
-                        <li>11 99999-9999</li>
+                        <li>(11) 99999-9999</li>
                         <li>Rua Tuiuti - Nº 9998</li>
                     </ul>
                 </div>
