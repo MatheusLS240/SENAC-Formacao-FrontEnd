@@ -1,11 +1,19 @@
+// ============================================================
+// ELEMENTOS DO DOM
+// ============================================================
+
 let menu = document.getElementById('menu');
 let buttonMenu = document.getElementById('buttonMenu');
-let paginaAtual =null;
+let paginaAtual = null;
 let register = null;
 let login = null;
 let containerScroll = null;
 let oferta = null;
 let larguraBlocoOferta = null;
+
+// ============================================================
+// MENU LATERAL - Abrir/Fechar
+// ============================================================
 
 buttonMenu.addEventListener("click", () => {
     if (menu.classList.contains("active")) {
@@ -22,6 +30,10 @@ buttonMenu.addEventListener("click", () => {
         menu.classList.add("active");
     }
 });
+
+// ============================================================
+// INICIALIZAÇÃO - Configurações por página
+// ============================================================
 
 window.addEventListener("load", () => {
     paginaAtual = window.location.pathname;
@@ -46,6 +58,10 @@ window.addEventListener("load", () => {
     }
 });
 
+// ============================================================
+// FUNÇÕES - Ofertas (carrossel)
+// ============================================================
+
 function voltarOfertas() {
     containerScroll.scrollBy({
         left: -larguraBlocoOferta,
@@ -59,6 +75,10 @@ function avancarOfertas() {
         behavior: 'smooth'
     });
 }
+
+// ============================================================
+// FUNÇÕES - Login e Cadastro (responsividade)
+// ============================================================
 
 function ajustarLogin() {
     const larguraTela = window.innerWidth;
