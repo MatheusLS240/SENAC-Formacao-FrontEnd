@@ -368,7 +368,7 @@ main {
     background-color: transparent;
     color: var(--cor-base-escura);
     font-size: 2rem;
-    transition: var(--transition-padrao);
+    transition: ease 0.3s;
     cursor: pointer;
 }
 
@@ -421,7 +421,7 @@ main {
     color: var(--cor-base-escura);
     font-size: 1.25rem;
     cursor: pointer;
-    transition: var(--transition-padrao);
+    transition: ease 0.3s;
 }
 
 .button-oferta:hover {

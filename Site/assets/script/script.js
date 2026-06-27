@@ -40,17 +40,17 @@ window.addEventListener("load", () => {
     register = document.getElementsByClassName('register-banner')[0];
     login = document.getElementsByClassName('login-banner')[0];
 
-    if (paginaAtual === "/Site/login.html") {
+    if (paginaAtual.includes("/login.html")) {
         ajustarLogin();
         window.addEventListener("resize", ajustarLogin);
     }
 
-    else if (paginaAtual === "/Site/criar-conta.html") {
+    else if (paginaAtual.includes("/criar-conta.html")) {
         ajustarRegister();
         window.addEventListener("resize", ajustarRegister);
     }
 
-    else if (paginaAtual === "/Site/index.html") {
+    else if (paginaAtual.includes("/index.html")) {
         containerScroll = document.getElementById('scroll-ofertas');
         oferta = document.getElementsByClassName('oferta')[0];
 
