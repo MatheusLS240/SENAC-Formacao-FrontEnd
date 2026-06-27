@@ -25,6 +25,7 @@
 
     --cor-sobreposicao: rgba(0, 0, 0, 0.5);
 }
+
 /* Reset Global */
 * {
     margin: 0;
@@ -195,13 +196,23 @@ nav li a:hover i {
 }
 
 @keyframes mostarMenu {
-    0% { right: -280px; }
-    100% { right: 0; }
+    0% {
+        right: -280px;
+    }
+
+    100% {
+        right: 0;
+    }
 }
 
 @keyframes fecharMenu {
-    0% { right: 0; }
-    100% { right: -280px; }
+    0% {
+        right: 0;
+    }
+
+    100% {
+        right: -280px;
+    }
 }
 
 /* ==========================================================================
@@ -318,7 +329,7 @@ main {
 
 
 /* ==========================================================================
-   OFERTAS (CAROUSEL / GRID ELEMS)
+   OFERTAS 
    ========================================================================== */
 
 .container-oferta {
@@ -406,7 +417,7 @@ main {
 
 
 /* ==========================================================================
-   AVALIAÇÕES (TESTIMONIALS)
+   AVALIAÇÕES 
    ========================================================================== */
 
 .container-avaliacoes {
@@ -491,7 +502,10 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     height: 100%;
+    gap: 20px;
+    width: 100%;
 }
 
 .bloco-campos form {
@@ -728,10 +742,171 @@ footer {
     text-align: center;
 }
 
+/* ==========================================================================
+   Pagina de Login
+   ========================================================================== */
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: calc(100vh - 70px);
+    padding: 20px;
+    background-color: var(--cor-fundo-secundario);
+}
+
+.login-card {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--cor-branca);
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 6px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 55%;
+    gap: 40px;
+    padding: 20px;
+}
+
+.login-header {
+    text-align: center;
+}
+
+.login-header h2 {
+    font-size: 1.65rem;
+}
+
+.login-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.input-group {
+    border-bottom: 2px solid var(--cor-base-escura);
+    padding: 10px 0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    color: var(--cor-base-escura);
+}
+
+.input-group input[type="text"],
+.input-group input[type="email"],
+.input-group input[type="password"] {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.login-fields input[type="submit"] {
+    background-color: var(--cor-base-escura);
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: var(--cor-branca);
+    width: 100%;
+    font-size: 1.25rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.login-fields input[type="submit"]:hover {
+    transform: scale(1.02);
+}
+
+.login-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.login-options a {
+    color: var(--cor-preta);
+    text-decoration: none;
+    text-align: center;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.login-banner,
+.register-banner {
+    width: 45%;
+    border: 2px solid black;
+    background-color: var(--cor-base-escura);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    text-align: center;
+}
+
+.login-banner {
+    border-radius: 75px 15px 15px 75px;
+}
+
+.register-banner {
+    border-radius: 15px 75px 75px 15px;
+}
+
+.banner-text {
+    color: var(--cor-branca);
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+.register-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--cor-branca);
+}
+
+.register-link a {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: 2px solid var(--cor-branca);
+    border-radius: 10px;
+    color: var(--cor-branca);
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.register-link a:hover {
+    transform: scale(1.05);
+}
 
 /* ==========================================================================
    RESPONSIVIDADE - TABLET (MAX-WIDTH: 920px)
    ========================================================================== */
+
+@media (max-width: 1300px) {
+    .login-card {
+        width: 75%;
+    }
+}
 
 @media (max-width: 920px) {
     header {
@@ -832,14 +1007,28 @@ footer {
         display: none;
     }
 
+    .login-card {
+        width: 85%;
+    }
+
     @keyframes mostarMenu {
-        0% { right: -100%; }
-        100% { right: 0; }
+        0% {
+            right: -100%;
+        }
+
+        100% {
+            right: 0;
+        }
     }
 
     @keyframes fecharMenu {
-        0% { right: 0; }
-        100% { right: -100%; }
+        0% {
+            right: 0;
+        }
+
+        100% {
+            right: -100%;
+        }
     }
 }
 
@@ -963,13 +1152,35 @@ footer {
         font-size: 1rem;
     }
 
+    .d-none {
+        display: none;
+    }
+
+    .login-card {
+        width: 95%;
+    }
+
+    .login-form {
+        width: 100%;
+    } 
+
     @keyframes mostarMenu {
-        0% { right: -100%; }
-        100% { right: 0; }
+        0% {
+            right: -100%;
+        }
+
+        100% {
+            right: 0;
+        }
     }
 
     @keyframes fecharMenu {
-        0% { right: 0; }
-        100% { right: -100%; }
+        0% {
+            right: 0;
+        }
+
+        100% {
+            right: -100%;
+        }
     }
 }
