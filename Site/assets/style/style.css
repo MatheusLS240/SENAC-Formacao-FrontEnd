@@ -22,8 +22,6 @@
 
     --cor-preta: #000000;
     --cor-branca: #FFFFFF;
-
-    --cor-sobreposicao: rgba(0, 0, 0, 0.5);
 }
 
 /* ==========================================================================
@@ -246,7 +244,7 @@ main {
     gap: 20px;
     height: calc(100vh - 70px);
     padding: 20px;
-    background: linear-gradient(var(--cor-sobreposicao), var(--cor-sobreposicao)), url(../imgs/logo-temp.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imgs/logo-temp.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -567,6 +565,7 @@ main {
 .campos textarea {
     min-height: 180px;
     resize: vertical;
+    max-height: 300px;
 }
 
 .campos input::placeholder,
