@@ -10,6 +10,9 @@ let login = null;
 let containerScroll = null;
 let oferta = null;
 let larguraBlocoOferta = null;
+let status = null;
+let statusAtual = null;
+let statusButton = null;
 
 // ============================================================
 // MENU LATERAL - Abrir/Fechar
@@ -55,6 +58,19 @@ window.addEventListener("load", () => {
         oferta = document.getElementsByClassName('oferta')[0];
 
         larguraBlocoOferta = oferta.clientWidth + 20;
+    }
+
+    else if (paginaAtual.includes("/pedidos.html")) {
+        status = document.getElementsByClassName("status");
+
+        for (let i = 0; i < status.length; i++) {
+            statusAtual = document.createElement("p");
+
+            statusAtual.innerText = "Em preparo";
+            statusAtual.classList.add(`status-${i}`);
+
+            status[i].appendChild(statusAtual);
+        }
     }
 });
 
