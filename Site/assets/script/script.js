@@ -4,7 +4,7 @@
 
 let menu = document.getElementById('menu');
 let buttonMenu = document.getElementById('buttonMenu');
-let paginaAtual = null;
+let paginaAtual = window.location.pathname;
 let register = null;
 let login = null;
 let containerScroll = null;
@@ -40,37 +40,47 @@ buttonMenu.addEventListener("click", () => {
 
 window.addEventListener("load", () => {
     paginaAtual = window.location.pathname;
-    register = document.getElementsByClassName('register-banner')[0];
-    login = document.getElementsByClassName('login-banner')[0];
 
     if (paginaAtual.includes("/login.html")) {
-        ajustarLogin();
-        window.addEventListener("resize", ajustarLogin);
-    }
-
-    else if (paginaAtual.includes("/criar-conta.html")) {
-        ajustarRegister();
-        window.addEventListener("resize", ajustarRegister);
-    }
-
-    else if (paginaAtual.includes("/index.html")) {
+        login = document.getElementsByClassName('login-banner')[0];
+        ajustarLoginRegister(login);
+        window.addEventListener("resize", () => ajustarLoginRegister(login));
+    } else if (paginaAtual.includes("/criar-conta.html")) {
+        register = document.getElementsByClassName('register-banner')[0];
+        ajustarLoginRegister(register);
+        window.addEventListener("resize", () => ajustarLoginRegister(register));
+    } else if (paginaAtual.includes("/index.html")) {
         containerScroll = document.getElementById('scroll-ofertas');
         oferta = document.getElementsByClassName('oferta')[0];
 
         larguraBlocoOferta = oferta.clientWidth + 20;
-    }
+    } else if (paginaAtual.includes("/pedidos.html")) {
+        statusAtual = document.getElementsByClassName("status-p");
+        statusButton = document.getElementsByClassName("button-status");
 
-    else if (paginaAtual.includes("/pedidos.html")) {
-        status = document.getElementsByClassName("status");
-
-        for (let i = 0; i < status.length; i++) {
-            statusAtual = document.createElement("p");
-
-            statusAtual.innerText = "Em preparo";
-            statusAtual.classList.add(`status-${i}`);
-
-            status[i].appendChild(statusAtual);
+        for (let i = 0; i < statusAtual.length; i++) {
+            statusAtual[i].innerText = "Em preparo";
+            statusAtual[i].classList.add(`status-${i}`);
+            statusButton[i].classList.add(`status-${i}`);
         }
+
+        statusAtual[2].innerText = "A caminho";
+        statusAtual[5].innerText = "Entregue";
+
+        for (let i = 0; i < statusAtual.length; i++) {
+            if (statusAtual[i].innerText === "Em preparo") {
+                statusButton[i].innerText = "Cancelar Pedido";
+            } else if (statusAtual[i].innerText === "A caminho") {
+                statusButton[i].innerText = "Falar com o entregador";
+                statusButton[i].style.backgroundColor = "var(--cor-caminho)";
+            } else if(statusAtual[i].innerText === "Entregue") {
+                statusButton[i].innerText = "Avaliar Pedido";
+                statusButton[i].style.backgroundColor = "var(--cor-entregue)";
+                statusButton[i].href = "https://www.youtube.com";
+            }
+        }
+    } else {
+        console.log("Pagina não encontrada");
     }
 });
 
@@ -93,25 +103,15 @@ function avancarOfertas() {
 }
 
 // ============================================================
-// FUNÇÕES - Login e Cadastro (responsividade)
+// FUNÇÃO - Login e Cadastro (responsividade)
 // ============================================================
 
-function ajustarLogin() {
+function ajustarLoginRegister(removeLoginRegister) {
     const larguraTela = window.innerWidth;
 
     if (larguraTela <= 640) {
-        login.classList.add("d-none");
+        removeLoginRegister.classList.add("d-none");
     } else {
-        login.classList.remove("d-none");
-    }
-}
-
-function ajustarRegister() {
-    const larguraTela = window.innerWidth;
-
-    if (larguraTela <= 640) {
-        register.classList.add("d-none");
-    } else {
-        register.classList.remove("d-none");
+        removeLoginRegister.classList.remove("d-none");
     }
 }

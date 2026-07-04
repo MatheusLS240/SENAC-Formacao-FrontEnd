@@ -16,8 +16,12 @@
 
     --cor-fundo-input: #FFFFFF;
 
-    --cor-sucesso: #7A8C6A;
+    --cor-sucesso: #6B8F5E;
     --cor-alerta: #B85C4A;
+
+    --cor-preparo: #B85C4A;
+    --cor-caminho: #C4883A;
+    --cor-entregue: #6B8F5E;
     --cor-avaliacao: #C8A84E;
 
     --cor-preta: #000000;
@@ -725,6 +729,7 @@ main {
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s ease;
+    text-decoration: none;
 }
 
 .button-status:hover {
