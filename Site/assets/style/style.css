@@ -1165,6 +1165,11 @@ footer {
         padding: 10px;
     }
 
+    .titulo-secao {
+        width: 90%;
+        font-size: 1.5rem;
+    }
+
     .container-logo img {
         height: 35px;
     }
@@ -1246,8 +1251,24 @@ footer {
         font-size: 0.95rem;
     }
 
+    .container-tc {
+        height: auto;
+    }
+
     .container-tc form {
         width: 80%;
+    }
+
+    .bloco-campos form {
+        width: 100%;
+        padding: 40px 20px;
+    }
+
+    .submit-reset input[type="submit"],
+    .submit-reset input[type="reset"] {
+        width: 45%;
+        text-align: center;
+        padding: 12px ;
     }
 
     .container-pedidos {
