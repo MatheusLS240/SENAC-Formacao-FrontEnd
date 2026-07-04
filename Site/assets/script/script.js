@@ -54,6 +54,14 @@ window.addEventListener("load", () => {
         oferta = document.getElementsByClassName('oferta')[0];
 
         larguraBlocoOferta = oferta.clientWidth + 20;
+
+        window.addEventListener("resize", () => {
+            larguraBlocoOferta = oferta.clientWidth + 20;
+            containerScroll.scrollTo({
+                left: 0,
+                behavior: 'smooth'
+            });
+        });
     } else if (paginaAtual.includes("/pedidos.html")) {
         statusAtual = document.getElementsByClassName("status-p");
         statusButton = document.getElementsByClassName("button-status");
@@ -73,7 +81,7 @@ window.addEventListener("load", () => {
             } else if (statusAtual[i].innerText === "A caminho") {
                 statusButton[i].innerText = "Falar com o entregador";
                 statusButton[i].style.backgroundColor = "var(--cor-caminho)";
-            } else if(statusAtual[i].innerText === "Entregue") {
+            } else if (statusAtual[i].innerText === "Entregue") {
                 statusButton[i].innerText = "Avaliar Pedido";
                 statusButton[i].style.backgroundColor = "var(--cor-entregue)";
                 statusButton[i].href = "https://www.youtube.com";

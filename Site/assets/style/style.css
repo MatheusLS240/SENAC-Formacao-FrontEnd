@@ -1007,7 +1007,7 @@ footer {
     }
 }
 
-@media (max-width: 920px) {
+@media (max-width: 960px) {
     header {
         padding: 10px 15px;
         gap: 10px;
@@ -1214,8 +1214,12 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    .conteudo-container-ofertas {
+        gap: 10px;
+    }
+
     .blocos-ofertas {
-        grid-auto-columns: calc(100% - 20px);
+        grid-auto-columns: 100%;
     }
 
     .container-avaliacoes {
