@@ -26,6 +26,8 @@
 
     --cor-preta: #000000;
     --cor-branca: #FFFFFF;
+
+    --altura-section: calc(100vh - 79px);
 }
 
 /* ==========================================================================
@@ -235,7 +237,7 @@ nav li a:hover i {
 
 main {
     width: 100%;
-    min-height: calc(100vh - 79px);
+    min-height: var(--altura-section);
     margin-top: 79px;
 }
 
@@ -245,7 +247,7 @@ main {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    height: calc(100vh - 70px);
+    height: var(--altura-section);
     padding: 20px;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imgs/logo-temp.jpg);
     background-size: cover;
@@ -307,7 +309,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: calc(100vh - 70px);
+    height: var(--altura-section);
     padding: 20px;
     background-color: var(--cor-fundo-primario);
 }
@@ -352,7 +354,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: calc(100vh - 70px);
+    min-height: var(--altura-section);
     padding: 20px;
     background-color: var(--cor-fundo-secundario);
 }
@@ -439,7 +441,7 @@ main {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    height: calc(100vh - 70px);
+    height: var(--altura-section);
     padding: 20px;
     background-color: var(--cor-fundo-primario);
 }
@@ -458,7 +460,6 @@ main {
     padding: 20px;
     border-radius: 10px;
     background-color: var(--cor-primaria);
-    color: var(--cor-base-clara);
     color: var(--cor-base-escura);
 }
 
@@ -505,7 +506,7 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    height: calc(100vh - 70px);
+    height: var(--altura-section);
     padding: 20px;
     background-color: var(--cor-fundo-secundario);
 }
@@ -631,7 +632,7 @@ main {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    height: calc(100vh - 70px);
+    height: var(--altura-section);
     padding: 20px;
     background-color: var(--cor-fundo-secundario);
 }
@@ -844,7 +845,7 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    height: calc(100vh - 70px);
+    height: var(--altura-section);
     padding: 20px;
     background-color: var(--cor-fundo-secundario);
 }
@@ -991,6 +992,76 @@ footer {
     transform: scale(1.05);
 }
 
+.container-config {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    height: var(--altura-section);
+    padding: 20px;
+    background-color: var(--cor-fundo-secundario);
+}
+
+.container-opcoes-config {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    background-color: var(--cor-fundo-primario);
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+.container-opcoes-config button {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    padding: 15px 20px;
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: var(--cor-preta);
+    transition: background-color 0.2s, color 0.2s;
+    text-align: left;
+}
+
+.container-opcoes-config button:hover {
+    background-color: var(--cor-fundo-secundario);
+}
+
+.container-opcoes-config button.ativo {
+    background-color: var(--cor-fundo-secundario);
+    font-weight: 600;
+}
+
+.container-opcoes-config button i {
+    width: 24px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.container-detalhes-config {
+    flex: 6;
+    padding: 30px;
+    background-color: var(--cor-fundo-primario);
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+.secao-config h2 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: var(--cor-preta);
+}
+
+.secao-config p {
+    color: #555;
+    line-height: 1.6;
+}
+
 /* ==========================================================================
    RESPONSIVIDADE - TABLET (MAX-WIDTH: 920px)
    ========================================================================== */
@@ -1027,7 +1098,7 @@ footer {
     }
 
     .container-search {
-        min-height: calc(100vh - 70px);
+        min-height: var(--altura-section);
         text-align: center;
     }
 
@@ -1242,10 +1313,6 @@ footer {
 
     .avaliacao p {
         font-size: 0.95rem;
-    }
-
-    .container-tc {
-        height: auto;
     }
 
     .container-tc form {

@@ -5,14 +5,21 @@
 let menu = document.getElementById('menu');
 let buttonMenu = document.getElementById('buttonMenu');
 let paginaAtual = window.location.pathname;
+
 let register = null;
 let login = null;
 let containerScroll = null;
 let oferta = null;
 let larguraBlocoOferta = null;
+
 let status = null;
 let statusAtual = null;
 let statusButton = null;
+
+let opcaoConfig = null;
+
+let botoesConfig = null;
+let secoesConfig = null;
 
 // ============================================================
 // MENU LATERAL - Abrir/Fechar
@@ -45,52 +52,70 @@ window.addEventListener("load", () => {
         login = document.getElementsByClassName('login-banner')[0];
         ajustarDetalhesResponsividade(login);
         window.addEventListener("resize", () => ajustarDetalhesResponsividade(login));
+
     } else if (paginaAtual.includes("/criar-conta.html")) {
         register = document.getElementsByClassName('register-banner')[0];
         ajustarDetalhesResponsividade(register);
         window.addEventListener("resize", () => ajustarDetalhesResponsividade(register));
+
     } else if (paginaAtual.includes("/index.html")) {
         containerScroll = document.getElementById('scroll-ofertas');
         oferta = document.getElementsByClassName('oferta')[0];
-
         larguraBlocoOferta = oferta.clientWidth + 20;
 
         window.addEventListener("resize", () => {
             larguraBlocoOferta = oferta.clientWidth + 20;
-            containerScroll.scrollTo({
-                left: 0,
-                behavior: 'smooth'
-            });
+            containerScroll.scrollTo({ left: 0, behavior: 'smooth' });
         });
+
     } else if (paginaAtual.includes("/pedidos.html")) {
         statusAtual = document.getElementsByClassName("p-statusAtual");
         statusButton = document.getElementsByClassName("button-status");
-        status = document.getElementsByClassName("p-status")
+        status = document.getElementsByClassName("p-status");
 
         statusAtual[2].innerText = "A caminho";
         statusAtual[5].innerText = "Entregue";
 
         for (let i = 0; i < statusAtual.length; i++) {
-            ajustarDetalhesResponsividade(status[i])
-            window.addEventListener("resize", () => ajustarDetalhesResponsividade(status[i]))
+            ajustarDetalhesResponsividade(status[i]);
+            window.addEventListener("resize", () => ajustarDetalhesResponsividade(status[i]));
 
             if (statusAtual[i].innerText === "") {
                 statusAtual[i].innerText = "Em preparo";
             }
-            
+
             if (statusAtual[i].innerText === "Em preparo") {
                 statusButton[i].innerText = "Cancelar Pedido";
                 statusButton[i].style.backgroundColor = "var(--cor-alerta)";
-                statusButton[i].href = "https://www.youtube.com";
             } else if (statusAtual[i].innerText === "A caminho") {
                 statusButton[i].innerText = "Falar com o entregador";
                 statusButton[i].style.backgroundColor = "var(--cor-caminho)";
-                statusButton[i].href = "https://www.youtube.com";
             } else if (statusAtual[i].innerText === "Entregue") {
                 statusButton[i].innerText = "Avaliar Pedido";
                 statusButton[i].style.backgroundColor = "var(--cor-entregue)";
-                statusButton[i].href = "https://www.youtube.com";
             }
+
+            statusButton[i].href = "https://www.youtube.com";
+        }
+
+    } else if (paginaAtual.includes("/config.html")) {
+        botoesConfig = document.getElementsByClassName("opcao-config");
+        secoesConfig = document.getElementsByClassName("secao-config")
+
+        botoesConfig[0].classList.add("ativo");
+
+        for (let i = 0; i < botoesConfig.length; i++) {
+            botoesConfig[i].addEventListener("click", () => {
+                for (let j = 0; j < botoesConfig.length; j++) {
+                    if (j === i) {
+                        continue;
+                    }
+                    secoesConfig[j].style.display = "none";
+                    botoesConfig[j].classList.remove("ativo");
+                }
+                secoesConfig[i].style.display = "block";
+                botoesConfig[i].classList.add("ativo");
+            });
         }
     } else {
         console.log("Pagina não encontrada");
@@ -102,17 +127,11 @@ window.addEventListener("load", () => {
 // ============================================================
 
 function voltarOfertas() {
-    containerScroll.scrollBy({
-        left: -larguraBlocoOferta,
-        behavior: 'smooth'
-    });
+    containerScroll.scrollBy({ left: -larguraBlocoOferta, behavior: 'smooth' });
 }
 
 function avancarOfertas() {
-    containerScroll.scrollBy({
-        left: larguraBlocoOferta,
-        behavior: 'smooth'
-    });
+    containerScroll.scrollBy({ left: larguraBlocoOferta, behavior: 'smooth' });
 }
 
 // ============================================================
@@ -120,9 +139,7 @@ function avancarOfertas() {
 // ============================================================
 
 function ajustarDetalhesResponsividade(remove) {
-    const larguraTela = window.innerWidth;
-
-    if (larguraTela <= 640) {
+    if (window.innerWidth <= 640) {
         remove.classList.add("d-none");
     } else {
         remove.classList.remove("d-none");
