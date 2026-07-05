@@ -119,7 +119,6 @@ header {
     cursor: pointer;
 }
 
-
 /* ==========================================================================
    NAVIGATION (MENU LATERAL)
    ========================================================================== */
@@ -342,7 +341,6 @@ main {
     width: 100%;
 }
 
-
 /* ==========================================================================
    OFERTAS 
    ========================================================================== */
@@ -431,7 +429,6 @@ main {
     transform: scale(1.1);
 }
 
-
 /* ==========================================================================
    AVALIAÇÕES 
    ========================================================================== */
@@ -498,7 +495,6 @@ main {
 .titulo-busca span {
     color: var(--cor-secundaria);
 }
-
 
 /* ==========================================================================
    FORMULÁRIO DE CONTATO
@@ -625,7 +621,6 @@ main {
     border-color: var(--cor-alerta);
 }
 
-
 /* ==========================================================================
    PEDIDOS
    ========================================================================== */
@@ -704,7 +699,7 @@ main {
     flex-direction: column;
     padding: 10px;
     font-size: 1.35rem;
-    flex: 2;
+    flex: 1;
 }
 
 .rodape-pedido {
@@ -726,7 +721,6 @@ main {
     padding: 10px 20px;
     border-radius: 50px;
     border: none;
-    background-color: var(--cor-alerta);
     color: var(--cor-branca);
     font-weight: bold;
     cursor: pointer;
@@ -1155,7 +1149,6 @@ footer {
     }
 }
 
-
 /* ==========================================================================
    RESPONSIVIDADE - MOBILE (MAX-WIDTH: 640px)
    ========================================================================== */
@@ -1286,7 +1279,7 @@ footer {
 
     
     .bloco-pedido {
-        width: 100%;
+        width: 90%;
         height: 100%;
     }
 
@@ -1307,10 +1300,7 @@ footer {
     }
 
     .detalhe-pedido {
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 10px 0;
+        padding: 10px 20px;
     }
     
     .detalhe-pedido p {
@@ -1339,6 +1329,14 @@ footer {
 
     .login-form {
         width: 100%;
+    }
+
+    .rodape-pedido {
+        gap: 20px;
+    }
+
+    .button-status {
+        max-width: 140px;    
     }
 
     @keyframes mostarMenu {

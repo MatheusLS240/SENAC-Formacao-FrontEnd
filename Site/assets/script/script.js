@@ -43,12 +43,12 @@ window.addEventListener("load", () => {
 
     if (paginaAtual.includes("/login.html")) {
         login = document.getElementsByClassName('login-banner')[0];
-        ajustarLoginRegister(login);
-        window.addEventListener("resize", () => ajustarLoginRegister(login));
+        ajustarDetalhesResponsividade(login);
+        window.addEventListener("resize", () => ajustarDetalhesResponsividade(login));
     } else if (paginaAtual.includes("/criar-conta.html")) {
         register = document.getElementsByClassName('register-banner')[0];
-        ajustarLoginRegister(register);
-        window.addEventListener("resize", () => ajustarLoginRegister(register));
+        ajustarDetalhesResponsividade(register);
+        window.addEventListener("resize", () => ajustarDetalhesResponsividade(register));
     } else if (paginaAtual.includes("/index.html")) {
         containerScroll = document.getElementById('scroll-ofertas');
         oferta = document.getElementsByClassName('oferta')[0];
@@ -63,24 +63,29 @@ window.addEventListener("load", () => {
             });
         });
     } else if (paginaAtual.includes("/pedidos.html")) {
-        statusAtual = document.getElementsByClassName("status-p");
+        statusAtual = document.getElementsByClassName("p-statusAtual");
         statusButton = document.getElementsByClassName("button-status");
-
-        for (let i = 0; i < statusAtual.length; i++) {
-            statusAtual[i].innerText = "Em preparo";
-            statusAtual[i].classList.add(`status-${i}`);
-            statusButton[i].classList.add(`status-${i}`);
-        }
+        status = document.getElementsByClassName("p-status")
 
         statusAtual[2].innerText = "A caminho";
         statusAtual[5].innerText = "Entregue";
 
         for (let i = 0; i < statusAtual.length; i++) {
+            ajustarDetalhesResponsividade(status[i])
+            window.addEventListener("resize", () => ajustarDetalhesResponsividade(status[i]))
+
+            if (statusAtual[i].innerText === "") {
+                statusAtual[i].innerText = "Em preparo";
+            }
+            
             if (statusAtual[i].innerText === "Em preparo") {
                 statusButton[i].innerText = "Cancelar Pedido";
+                statusButton[i].style.backgroundColor = "var(--cor-alerta)";
+                statusButton[i].href = "https://www.youtube.com";
             } else if (statusAtual[i].innerText === "A caminho") {
                 statusButton[i].innerText = "Falar com o entregador";
                 statusButton[i].style.backgroundColor = "var(--cor-caminho)";
+                statusButton[i].href = "https://www.youtube.com";
             } else if (statusAtual[i].innerText === "Entregue") {
                 statusButton[i].innerText = "Avaliar Pedido";
                 statusButton[i].style.backgroundColor = "var(--cor-entregue)";
@@ -114,12 +119,12 @@ function avancarOfertas() {
 // FUNÇÃO - Login e Cadastro (responsividade)
 // ============================================================
 
-function ajustarLoginRegister(removeLoginRegister) {
+function ajustarDetalhesResponsividade(remove) {
     const larguraTela = window.innerWidth;
 
     if (larguraTela <= 640) {
-        removeLoginRegister.classList.add("d-none");
+        remove.classList.add("d-none");
     } else {
-        removeLoginRegister.classList.remove("d-none");
+        remove.classList.remove("d-none");
     }
 }
