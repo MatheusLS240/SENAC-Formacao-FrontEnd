@@ -41,8 +41,57 @@
 
     <!-- ========== CONTEÚDO PRINCIPAL ========== -->
     <main>
+        <!-- ========== FILTRO DE PEDIDOS ========== -->
+        <section class="container-filtro-pedidos">
+            <div class="titulo-secao">
+                <h1>PEDIDOS</h1>
+            </div>
+            <div class="filtros-status">
+                <button type="button" class="filtro-button filtro-todos active">
+                    <i class="fa-solid fa-list"></i>
+                    <span>Todos</span>
+                </button>
+                <button type="button" class="filtro-button filtro-preparo">
+                    <i class="fa-solid fa-fire-burner"></i>
+                    <span>Em Preparo</span>
+                </button>
+                <button type="button" class="filtro-button filtro-caminho">
+                    <i class="fa-solid fa-truck"></i>
+                    <span>A Caminho</span>
+                </button>
+                <button type="button" class="filtro-button filtro-entregue">
+                    <i class="fa-solid fa-check-circle"></i>
+                    <span>Entregue</span>
+                </button>
+                <button type="button" class="filtro-button filtro-avaliacao">
+                    <i class="fa-solid fa-star"></i>
+                    <span>Avaliação</span>
+                </button>
+            </div>
+        </section>
+
         <section class="container-pedidos">
-            <div class="col">
+            <div class="bloco-pedido">
+                    <div class="header-pedido">
+                        <h4>Número do pedido:</h4>
+                        <h4>999999-99</h4>
+                    </div>
+                    <div class="main-pedido">
+                        <img src="assets/imgs/logo-temp.jpg" alt="Imagem do pedido">
+                        <div class="detalhe-pedido">
+                            <p>Titulo do pedido</p>
+                            <p>Valor</p>
+                            <p>Data e Hora</p>
+                        </div>
+                    </div>
+                    <div class="rodape-pedido">
+                        <div class="status">
+                            <p class="d-none p-status">Status:</p>
+                            <p class="p-statusAtual"></p>
+                        </div>
+                        <a href="" class="button-status" aria-label="Cancelar pedido"></a>
+                    </div>
+                </div>
                 <div class="bloco-pedido">
                     <div class="header-pedido">
                         <h4>Número do pedido:</h4>
@@ -64,7 +113,6 @@
                         <a href="" class="button-status" aria-label="Cancelar pedido"></a>
                     </div>
                 </div>
-
                 <div class="bloco-pedido">
                     <div class="header-pedido">
                         <h4>Número do pedido:</h4>
@@ -86,31 +134,6 @@
                         <a href="" class="button-status" aria-label="Cancelar pedido"></a>
                     </div>
                 </div>
-
-                <div class="bloco-pedido">
-                    <div class="header-pedido">
-                        <h4>Número do pedido:</h4>
-                        <h4>999999-99</h4>
-                    </div>
-                    <div class="main-pedido">
-                        <img src="assets/imgs/logo-temp.jpg" alt="Imagem do pedido">
-                        <div class="detalhe-pedido">
-                            <p>Titulo do pedido</p>
-                            <p>Valor</p>
-                            <p>Data e Hora</p>
-                        </div>
-                    </div>
-                    <div class="rodape-pedido">
-                        <div class="status">
-                            <p class="d-none p-status">Status:</p>
-                            <p class="p-statusAtual"></p>
-
-                        </div>
-                        <a href="" class="button-status" aria-label="Cancelar pedido"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
                 <div class="bloco-pedido">
                     <div class="header-pedido">
                         <h4>Número do pedido:</h4>
@@ -132,7 +155,6 @@
                         <a href="" class="button-status" aria-label="Cancelar pedido"></a>
                     </div>
                 </div>
-
                 <div class="bloco-pedido">
                     <div class="header-pedido">
                         <h4>Número do pedido:</h4>
@@ -154,7 +176,6 @@
                         <a href="" class="button-status" aria-label="Cancelar pedido"></a>
                     </div>
                 </div>
-
                 <div class="bloco-pedido">
                     <div class="header-pedido">
                         <h4>Número do pedido:</h4>
@@ -176,7 +197,6 @@
                         <a href="" class="button-status" aria-label="Cancelar pedido"></a>
                     </div>
                 </div>
-            </div>
         </section>
     </main>
 

@@ -631,55 +631,111 @@ main {
 }
 
 /* ==========================================================================
+   FILTRO DE PEDIDOS
+   ========================================================================== */
+
+.container-filtro-pedidos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0 0 0;
+    gap: 20px;
+    background-color: var(--cor-fundo-secundario);
+}
+
+.filtros-status {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    max-width: 800px;
+    padding-bottom: 10px;
+}
+
+.filtro-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border: 2px solid var(--cor-base-escura);
+    border-radius: 50px;
+    background-color: var(--cor-fundo-primario);
+    color: var(--cor-base-escura);
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filtro-button i {
+    font-size: 1rem;
+}
+
+.filtro-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(61, 43, 31, 0.2);
+}
+
+.filtro-button.active {
+    background-color: var(--cor-base-escura);
+    color: var(--cor-branca);
+    border-color: var(--cor-base-escura);
+}
+
+.filtro-button.active:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(61, 43, 31, 0.3);
+}
+
+.filtro-preparo.active {
+    background-color: var(--cor-preparo);
+    border-color: var(--cor-preparo);
+    color: var(--cor-branca);
+}
+
+.filtro-caminho.active {
+    background-color: var(--cor-caminho);
+    border-color: var(--cor-caminho);
+    color: var(--cor-branca);
+}
+
+.filtro-entregue.active {
+    background-color: var(--cor-entregue);
+    border-color: var(--cor-entregue);
+    color: var(--cor-branca);
+}
+
+.filtro-avaliacao.active {
+    background-color: var(--cor-avaliacao);
+    border-color: var(--cor-avaliacao);
+    color: var(--cor-branca);
+}
+
+/* ==========================================================================
    PEDIDOS
    ========================================================================== */
 
 .container-pedidos {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    padding: 20px;
+    padding: 20px 10%;
     background-color: var(--cor-fundo-secundario);
-}
-
-.col {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 50%;
-    max-width: 700px;
-}
-
-.button-filtro {
-    width: 140px;
-    height: 40px;
-    font-size: 1.35rem;
-    background-color: var(--cor-primaria-transparente);
-    padding: 5px 20px;
-    border: none;
-    border-radius: 5px;
-    float: left;
+    place-items: center;
 }
 
 .bloco-pedido {
     background-color: var(--cor-primaria-transparente);
     padding: 20px;
-    width: 100%;
-    height: 270px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 10px;
 }
 
-.bloco-pedido .number-pedido {
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-}
-
+.number-pedido,
 .header-pedido {
     display: flex;
     flex-direction: row;
@@ -696,8 +752,9 @@ main {
 }
 
 .main-pedido img {
+    max-width: 30%;
+    object-fit: cover;
     border-right: solid var(--cor-base-escura) 3px;
-    flex: 1;
 }
 
 .detalhe-pedido {
@@ -707,7 +764,6 @@ main {
     flex-direction: column;
     padding: 10px;
     font-size: 1.35rem;
-    flex: 1;
 }
 
 .rodape-pedido {
@@ -1097,7 +1153,7 @@ footer {
     flex: 1;
     padding: 20px;
     border-radius: 30px;
-    background-color: var(--cor-primaria);
+    background-color: var(--cor-primaria-transparente);
     color: var(--cor-base-escura);
     text-align: center;
     text-decoration: none;
@@ -1122,6 +1178,15 @@ footer {
 @media (max-width: 1300px) {
     .login-card {
         width: 75%;
+    }
+
+    .pag-container-categorias {
+        height: 100%;
+    }
+
+    .pag-container-categorias .blocos-categorias {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
     }
 }
 
@@ -1218,18 +1283,38 @@ footer {
     }
 
     .container-pedidos {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
         gap: 15px;
-        padding: 20px 0;
-        height: 100%;
+        padding: 20px;
     }
 
-    .col {
-        width: 100%;
-        align-items: center;
-        justify-content: center;
+    .container-filtro-pedidos {
+        padding: 20px 15px 10px 0;
+    }
+
+    .container-filtro-pedidos .titulo-secao {
+        width: 90%;
+        font-size: 1.5rem;
+    }
+
+    .filtros-status {
+        gap: 10px;
+    }
+
+    .filtro-button {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+    }
+
+    .main-pedido {
+        flex-direction: column;
+        border-radius: 10px;
+    }
+
+    .main-pedido img {
+        max-width: 100%;
+        border: none;
+        border-bottom: 3px solid var(--cor-base-escura);
     }
 
     .detalhe-pedido p {
@@ -1237,11 +1322,11 @@ footer {
     }
 
     .status {
-        flex-direction: row;
+        flex-direction: column;
     }
 
-    .bloco-pedido {
-        width: 90%;
+    .button-status {
+        height: 100%;
     }
 
     .d-none {
@@ -1290,7 +1375,7 @@ footer {
    RESPONSIVIDADE - MOBILE (MAX-WIDTH: 640px)
    ========================================================================== */
 
-@media (max-width: 540px) {
+@media (max-width: 640px) {
     header {
         padding: 10px;
     }
@@ -1398,35 +1483,50 @@ footer {
     }
 
     .container-pedidos {
-        flex-direction: column;
+        grid-template-columns: 1fr;
         gap: 15px;
-        padding: 20px 0;
-        height: 100%;
+        padding: 15px;
     }
 
-    .col {
-        flex-direction: column;
-        margin: 0;
-        padding: 0 20px;
+    .container-filtro-pedidos {
+        padding: 15px 10px 5px;
     }
 
+    .container-filtro-pedidos .titulo-secao {
+        width: 95%;
+        font-size: 1.3rem;
+    }
+
+    .filtros-status {
+        gap: 6px;
+    }
+
+    .filtro-button {
+        padding: 7px 12px;
+        font-size: 0.75rem;
+        gap: 5px;
+    }
+
+    .filtro-button i {
+        font-size: 0.8rem;
+    }
 
     .bloco-pedido {
-        width: 90%;
-        height: 100%;
+        width: 100%;
     }
 
     .main-pedido {
         flex-direction: column;
-        height: 100%;
         border-radius: 10px;
-        ;
     }
 
     .main-pedido img {
-        border: none;
-        border-bottom: var(--cor-base-escura) 3px solid;
+        flex: 1;
         width: 100%;
+        max-width: 100%;
+        object-fit: cover;
+        border: none;
+        border-bottom: 3px solid var(--cor-base-escura);
     }
 
     .main-pedido p {
@@ -1434,15 +1534,26 @@ footer {
     }
 
     .detalhe-pedido {
-        padding: 10px 20px;
+        padding: 10px 15px;
     }
 
     .detalhe-pedido p {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     .status {
         flex-direction: column;
+        font-size: 1.1rem;
+    }
+
+    .rodape-pedido {
+        gap: 15px;
+    }
+
+    .button-status {
+        max-width: 130px;
+        padding: 8px 16px;
+        font-size: 0.9rem;
     }
 
     footer {
@@ -1463,14 +1574,6 @@ footer {
 
     .login-form {
         width: 100%;
-    }
-
-    .rodape-pedido {
-        gap: 20px;
-    }
-
-    .button-status {
-        max-width: 140px;
     }
 
     .pag-container-categorias h1 {
