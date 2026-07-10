@@ -314,7 +314,7 @@ main {
     background-color: var(--cor-fundo-primario);
 }
 
-.blocos-categorias {
+.container-categorias .blocos-categorias {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
@@ -322,7 +322,9 @@ main {
     margin-top: 20px;
 }
 
-.blocos-categorias a.bloco {
+.container-categorias .bloco {
+    display: flex;
+    flex-direction: column;
     flex: 1;
     padding: 20px;
     border-radius: 10px;
@@ -333,14 +335,20 @@ main {
     text-transform: uppercase;
     cursor: pointer;
     transition: ease 0.3s;
+    gap: 20px;
 }
 
-.blocos-categorias a.bloco:hover {
+.container-categorias .bloco:hover {
     transform: translateY(-10px);
 }
 
-.bloco img {
+.container-categorias img {
     width: 100%;
+    border-radius: 5px;
+}
+
+.container-categorias p {
+    font-size: 18px;
 }
 
 /* ==========================================================================
@@ -632,7 +640,6 @@ main {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    height: var(--altura-section);
     padding: 20px;
     background-color: var(--cor-fundo-secundario);
 }
@@ -1062,6 +1069,52 @@ footer {
     line-height: 1.6;
 }
 
+.pag-container-categorias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: var(--altura-section);
+    padding: 20px;
+    background-color: var(--cor-fundo-secundario);
+}
+
+.pag-container-categorias .blocos-categorias {
+    display: grid;
+    grid-template-columns: repeat(5, calc(20% - 25px));
+    gap: 25px;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.pag-container-categorias .bloco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: 200px;
+    gap: 20px;
+    flex: 1;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: var(--cor-primaria);
+    color: var(--cor-base-escura);
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: ease 0.3s;
+    box-shadow: 2px 3px 5px var(--cor-preta);
+}
+
+.pag-container-categorias .bloco:hover {
+    transform: translateY(-10px);
+}
+
+.pag-container-categorias i {
+    font-size: 64px;
+}
+
 /* ==========================================================================
    RESPONSIVIDADE - TABLET (MAX-WIDTH: 920px)
    ========================================================================== */
@@ -1133,7 +1186,7 @@ footer {
         font-size: 1.6rem;
     }
 
-    .blocos-categorias {
+    .container-categorias .blocos-categorias {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -1199,6 +1252,19 @@ footer {
         width: 85%;
     }
 
+    .pag-container-categorias {
+        height: 100%;
+    }
+
+    .pag-container-categorias h1 {
+        font-size: 48px;
+    }
+
+    .pag-container-categorias .blocos-categorias {
+        grid-template-columns: repeat(2, 50%);
+        gap: 20px;
+    }
+
     @keyframes mostarMenu {
         0% {
             right: -100%;
@@ -1224,7 +1290,7 @@ footer {
    RESPONSIVIDADE - MOBILE (MAX-WIDTH: 640px)
    ========================================================================== */
 
-@media (max-width: 640px) {
+@media (max-width: 540px) {
     header {
         padding: 10px;
     }
@@ -1279,8 +1345,8 @@ footer {
         font-size: 1.3rem;
     }
 
-    .blocos-categorias {
-        grid-template-columns: 1fr;
+    .container-categorias .blocos-categorias {
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .conteudo-container-ofertas {
@@ -1328,7 +1394,7 @@ footer {
     .submit-reset input[type="reset"] {
         width: 45%;
         text-align: center;
-        padding: 12px ;
+        padding: 12px;
     }
 
     .container-pedidos {
@@ -1344,7 +1410,7 @@ footer {
         padding: 0 20px;
     }
 
-    
+
     .bloco-pedido {
         width: 90%;
         height: 100%;
@@ -1353,7 +1419,8 @@ footer {
     .main-pedido {
         flex-direction: column;
         height: 100%;
-        border-radius: 10px;;
+        border-radius: 10px;
+        ;
     }
 
     .main-pedido img {
@@ -1369,7 +1436,7 @@ footer {
     .detalhe-pedido {
         padding: 10px 20px;
     }
-    
+
     .detalhe-pedido p {
         font-size: 1.3rem;
     }
@@ -1403,7 +1470,16 @@ footer {
     }
 
     .button-status {
-        max-width: 140px;    
+        max-width: 140px;
+    }
+
+    .pag-container-categorias h1 {
+        font-size: 40px;
+    }
+
+    .pag-container-categorias .blocos-categorias {
+        grid-template-columns: repeat(1, 100%);
+        gap: 15px;
     }
 
     @keyframes mostarMenu {
