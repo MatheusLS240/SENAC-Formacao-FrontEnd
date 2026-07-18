@@ -513,6 +513,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 20px;
     height: var(--altura-section);
     padding: 20px;
@@ -524,7 +525,6 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 100%;
     gap: 20px;
     width: 100%;
 }
@@ -638,9 +638,11 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-end;
     padding: 20px 0 0 0;
     gap: 20px;
     background-color: var(--cor-fundo-secundario);
+    height: 190px;
 }
 
 .filtros-status {
@@ -717,12 +719,17 @@ main {
    ========================================================================== */
 
 .container-pedidos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 20px 10%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
     background-color: var(--cor-fundo-secundario);
-    place-items: center;
+    padding: 20px;
+    gap: 20px;
+    overflow: hidden;
+    position: relative;
+    transition: all ease 0.3s;
 }
 
 .bloco-pedido {
@@ -733,6 +740,8 @@ main {
     flex-direction: column;
     justify-content: space-between;
     gap: 10px;
+    width: calc(50% - 20px);
+    max-width: 700px;
 }
 
 .number-pedido,
@@ -831,6 +840,23 @@ main {
 .status p:last-child {
     font-weight: 700;
     color: var(--cor-sucesso);
+}
+
+#exibir-mais,
+#exibir-menos {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#exibir-menos {
+    display: none;
 }
 
 /* ==========================================================================
@@ -1179,11 +1205,7 @@ footer {
     .login-card {
         width: 75%;
     }
-
-    .pag-container-categorias {
-        height: 100%;
-    }
-
+    
     .pag-container-categorias .blocos-categorias {
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;

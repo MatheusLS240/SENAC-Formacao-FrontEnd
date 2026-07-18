@@ -12,6 +12,9 @@ let containerScroll = null;
 let oferta = null;
 let larguraBlocoOferta = null;
 
+let blocoPedido = null;
+let buttonExibirMais = null;
+let buttonExibirMenos = null;
 let status = null;
 let statusAtual = null;
 let statusButton = null;
@@ -72,6 +75,41 @@ window.addEventListener("load", () => {
         statusAtual = document.getElementsByClassName("p-statusAtual");
         statusButton = document.getElementsByClassName("button-status");
         status = document.getElementsByClassName("p-status");
+        blocoPedido = document.getElementsByClassName("bloco-pedido");
+        buttonExibirMais = document.getElementById("exibir-mais");
+        buttonExibirMenos = document.getElementById("exibir-menos");
+        let count = 0;
+
+
+        for (let i = 0; i < blocoPedido.length; i++) {
+            if (count >= 6) {
+                blocoPedido[i].style.display = "none";
+            }
+            count++;
+        }
+
+        buttonExibirMais.addEventListener("click", () => {
+            count = 0;
+            for (let i = 0; i < blocoPedido.length; i++) {
+                blocoPedido[i].style.display = "flex";
+            }
+
+            buttonExibirMais.style.display = "none";
+            buttonExibirMenos.style.display = "block";
+        });
+
+        buttonExibirMenos.addEventListener("click", () => {
+            count = 0;
+            for (let i = 0; i < blocoPedido.length; i++) {
+                if (count >= 6) {
+                    blocoPedido[i].style.display = "none";
+                }
+                count++;
+            }
+
+            buttonExibirMais.style.display = "block";
+            buttonExibirMenos.style.display = "none";
+        });
 
         statusAtual[2].innerText = "A caminho";
         statusAtual[5].innerText = "Entregue";
