@@ -12,12 +12,14 @@ let containerScroll = null;
 let oferta = null;
 let larguraBlocoOferta = null;
 
+let containerPedido = null;
 let blocoPedido = null;
 let buttonExibirMais = null;
 let buttonExibirMenos = null;
 let status = null;
 let statusAtual = null;
 let statusButton = null;
+let alturaContainerPedido = null;
 
 let opcaoConfig = null;
 
@@ -25,10 +27,12 @@ let botoesConfig = null;
 let secoesConfig = null;
 
 // ============================================================
-// MENU LATERAL - Abrir/Fechar
+// MENU LATERAL
 // ============================================================
 
-buttonMenu.addEventListener("click", () => {
+buttonMenu.addEventListener("click", abrirFecharMenu);
+
+function abrirFecharMenu() {
     if (menu.classList.contains("active")) {
         menu.classList.remove("active");
         menu.classList.add("desactive");
@@ -42,138 +46,233 @@ buttonMenu.addEventListener("click", () => {
         menu.classList.remove("desactive");
         menu.classList.add("active");
     }
-});
+}
 
 // ============================================================
-// INICIALIZAÇÃO - Configurações por página
+// INICIALIZAÇÃO
 // ============================================================
 
-window.addEventListener("load", () => {
+window.addEventListener("load", inicializarPagina);
+
+function inicializarPagina() {
     paginaAtual = window.location.pathname;
 
     if (paginaAtual.includes("/login.html")) {
-        login = document.getElementsByClassName('login-banner')[0];
-        ajustarDetalhesResponsividade(login);
-        window.addEventListener("resize", () => ajustarDetalhesResponsividade(login));
-
+        inicializarLogin();
     } else if (paginaAtual.includes("/criar-conta.html")) {
-        register = document.getElementsByClassName('register-banner')[0];
-        ajustarDetalhesResponsividade(register);
-        window.addEventListener("resize", () => ajustarDetalhesResponsividade(register));
-
+        inicializarCadastro();
     } else if (paginaAtual.includes("/index.html")) {
-        containerScroll = document.getElementById('scroll-ofertas');
-        oferta = document.getElementsByClassName('oferta')[0];
-        larguraBlocoOferta = oferta.clientWidth + 20;
-
-        window.addEventListener("resize", () => {
-            larguraBlocoOferta = oferta.clientWidth + 20;
-            containerScroll.scrollTo({ left: 0, behavior: 'smooth' });
-        });
-
+        inicializarOfertas();
     } else if (paginaAtual.includes("/pedidos.html")) {
-        statusAtual = document.getElementsByClassName("p-statusAtual");
-        statusButton = document.getElementsByClassName("button-status");
-        status = document.getElementsByClassName("p-status");
-        blocoPedido = document.getElementsByClassName("bloco-pedido");
-        buttonExibirMais = document.getElementById("exibir-mais");
-        buttonExibirMenos = document.getElementById("exibir-menos");
-        let count = 0;
-
-
-        for (let i = 0; i < blocoPedido.length; i++) {
-            if (count >= 6) {
-                blocoPedido[i].style.display = "none";
-            }
-            count++;
-        }
-
-        buttonExibirMais.addEventListener("click", () => {
-            count = 0;
-            for (let i = 0; i < blocoPedido.length; i++) {
-                blocoPedido[i].style.display = "flex";
-            }
-
-            buttonExibirMais.style.display = "none";
-            buttonExibirMenos.style.display = "block";
-        });
-
-        buttonExibirMenos.addEventListener("click", () => {
-            count = 0;
-            for (let i = 0; i < blocoPedido.length; i++) {
-                if (count >= 6) {
-                    blocoPedido[i].style.display = "none";
-                }
-                count++;
-            }
-
-            buttonExibirMais.style.display = "block";
-            buttonExibirMenos.style.display = "none";
-        });
-
-        statusAtual[2].innerText = "A caminho";
-        statusAtual[5].innerText = "Entregue";
-
-        for (let i = 0; i < statusAtual.length; i++) {
-            ajustarDetalhesResponsividade(status[i]);
-            window.addEventListener("resize", () => ajustarDetalhesResponsividade(status[i]));
-
-            if (statusAtual[i].innerText === "") {
-                statusAtual[i].innerText = "Em preparo";
-            }
-
-            if (statusAtual[i].innerText === "Em preparo") {
-                statusButton[i].innerText = "Cancelar Pedido";
-                statusButton[i].style.backgroundColor = "var(--cor-alerta)";
-            } else if (statusAtual[i].innerText === "A caminho") {
-                statusButton[i].innerText = "Falar com o entregador";
-                statusButton[i].style.backgroundColor = "var(--cor-caminho)";
-            } else if (statusAtual[i].innerText === "Entregue") {
-                statusButton[i].innerText = "Avaliar Pedido";
-                statusButton[i].style.backgroundColor = "var(--cor-entregue)";
-            }
-
-            statusButton[i].href = "https://www.youtube.com";
-        }
-
+        inicializarPedidos();
     } else if (paginaAtual.includes("/config.html")) {
-        botoesConfig = document.getElementsByClassName("opcao-config");
-        secoesConfig = document.getElementsByClassName("secao-config")
-
-        botoesConfig[0].classList.add("ativo");
-
-        for (let i = 0; i < botoesConfig.length; i++) {
-            botoesConfig[i].addEventListener("click", () => {
-                for (let j = 0; j < botoesConfig.length; j++) {
-                    if (j === i) {
-                        continue;
-                    }
-                    secoesConfig[j].style.display = "none";
-                    botoesConfig[j].classList.remove("ativo");
-                }
-                secoesConfig[i].style.display = "block";
-                botoesConfig[i].classList.add("ativo");
-            });
-        }
+        inicializarConfiguracoes();
     } else {
         console.log("Pagina não encontrada");
     }
-});
+}
 
 // ============================================================
-// FUNÇÕES - Ofertas (carrossel)
+// LOGIN
+// ============================================================
+
+function inicializarLogin() {
+    login = document.getElementsByClassName('login-banner')[0];
+
+    ajustarDetalhesResponsividade(login);
+
+    window.addEventListener("resize", () =>
+        ajustarDetalhesResponsividade(login)
+    );
+}
+
+// ============================================================
+// CADASTRO
+// ============================================================
+
+function inicializarCadastro() {
+    register = document.getElementsByClassName('register-banner')[0];
+
+    ajustarDetalhesResponsividade(register);
+
+    window.addEventListener("resize", () =>
+        ajustarDetalhesResponsividade(register)
+    );
+}
+
+// ============================================================
+// OFERTAS
+// ============================================================
+
+function inicializarOfertas() {
+    containerScroll = document.getElementById('scroll-ofertas');
+    oferta = document.getElementsByClassName('oferta')[0];
+    larguraBlocoOferta = oferta.clientWidth + 20;
+
+    window.addEventListener("resize", () => {
+        larguraBlocoOferta = oferta.clientWidth + 20;
+        containerScroll.scrollTo({ left: 0, behavior: "smooth" });
+    });
+}
+
+// ============================================================
+// PEDIDOS
+// ============================================================
+
+function inicializarPedidos() {
+
+    statusAtual = document.getElementsByClassName("p-statusAtual");
+    statusButton = document.getElementsByClassName("button-status");
+    status = document.getElementsByClassName("p-status");
+    blocoPedido = document.getElementsByClassName("bloco-pedido");
+    buttonExibirMais = document.getElementById("exibir-mais");
+    buttonExibirMenos = document.getElementById("exibir-menos");
+    containerPedido = document.getElementsByClassName("container-pedidos-conteudo")[0];
+
+    alturaContainerPedido = containerPedido.offsetHeight + "px";
+
+    ocultarPedidos();
+    configurarResizePedidos();
+    configurarBotoesPedidos();
+    configurarStatusPedidos();
+}
+
+function ocultarPedidos() {
+    let count = 0;
+
+    for (let i = 0; i < blocoPedido.length; i++) {
+        if (count >= 6) {
+            blocoPedido[i].style.display = "none";
+        }
+        count++;
+    }
+}
+
+function configurarResizePedidos() {
+    window.addEventListener("resize", () => {
+        alturaContainerPedido = containerPedido.offsetHeight + "px";
+        buttonExibirMenos.click();
+    });
+}
+
+function configurarBotoesPedidos() {
+
+    buttonExibirMais.addEventListener("click", () => {
+
+        containerPedido.style.height = alturaContainerPedido + "px";
+        alturaContainerPedido = containerPedido.offsetHeight;
+
+        for (let i = 0; i < blocoPedido.length; i++) {
+            blocoPedido[i].style.display = "flex";
+        }
+
+        requestAnimationFrame(() => {
+            containerPedido.style.transition = "height 0.4s ease";
+            containerPedido.style.height = containerPedido.scrollHeight + "px";
+        });
+
+        buttonExibirMais.style.display = "none";
+        buttonExibirMenos.style.display = "block";
+    });
+
+    buttonExibirMenos.addEventListener("click", () => {
+
+        requestAnimationFrame(() => {
+
+            containerPedido.style.transition = "height 0.4s ease";
+            containerPedido.style.height = alturaContainerPedido + "px";
+
+            buttonExibirMais.style.display = "block";
+            buttonExibirMenos.style.display = "none";
+
+            setTimeout(() => {
+                ocultarPedidos();
+            }, 400);
+        });
+    });
+}
+
+function configurarStatusPedidos() {
+
+    statusAtual[2].innerText = "A caminho";
+    statusAtual[5].innerText = "Entregue";
+
+    for (let i = 0; i < statusAtual.length; i++) {
+
+        ajustarDetalhesResponsividade(status[i]);
+
+        window.addEventListener("resize", () =>
+            ajustarDetalhesResponsividade(status[i])
+        );
+
+        if (statusAtual[i].innerText === "") {
+            statusAtual[i].innerText = "Em preparo";
+        }
+
+        if (statusAtual[i].innerText === "Em preparo") {
+            statusButton[i].innerText = "Cancelar Pedido";
+            statusButton[i].style.backgroundColor = "var(--cor-alerta)";
+        } else if (statusAtual[i].innerText === "A caminho") {
+            statusButton[i].innerText = "Falar com o entregador";
+            statusButton[i].style.backgroundColor = "var(--cor-caminho)";
+        } else if (statusAtual[i].innerText === "Entregue") {
+            statusButton[i].innerText = "Avaliar Pedido";
+            statusButton[i].style.backgroundColor = "var(--cor-entregue)";
+        }
+
+        statusButton[i].href = "https://www.youtube.com";
+    }
+}
+
+// ============================================================
+// CONFIGURAÇÕES
+// ============================================================
+
+function inicializarConfiguracoes() {
+
+    botoesConfig = document.getElementsByClassName("opcao-config");
+    secoesConfig = document.getElementsByClassName("secao-config");
+
+    botoesConfig[0].classList.add("ativo");
+
+    for (let i = 0; i < botoesConfig.length; i++) {
+
+        botoesConfig[i].addEventListener("click", () => {
+
+            for (let j = 0; j < botoesConfig.length; j++) {
+
+                if (j === i) continue;
+
+                secoesConfig[j].style.display = "none";
+                botoesConfig[j].classList.remove("ativo");
+            }
+
+            secoesConfig[i].style.display = "block";
+            botoesConfig[i].classList.add("ativo");
+        });
+    }
+}
+
+// ============================================================
+// FUNÇÕES - OFERTAS
 // ============================================================
 
 function voltarOfertas() {
-    containerScroll.scrollBy({ left: -larguraBlocoOferta, behavior: 'smooth' });
+    containerScroll.scrollBy({
+        left: -larguraBlocoOferta,
+        behavior: "smooth"
+    });
 }
 
 function avancarOfertas() {
-    containerScroll.scrollBy({ left: larguraBlocoOferta, behavior: 'smooth' });
+    containerScroll.scrollBy({
+        left: larguraBlocoOferta,
+        behavior: "smooth"
+    });
 }
 
 // ============================================================
-// FUNÇÃO - Login e Cadastro (responsividade)
+// RESPONSIVIDADE
 // ============================================================
 
 function ajustarDetalhesResponsividade(remove) {
