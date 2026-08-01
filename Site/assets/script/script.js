@@ -7,6 +7,14 @@ let buttonMenu = document.getElementById('buttonMenu');
 let paginaAtual = window.location.pathname;
 
 let register = null;
+let senhaCriarConta = null;
+let campoSenha = null;
+let campoSenhaConfirmacao = null;
+let valor = null;
+let listaConfirmacoes = null;
+let itemListaConfirmacoes = null;
+let containerFaltaSenha = null;
+
 let login = null;
 let containerScroll = null;
 let oferta = null;
@@ -91,13 +99,61 @@ function inicializarLogin() {
 // ============================================================
 
 function inicializarCadastro() {
-    register = document.getElementsByClassName('register-banner')[0];
+    register = document.getElementsByClassName("register-banner")[0];
+    campoSenha = document.getElementById("senha");
+    campoSenhaConfirmacao = document.getElementById("confirmar-senha");
+    listaConfirmacoes = document.getElementById("erros");
+    itemListaConfirmacoes = listaConfirmacoes.children;
+    containerFaltaSenha = document.getElementsByClassName("falta-senha");
 
     ajustarDetalhesResponsividade(register);
 
-    window.addEventListener("resize", () =>
-        ajustarDetalhesResponsividade(register)
+    window.addEventListener("resize", () => {
+        ajustarDetalhesResponsividade(register);
+    });
+
+    validarSenha();
+}
+function validarSenha() {
+    campoSenha.addEventListener("input", () => {
+        const valor = campoSenha.value;
+
+        validar("minimo", valor.length >= 8);
+        validar("maiuscula", /[A-Z]/.test(valor));
+        validar("minuscula", /[a-z]/.test(valor));
+        validar("numero", /\d/.test(valor));
+        validar("especial", /[@$!%*?&._#\-]/.test(valor));
+
+        if (campoSenhaConfirmacao.value !== "") {
+            validar(
+                "senha-diferente",
+                valor === campoSenhaConfirmacao.value
+            );
+        }
+    });
+
+    campoSenhaConfirmacao.addEventListener("input", () => {
+        validar(
+            "senha-diferente",
+            campoSenha.value === campoSenhaConfirmacao.value
+        );
+    });
+}
+
+function validar(id, valido) {
+    const item = document.getElementById(id);
+
+    if (valido) {
+        item.style.display = "none";
+    } else {
+        item.style.display = "block";
+    }
+
+    const existePendente = [...itemListaConfirmacoes].some(
+        elemento => elemento.style.display !== "none"
     );
+
+    containerFaltaSenha[0].style.display = existePendente ? "block" : "none";
 }
 
 // ============================================================
@@ -120,7 +176,6 @@ function inicializarOfertas() {
 // ============================================================
 
 function inicializarPedidos() {
-
     statusAtual = document.getElementsByClassName("p-statusAtual");
     statusButton = document.getElementsByClassName("button-status");
     status = document.getElementsByClassName("p-status");
@@ -156,10 +211,8 @@ function configurarResizePedidos() {
 }
 
 function configurarBotoesPedidos() {
-
     buttonExibirMais.addEventListener("click", () => {
-
-        containerPedido.style.height = alturaContainerPedido + "px";
+        containerPedido.style.height = containerPedido.offsetHeight + "px";
         alturaContainerPedido = containerPedido.offsetHeight;
 
         for (let i = 0; i < blocoPedido.length; i++) {
@@ -176,9 +229,7 @@ function configurarBotoesPedidos() {
     });
 
     buttonExibirMenos.addEventListener("click", () => {
-
         requestAnimationFrame(() => {
-
             containerPedido.style.transition = "height 0.4s ease";
             containerPedido.style.height = alturaContainerPedido + "px";
 
@@ -193,7 +244,6 @@ function configurarBotoesPedidos() {
 }
 
 function configurarStatusPedidos() {
-
     statusAtual[2].innerText = "A caminho";
     statusAtual[5].innerText = "Entregue";
 
@@ -229,10 +279,8 @@ function configurarStatusPedidos() {
 // ============================================================
 
 function inicializarConfiguracoes() {
-
     botoesConfig = document.getElementsByClassName("opcao-config");
     secoesConfig = document.getElementsByClassName("secao-config");
-
     botoesConfig[0].classList.add("ativo");
 
     for (let i = 0; i < botoesConfig.length; i++) {
@@ -240,7 +288,6 @@ function inicializarConfiguracoes() {
         botoesConfig[i].addEventListener("click", () => {
 
             for (let j = 0; j < botoesConfig.length; j++) {
-
                 if (j === i) continue;
 
                 secoesConfig[j].style.display = "none";

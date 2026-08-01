@@ -835,6 +835,18 @@ main {
     font-weight: 700;
 }
 
+.falta-senha {
+    display: none;
+}
+
+.falta-senha ul {
+    list-style-type: none;
+}
+
+.falta-senha li {
+    display: none;
+}
+
 .status p:first-child {
     color: var(--cor-base-escura);
     font-weight: 600;
