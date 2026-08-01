@@ -13,9 +13,11 @@ let campoSenhaConfirmacao = null;
 let valor = null;
 let listaConfirmacoes = null;
 let itemListaConfirmacoes = null;
+let itemConfirmacaoSenha = null;
 let containerFaltaSenha = null;
 
 let login = null;
+
 let containerScroll = null;
 let oferta = null;
 let larguraBlocoOferta = null;
@@ -132,12 +134,7 @@ function validarSenha() {
         }
     });
 
-    campoSenhaConfirmacao.addEventListener("input", () => {
-        validar(
-            "senha-diferente",
-            campoSenha.value === campoSenhaConfirmacao.value
-        );
-    });
+    confirmarSenhas();
 }
 
 function validar(id, valido) {
@@ -154,6 +151,17 @@ function validar(id, valido) {
     );
 
     containerFaltaSenha[0].style.display = existePendente ? "block" : "none";
+}
+
+function confirmarSenhas() {
+    itemConfirmacaoSenha = document.getElementById("senha-diferente");
+    campoSenhaConfirmacao.addEventListener("input", () => {
+        if (campoSenha.value !== campoSenhaConfirmacao.value) {
+            itemConfirmacaoSenha.style.display = "block";
+        } else {
+            itemConfirmacaoSenha.style.display = "none";
+        }
+    });
 }
 
 // ============================================================

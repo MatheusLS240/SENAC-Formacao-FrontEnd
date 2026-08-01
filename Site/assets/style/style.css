@@ -843,7 +843,8 @@ main {
     list-style-type: none;
 }
 
-.falta-senha li {
+.falta-senha li,
+p#senha-diferente {
     display: none;
 }
 
