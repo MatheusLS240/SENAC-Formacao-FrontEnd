@@ -32,9 +32,12 @@ let statusButton = null;
 let alturaContainerPedido = null;
 
 let opcaoConfig = null;
-
 let botoesConfig = null;
 let secoesConfig = null;
+
+let opcoesCateg = null;
+let botoesCateg = null;
+let secoesCateg = null;
 
 // ============================================================
 // MENU LATERAL
@@ -77,6 +80,8 @@ function inicializarPagina() {
         inicializarPedidos();
     } else if (paginaAtual.includes("/config.html")) {
         inicializarConfiguracoes();
+    } else if (paginaAtual.includes("/categorias.html")) {
+        inicializarCategorias();
     } else {
         console.log("Pagina não encontrada");
     }
@@ -294,7 +299,6 @@ function inicializarConfiguracoes() {
     for (let i = 0; i < botoesConfig.length; i++) {
 
         botoesConfig[i].addEventListener("click", () => {
-
             for (let j = 0; j < botoesConfig.length; j++) {
                 if (j === i) continue;
 
@@ -304,6 +308,30 @@ function inicializarConfiguracoes() {
 
             secoesConfig[i].style.display = "block";
             botoesConfig[i].classList.add("ativo");
+        });
+    }
+}
+
+// ============================================================
+// CATEGORIAS
+// ============================================================
+
+function inicializarCategorias() {
+    botoesCateg = document.getElementsByClassName("opcoes-categ");
+    secoesCateg = document.getElementsByClassName("secao-categ");
+    botoesCateg[0].classList.add("ativo");
+
+    for (let i = 0; i < botoesCateg.length; i++) {
+        botoesCateg[i].addEventListener("click", () => {
+            for (let j = 0; j < secoesCateg.length; j++) {
+                if (j === i) continue;
+
+                secoesCateg[j].style.display = "none";
+                botoesCateg[j].classList.remove("ativo");
+            }
+
+            secoesCateg[i].style.display = "block";
+            botoesCateg[i].classList.add("ativo");
         });
     }
 }
