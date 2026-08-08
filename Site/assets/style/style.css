@@ -45,6 +45,12 @@ html {
     scrollbar-width: none;
 }
 
+html,
+body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
 /* ==========================================================================
    COMPONENTES REUTILIZÁVEIS
    ========================================================================== */
@@ -559,7 +565,8 @@ main {
     align-items: center;
     justify-content: center;
     gap: 40px;
-    width: 700px;
+    width: 100%;
+    max-width: 700px;
     padding: 40px;
 }
 
@@ -1382,11 +1389,6 @@ footer {
     .login-card {
         width: 75%;
     }
-
-    .pag-container-categorias .blocos-categorias {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-    }
 }
 
 @media (max-width: 960px) {
@@ -1544,11 +1546,6 @@ footer {
         font-size: 48px;
     }
 
-    .pag-container-categorias .blocos-categorias {
-        grid-template-columns: repeat(2, 50%);
-        gap: 20px;
-    }
-
     /* -------- Página de configurações -------- */
     .container-config {
         flex-direction: column;
@@ -1607,6 +1604,7 @@ footer {
 
     .login-form {
         width: 100%;
+        order: 1;
     }
 
     .login-banner,
@@ -1614,6 +1612,7 @@ footer {
         width: 100%;
         border-radius: 15px;
         padding: 30px 20px;
+        order: 2;
     }
 
     @-webkit-keyframes mostarMenu {
@@ -1861,15 +1860,6 @@ footer {
 
     .login-form {
         width: 100%;
-    }
-
-    .pag-container-categorias h1 {
-        font-size: 40px;
-    }
-
-    .pag-container-categorias .blocos-categorias {
-        grid-template-columns: repeat(1, 100%);
-        gap: 15px;
     }
 
     /* -------- Página de configurações -------- */
