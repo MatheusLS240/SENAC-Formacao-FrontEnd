@@ -1,0 +1,540 @@
+{
+  "pedidos": [
+    {
+      "nome": "Feijoada Completa",
+      "restaurante": "Sabor Caseiro",
+      "imagem_restaurante": "https://api.dicebear.com/9.x/initials/svg?seed=Sabor%20Caseiro&backgroundType=gradientLinear",
+      "imagem_prato": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&h=600&q=80",
+      "tempo_medio_entrega": "25-40 min",
+      "preco": "42,90",
+      "descricao": "Feijoada tradicional com carnes selecionadas, acompanhada de arroz, couve refogada, farofa crocante e laranja.",
+      "data_pedido": "2026-03-15",
+      "status_entrega": "Entregue",
+      "avaliacoes": [
+        {
+          "nome_cliente": "Carlos Eduardo Silva",
+          "feedback": "Muito saborosa e chegou bem quentinha, embalagem impecável.",
+          "nota": 5
+        },
+        {
+          "nome_cliente": "Mariana Costa",
+          "feedback": "Gostei bastante, mas achei a porção de arroz um pouco pequena.",
+          "nota": 4
+        },
+        {
+          "nome_cliente": "Rodrigo Almeida",
+          "feedback": "Sabor bem tradicional, lembrou a feijoada da minha avó.",
+          "nota": 5
+        }
+      ]
+    },
+    {
+      "nome": "Moqueca Capixaba",
+      "restaurante": "Cantinho do Mar",
+      "imagem_restaurante": "https://api.dicebear.com/9.x/initials/svg?seed=Cantinho%20do%20Mar&backgroundType=gradientLinear",
+      "imagem_prato": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&h=600&q=80",
+      "tempo_medio_entrega": "30-45 min",
+      "preco": "68,90",
+      "descricao": "Moqueca preparada com peixe fresco, leite de coco, dendê e pimentões, servida com arroz branco e pirão.",
+      "data_pedido": "2026-05-02",
+      "status_entrega": "A caminho",
+      "avaliacoes": [
+        {
+          "nome_cliente": "Fábio Rocha",
+          "feedback": "Um dos melhores pratos que já pedi, tempero equilibrado e peixe fresquinho.",
+          "nota": 5
+        },
+        {
+          "nome_cliente": "Elaine Souza",
+          "feedback": "Estava boa, mas achei o preço um pouco salgado para a quantidade.",
+          "nota": 3
+        }
+      ]
+    },
+    {
+      "nome": "Picanha na Chapa",
+      "restaurante": "Churrascaria Boi na Brasa",
+      "imagem_restaurante": "https://api.dicebear.com/9.x/initials/svg?seed=Churrascaria%20Boi%20na%20Brasa&backgroundType=gradientLinear",
+      "imagem_prato": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&h=600&q=80",
+      "tempo_medio_entrega": "35-50 min",
+      "preco": "89,90",
+      "descricao": "Picanha grelhada na chapa, servida com farofa crocante, vinagrete e pão de alho.",
+      "data_pedido": "2026-01-20",
+      "status_entrega": "Entregue",
+      "avaliacoes": [
+        {
+          "nome_cliente": "Thiago Araújo",
+          "feedback": "Carne no ponto exato que pedi, chegou ainda quente. Excelente!",
+          "nota": 5
+        },
+        {
+          "nome_cliente": "Isabela Cardoso",
+          "feedback": "Muito boa, só demorou um pouco mais do que o esperado para chegar.",
+          "nota": 4
+        },
+        {
+          "nome_cliente": "Bruno Henrique Lima",
+          "feedback": "Carne um pouco dura dessa vez, mas o tempero estava ótimo.",
+          "nota": 3
+        }
+      ]
+    },
+    {
+      "nome": "Frango à Parmegiana",
+      "restaurante": "Cantina da Nonna",
+      "imagem_restaurante": "https://api.dicebear.com/9.x/initials/svg?seed=Cantina%20da%20Nonna&backgroundType=gradientLinear",
+      "imagem_prato": "https://images.unsplash.com/photo-1565299507177-b0ac66763828?auto=format&fit=crop&w=800&h=600&q=80",
+      "tempo_medio_entrega": "20-35 min",
+      "preco": "45,50",
+      "descricao": "Filé de frango empanado, coberto com molho de tomate caseiro e queijo gratinado, acompanha arroz e fritas.",
+      "data_pedido": "2026-07-11",
+      "status_entrega": "Em preparo",
+      "avaliacoes": [
+        {
+          "nome_cliente": "Patrícia Gomes",
+          "feedback": "Prato generoso e muito saboroso, queijo derretido na medida certa.",
+          "nota": 5
+        },
+        {
+          "nome_cliente": "Diego Santos",
+          "feedback": "Bom, mas as batatas fritas vieram meio murchas.",
+          "nota": 3
+        }
+      ]
+    },
+    {
+      "nome": "Pizza Margherita",
+      "restaurante": "Pizzaria Bella Napoli",
+      "imagem_restaurante": "https://api.dicebear.com/9.x/initials/svg?seed=Pizzaria%20Bella%20Napoli&backgroundType=gradientLinear",
+      "imagem_prato": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=800&h=600&q=80",
+      "tempo_medio_entrega": "25-40 min",
+      "preco": "52,00",
+      "descricao": "Massa fina artesanal, molho de tomate italiano, muçarela de búfala e manjericão fresco.",
+      "data_pedido": "2026-09-08",
+      "status_entrega": "Entregue",
+      "avaliacoes": [
+        {
+          "nome_cliente": "Camila Freitas",
+          "feedback": "Massa perfeita, fina e crocante como eu gosto.",
+          "nota": 5
+        },
+        {
+          "nome_cliente": "Eduardo Cavalcanti",
+          "feedback": "Boa pizza, mas poderia vir com mais manjericão.",
+          "nota": 4
+        }
+      ]
+    },
+    {
+      "nome": "Pizza Calabresa",
+      "restaurante": "Pizzaria Bella Napoli",
+      "imagem_restaurante": "https://api.dicebear.com/9.x/initials/svg?seed=Pizzaria%20Bella%20Napoli&backgroundType=gradientLinear",
+      "imagem_prato": "https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=800&h=600&q=80",
+      "tempo_medio_entrega": "25-40 min",
+      "preco": "55,90",
+      "descricao": "Pizza clássica de calabresa fatiada, cebola roxa e generosa camada de catupiry original.",
+      "data_pedido": "2026-04-27",
+      "status_entrega": "A caminho",
+      "avaliacoes": [
+        {
+          "nome_cliente": "Larissa Pinto",
+          "feedback": "Sempre peço essa, nunca decepciona!",
+          "nota": 5
+        },
+        {
+          "nome_cliente": "Marcelo Vieira",
+          "feedback": "Estava gostosa, mas achei a quantidade de calabresa mediana.",
+          "nota": 3
+        },
+        {
+          "nome_cliente": "Yasmin Farias",
+          "feedback": "Chegou rápido e quentinha, recomendo.",
+          "nota": 5
+        }
+      ]
+    },
+    {
+      "nome": "Burger Duplo Bacon",
+      "restaurante": "Burger House",
+      "imagem_restaurante": "https://api.dicebear.com/9.x/initials/svg?seed=Burger%20House&backgroundType=gradientLinear",
+      "imagem_prato": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&h=600&q=80",
+      "tempo_medio_entrega": "15-25 min",
+      "preco": "34,90",
+      "descricao": "Dois blends de carne 100% bovina, queijo cheddar, bacon crocante e molho especial da casa no pão brioche.",
+      "data_pedido": "2026-06-14",
+      "status_entrega": "Entregue",
+      "avaliacoes": [
+        {
+          "nome_cliente": "William Duarte",
+          "feedback": "Hambúrguer suculento, um dos melhores da região.",
+          "nota": 5
+        },
+        {
+          "nome_cliente": "Sabrina Lopes",
+          "feedback": "Muito bom, mas o pão estava um pouco amassado ao chegar.",
+          "nota": 4
+        }
+      ]
+    },
+    {
+      "nome": "Burger Vegetariano",
+      "restaurante": "Burger House",
+      "imagem_restaurante": "https://api.dicebear.com/9.x/initials/svg?seed=Burger%20House&backgroundType=gradientLinear",
+      "imagem_prato": "https://images.unsplash.com/photo-1520072959219-c595dc870360?auto=format&fit=crop&w=800&h=600&q=80",
+      "tempo_medio_entrega": "15-25 min",
+      "preco": "29,90",
+      "descricao": "Blend vegetariano de grão-de-bico e especiarias, queijo, alface e tomate no pão integral.",
+      "data_pedido": "2026-02-09",
+      "status_entrega": "Em preparo",
+      "avaliacoes": [
+        {
+          "nome_cliente": "Beatriz Monteiro",
+          "feedback": "Surpreendente! Não senti falta da carne, muito bem temperado.",
+          "nota": 5
+        },
+        {
+          "nome_cliente": "Otávio Pereira",
+          "feedback": "Gostei, mas achei a textura um pouco seca.",
+          "nota": 3
+        }
+      ]
+    },
+    {
+      "nome": "Espaguete Carbonara",
+      "restaurante": "Cantina da Nonna",
+      "imagem_restaurante": "https://api.dicebear.com/9.x/initials/svg?seed=Cantina%20da%20Nonna&backgroundType=gradientLinear",
+      "imagem_prato": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&h=600&q=80",
+      "tempo_medio_entrega": "20-35 min",
+      "preco": "41,00",
+      "descricao": "Massa italiana ao molho cremoso de ovos, queijo parmesão, pancetta crocante e pimenta-do-reino.",
+      "data_pedido": "2026-08-19",
+      "status_entrega": "A caminho",
+      "avaliacoes": [
+        {
+          "nome_cliente": "Juliana Moura",
+          "feedback": "Cremosidade perfeita, sabor autêntico.",
+          "nota": 5
+        },
+        {
+          "nome_cliente": "Felipe Batista",
+          "feedback": "Estava bom, mas achei um pouco salgado.",
+          "nota": 3
+        }
+      ]
+    },
+    {
+      "nome": "Lasanha Bolonhesa",
+      "restaurante": "Cantina da Nonna",
+      "imagem_restaurante": "https://api.dicebear.com/9.x/initials/svg?seed=Cantina%20da%20Nonna&backgroundType=gradientLinear",
+      "imagem_prato": "https://images.unsplash.com/photo-1574894709920-11b28e7367e3?auto=format&fit=crop&w=800&h=600&q=80",
+      "tempo_medio_entrega": "20-35 min",
+      "preco": "46,90",
+      "descricao": "Camadas de massa fresca, molho bolonhesa encorpado e queijo gratinado no forno.",
+      "data_pedido": "2026-11-03",
+      "status_entrega": "Entregue",
+      "avaliacoes": [
+        {
+          "nome_cliente": "Ana Paula Ferreira",
+          "feedback": "Chegou borbulhando de quente, uma delícia!",
+          "nota": 5
+        },
+        {
+          "nome_cliente": "Henrique Barbosa",
+          "feedback": "Muito boa, porção generosa para o preço.",
+          "nota": 5
+        },
+        {
+          "nome_cliente": "Nathalia Ribeiro",
+          "feedback": "Boa, mas o molho estava um pouco mais líquido do que o normal.",
+          "nota": 3
+        }
+      ]
+    },
+    {
+      "nome": "Salada Caesar",
+      "restaurante": "Verde Vida Saladas",
+      "imagem_restaurante": "https://api.dicebear.com/9.x/initials/svg?seed=Verde%20Vida%20Saladas&backgroundType=gradientLinear",
+      "imagem_prato": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&h=600&q=80",
+      "tempo_medio_entrega": "15-25 min",
+      "preco": "32,50",
+      "descricao": "Mix de folhas verdes, frango grelhado, croutons, lascas de parmesão e molho caesar tradicional.",
+      "data_pedido": "2026-05-25",
+      "status_entrega": "Em preparo",
+      "avaliacoes": [
+        {
+          "nome_cliente": "Vanessa Correia",
+          "feedback": "Leve, saborosa e bem montada. Virou meu pedido favorito.",
+          "nota": 5
+        },
+        {
+          "nome_cliente": "Lucas Martins",
+          "feedback": "Boa opção saudável, mas achei pouco molho.",
+          "nota": 4
+        }
+      ]
+    },
+    {
+      "nome": "Salada Tropical",
+      "restaurante": "Verde Vida Saladas",
+      "imagem_restaurante": "https://api.dicebear.com/9.x/initials/svg?seed=Verde%20Vida%20Saladas&backgroundType=gradientLinear",
+      "imagem_prato": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&h=600&q=80",
+      "tempo_medio_entrega": "15-25 min",
+      "preco": "28,90",
+      "descricao": "Quinoa, folhas verdes, manga fresca, castanhas e vinagrete cítrico.",
+      "data_pedido": "2026-10-12",
+      "status_entrega": "Entregue",
+      "avaliacoes": [
+        {
+          "nome_cliente": "Karina Dias",
+          "feedback": "Combinação refrescante e diferente, adorei!",
+          "nota": 5
+        },
+        {
+          "nome_cliente": "João Pedro Nunes",
+          "feedback": "Gostoso, mas esperava uma porção um pouco maior pelo preço.",
+          "nota": 3
+        }
+      ]
+    },
+    {
+      "nome": "Salmão ao Maracujá",
+      "restaurante": "Cantinho do Mar",
+      "imagem_restaurante": "https://api.dicebear.com/9.x/initials/svg?seed=Cantinho%20do%20Mar&backgroundType=gradientLinear",
+      "imagem_prato": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=800&h=600&q=80",
+      "tempo_medio_entrega": "30-45 min",
+      "preco": "72,90",
+      "descricao": "Filé de salmão grelhado no ponto, coberto com molho agridoce de maracujá, acompanha arroz e legumes salteados.",
+      "data_pedido": "2026-03-30",
+      "status_entrega": "A caminho",
+      "avaliacoes": [
+        {
+          "nome_cliente": "Gabriela Alves",
+          "feedback": "Salmão no ponto perfeito e o molho de maracujá é maravilhoso.",
+          "nota": 5
+        },
+        {
+          "nome_cliente": "Rafael Teixeira",
+          "feedback": "Muito bom, mas achei o preço elevado para a porção.",
+          "nota": 3
+        }
+      ]
+    },
+    {
+      "nome": "Costela Barbecue",
+      "restaurante": "Smoke House BBQ",
+      "imagem_restaurante": "https://api.dicebear.com/9.x/initials/svg?seed=Smoke%20House%20BBQ&backgroundType=gradientLinear",
+      "imagem_prato": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&h=600&q=80",
+      "tempo_medio_entrega": "30-45 min",
+      "preco": "65,00",
+      "descricao": "Costela cozida lentamente até desmanchar, ao molho barbecue defumado, acompanha purê de batata.",
+      "data_pedido": "2026-06-30",
+      "status_entrega": "Entregue",
+      "avaliacoes": [
+        {
+          "nome_cliente": "Priscila Andrade",
+          "feedback": "Carne desmanchando, sabor incrível de churrasco americano.",
+          "nota": 5
+        },
+        {
+          "nome_cliente": "Vinícius Ramos",
+          "feedback": "Ótimo prato, só achei o purê um pouco frio ao chegar.",
+          "nota": 4
+        }
+      ]
+    },
+    {
+      "nome": "Strogonoff de Frango",
+      "restaurante": "Sabor Caseiro",
+      "imagem_restaurante": "https://api.dicebear.com/9.x/initials/svg?seed=Sabor%20Caseiro&backgroundType=gradientLinear",
+      "imagem_prato": "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=800&h=600&q=80",
+      "tempo_medio_entrega": "25-40 min",
+      "preco": "38,90",
+      "descricao": "Frango cremoso ao molho strogonoff, servido com arroz branco e batata palha crocante.",
+      "data_pedido": "2026-01-05",
+      "status_entrega": "Em preparo",
+      "avaliacoes": [
+        {
+          "nome_cliente": "Renata Barros",
+          "feedback": "Clássico que nunca falha, cremoso na medida certa.",
+          "nota": 5
+        },
+        {
+          "nome_cliente": "Gustavo Nogueira",
+          "feedback": "Bom, mas a batata palha veio meio mole por causa da embalagem.",
+          "nota": 3
+        }
+      ]
+    },
+    {
+      "nome": "Camarão na Moranga",
+      "restaurante": "Cantinho do Mar",
+      "imagem_restaurante": "https://api.dicebear.com/9.x/initials/svg?seed=Cantinho%20do%20Mar&backgroundType=gradientLinear",
+      "imagem_prato": "https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?auto=format&fit=crop&w=800&h=600&q=80",
+      "tempo_medio_entrega": "30-45 min",
+      "preco": "78,90",
+      "descricao": "Camarões ao molho cremoso de catupiry e requeijão, servidos dentro de uma moranga assada.",
+      "data_pedido": "2026-09-21",
+      "status_entrega": "A caminho",
+      "avaliacoes": [
+        {
+          "nome_cliente": "Cecília Franco",
+          "feedback": "Apresentação linda e sabor à altura, superou minhas expectativas.",
+          "nota": 5
+        },
+        {
+          "nome_cliente": "Leandro Prado",
+          "feedback": "Muito gostoso, mas achei poucos camarões para o preço cobrado.",
+          "nota": 3
+        },
+        {
+          "nome_cliente": "Débora Castro",
+          "feedback": "Chegou quentinho e bem embalado, recomendo demais.",
+          "nota": 5
+        }
+      ]
+    },
+    {
+      "nome": "Risoto de Cogumelos",
+      "restaurante": "Cantina da Nonna",
+      "imagem_restaurante": "https://api.dicebear.com/9.x/initials/svg?seed=Cantina%20da%20Nonna&backgroundType=gradientLinear",
+      "imagem_prato": "https://images.unsplash.com/photo-1476124369491-e7addf5db371?auto=format&fit=crop&w=800&h=600&q=80",
+      "tempo_medio_entrega": "20-35 min",
+      "preco": "54,90",
+      "descricao": "Arroz arbóreo cremoso com mix de cogumelos frescos, finalizado com parmesão e ervas.",
+      "data_pedido": "2026-11-17",
+      "status_entrega": "Entregue",
+      "avaliacoes": [
+        {
+          "nome_cliente": "Alexandre Souza",
+          "feedback": "Cremosidade impecável, sabor sofisticado.",
+          "nota": 5
+        },
+        {
+          "nome_cliente": "Fernanda Lima",
+          "feedback": "Muito bom, mas na minha opinião faltou um pouco de sal.",
+          "nota": 4
+        }
+      ]
+    },
+    {
+      "nome": "Pudim de Leite",
+      "restaurante": "Doce Encanto",
+      "imagem_restaurante": "https://api.dicebear.com/9.x/initials/svg?seed=Doce%20Encanto&backgroundType=gradientLinear",
+      "imagem_prato": "https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=800&h=600&q=80",
+      "tempo_medio_entrega": "10-20 min",
+      "preco": "15,90",
+      "descricao": "Pudim caseiro cremoso com calda de caramelo, sobremesa clássica brasileira.",
+      "data_pedido": "2026-02-28",
+      "status_entrega": "Entregue",
+      "avaliacoes": [
+        {
+          "nome_cliente": "Bianca Rezende",
+          "feedback": "Igualzinho ao da minha vó, simplesmente perfeito.",
+          "nota": 5
+        },
+        {
+          "nome_cliente": "Pedro Henrique Melo",
+          "feedback": "Bom, mas achei a calda um pouco doce demais.",
+          "nota": 4
+        }
+      ]
+    },
+    {
+      "nome": "Petit Gâteau",
+      "restaurante": "Doce Encanto",
+      "imagem_restaurante": "https://api.dicebear.com/9.x/initials/svg?seed=Doce%20Encanto&backgroundType=gradientLinear",
+      "imagem_prato": "https://images.unsplash.com/photo-1563805042-7684c019e11b?auto=format&fit=crop&w=800&h=600&q=80",
+      "tempo_medio_entrega": "10-20 min",
+      "preco": "22,90",
+      "descricao": "Bolinho de chocolate quente com recheio derretido, acompanhado de bola de sorvete de creme.",
+      "data_pedido": "2026-07-04",
+      "status_entrega": "A caminho",
+      "avaliacoes": [
+        {
+          "nome_cliente": "Aline Barreto",
+          "feedback": "Perfeito, recheio derretendo na hora certa.",
+          "nota": 5
+        },
+        {
+          "nome_cliente": "Matheus Cunha",
+          "feedback": "O sorvete chegou já meio derretido, mas o bolo estava ótimo.",
+          "nota": 3
+        }
+      ]
+    },
+    {
+      "nome": "Brigadeirão Cremoso",
+      "restaurante": "Doce Encanto",
+      "imagem_restaurante": "https://api.dicebear.com/9.x/initials/svg?seed=Doce%20Encanto&backgroundType=gradientLinear",
+      "imagem_prato": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&h=600&q=80",
+      "tempo_medio_entrega": "10-20 min",
+      "preco": "18,50",
+      "descricao": "Sobremesa cremosa de chocolate no formato de brigadeiro gigante, coberta com granulado.",
+      "data_pedido": "2026-04-09",
+      "status_entrega": "Em preparo",
+      "avaliacoes": [
+        {
+          "nome_cliente": "Tatiana Farias",
+          "feedback": "Muito cremoso e não é enjoativo, adorei.",
+          "nota": 5
+        },
+        {
+          "nome_cliente": "Douglas Pires",
+          "feedback": "Gostoso, porção poderia ser um pouco maior.",
+          "nota": 4
+        }
+      ]
+    },
+    {
+      "nome": "Pão de Queijo Recheado",
+      "restaurante": "Padoca Mineira",
+      "imagem_restaurante": "https://api.dicebear.com/9.x/initials/svg?seed=Padoca%20Mineira&backgroundType=gradientLinear",
+      "imagem_prato": "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&h=600&q=80",
+      "tempo_medio_entrega": "10-20 min",
+      "preco": "19,90",
+      "descricao": "Porção de pães de queijo quentinhos recheados com catupiry cremoso, feitos na hora.",
+      "data_pedido": "2026-12-01",
+      "status_entrega": "Entregue",
+      "avaliacoes": [
+        {
+          "nome_cliente": "Simone Teixeira",
+          "feedback": "Chegaram quentinhos e o recheio estava generoso, adorei!",
+          "nota": 5
+        },
+        {
+          "nome_cliente": "Ricardo Nascimento",
+          "feedback": "Muito bons, mas vieram um pouco menos do que o esperado.",
+          "nota": 3
+        }
+      ]
+    },
+    {
+      "nome": "Coxinha de Frango",
+      "restaurante": "Padoca Mineira",
+      "imagem_restaurante": "https://api.dicebear.com/9.x/initials/svg?seed=Padoca%20Mineira&backgroundType=gradientLinear",
+      "imagem_prato": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=800&h=600&q=80",
+      "tempo_medio_entrega": "10-20 min",
+      "preco": "16,90",
+      "descricao": "Coxinhas artesanais com recheio cremoso de frango desfiado, empanadas e fritas na hora.",
+      "data_pedido": "2026-08-30",
+      "status_entrega": "A caminho",
+      "avaliacoes": [
+        {
+          "nome_cliente": "Amanda Vasconcelos",
+          "feedback": "Crocante por fora e cremosa por dentro, perfeita!",
+          "nota": 5
+        },
+        {
+          "nome_cliente": "Bruno Cardoso",
+          "feedback": "Boas, mas chegaram um pouco frias.",
+          "nota": 3
+        },
+        {
+          "nome_cliente": "Letícia Moraes",
+          "feedback": "Sempre peço, nunca decepciona.",
+          "nota": 5
+        }
+      ]
+    }
+  ]
+}

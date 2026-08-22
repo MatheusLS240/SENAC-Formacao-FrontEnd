@@ -39,6 +39,11 @@ let opcoesCateg = null;
 let botoesCateg = null;
 let secoesCateg = null;
 
+let ofertas = null;
+let img = null;
+let nome = null;
+let preco = null;
+
 // ============================================================
 // MENU LATERAL
 // ============================================================
@@ -365,3 +370,23 @@ function ajustarDetalhesResponsividade(remove) {
         remove.classList.remove("d-none");
     }
 }
+
+// ============================================================
+// REQUISITANDO JSON
+// ============================================================
+
+fetch("assets/json/dados.json")
+    .then(response => response.json())
+    .then(data => {
+        ofertas = document.getElementsByClassName('oferta');
+        for(let i = 0; i < ofertas.length; i++) {
+            img = ofertas[i].getElementsByTagName("img")[0];
+            nome = ofertas[i].getElementsByTagName("p")[0];
+            preco = ofertas[i].getElementsByTagName("p")[1];
+
+            img.src = data.pedidos[i].imagem_prato;
+            nome.textContent = data.pedidos[i].nome;
+            preco.textContent = `R$ ${data.pedidos[i].preco}`;
+        }
+    })
+    .catch(erro => console.error('Erro ao carregar o JSON:', erro));
