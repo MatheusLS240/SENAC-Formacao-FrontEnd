@@ -1970,3 +1970,798 @@ footer {
         }
     }
 }
+/* ==========================================================================
+   RESPONSIVIDADE COMPLETA - AJUSTES FINAIS
+   Mantém os estilos existentes e corrige pontos de quebra em telas menores.
+   ========================================================================== */
+
+*,
+*::before,
+*::after {
+    min-width: 0;
+}
+
+img,
+svg,
+video {
+    max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+    max-width: 100%;
+}
+
+/* Desktop médio */
+@media (max-width: 1100px) {
+    .container-categorias .blocos-categorias {
+        width: 90%;
+    }
+
+    .blocos-ofertas {
+        width: 90%;
+    }
+
+    .bloco-avaliacoes {
+        width: 90%;
+    }
+
+    .container-footer {
+        width: 90%;
+    }
+
+    .login-card {
+        width: min(900px, 92%);
+    }
+
+    .bloco-pedido {
+        width: calc(50% - 10px);
+    }
+}
+
+/* Tablet */
+@media (max-width: 960px) {
+    :root {
+        --altura-section: calc(100dvh - 70px);
+    }
+
+    header {
+        min-height: 70px;
+    }
+
+    main {
+        margin-top: 70px;
+    }
+
+    .container-search,
+    .container-categorias,
+    .container-oferta,
+    .container-tc,
+    .login,
+    .container-config {
+        min-height: var(--altura-section);
+    }
+
+    .container-search {
+        height: auto;
+        min-height: var(--altura-section);
+        background-attachment: scroll;
+    }
+
+    .container-categorias {
+        height: auto;
+        min-height: var(--altura-section);
+        padding: 45px 20px;
+    }
+
+    .container-categorias .blocos-categorias {
+        width: 100%;
+    }
+
+    .container-oferta {
+        min-height: auto;
+        padding: 45px 20px;
+    }
+
+    .conteudo-container-ofertas {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .blocos-ofertas {
+        width: 100%;
+        grid-auto-columns: calc((100% - 20px) / 2);
+    }
+
+    .prev-next-ofertas {
+        flex: 0 0 38px;
+    }
+
+    .container-avaliacoes {
+        min-height: auto;
+    }
+
+    .container-footer {
+        width: 100%;
+    }
+
+    .container-tc {
+        height: auto;
+        min-height: var(--altura-section);
+        padding: 45px 20px;
+    }
+
+    .bloco-campos form {
+        max-width: 760px;
+        padding: 30px 20px;
+    }
+
+    .container-pedidos {
+        min-height: auto;
+    }
+
+    .container-pedidos-conteudo {
+        align-items: stretch;
+    }
+
+    .bloco-pedido {
+        width: calc(50% - 10px);
+    }
+
+    .main-pedido img {
+        width: 34%;
+        max-width: 34%;
+    }
+
+    .detalhe-pedido {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .header-pedido {
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .rodape-pedido {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .status {
+        min-width: 0;
+        flex-wrap: wrap;
+    }
+
+    .button-status {
+        white-space: nowrap;
+    }
+
+    .container-config {
+        height: auto;
+        min-height: var(--altura-section);
+        padding: 20px;
+    }
+
+    .container-opcoes-config {
+        flex: 0 0 auto;
+        flex-direction: row;
+        align-items: stretch;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scrollbar-width: none;
+    }
+
+    .container-opcoes-config::-webkit-scrollbar,
+    .nav-categorias::-webkit-scrollbar,
+    .blocos-ofertas::-webkit-scrollbar {
+        display: none;
+    }
+
+    .container-opcoes-config button {
+        flex: 0 0 auto;
+        width: auto;
+        min-height: 46px;
+        white-space: nowrap;
+    }
+
+    .container-detalhes-config {
+        width: 100%;
+        max-height: none;
+    }
+
+    .pag-container-categorias {
+        height: auto;
+        min-height: 0;
+        padding-bottom: 40px;
+    }
+
+    .nav-categorias {
+        flex-wrap: wrap;
+    }
+
+    .linha-secao-categ {
+        height: auto;
+        align-items: stretch;
+    }
+
+    .bloco-pratos {
+        min-width: 0;
+    }
+
+    .bloco-pratos img {
+        height: auto;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+    }
+
+    .login {
+        height: auto;
+        min-height: var(--altura-section);
+        padding: 35px 20px;
+    }
+
+    .login-card {
+        width: min(700px, 100%);
+        max-width: 100%;
+    }
+
+    .login-form,
+    .login-banner,
+    .register-banner {
+        min-width: 0;
+    }
+
+    .login-options {
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .submit-reset {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .submit-reset input[type="submit"],
+    .submit-reset input[type="reset"] {
+        flex: 1 1 180px;
+    }
+
+    footer {
+        padding-top: 10px;
+    }
+}
+
+/* Celulares */
+@media (max-width: 640px) {
+    :root {
+        --altura-section: calc(100dvh - 64px);
+    }
+
+    header {
+        min-height: 64px;
+        padding: 8px 10px;
+    }
+
+    .container-logo img {
+        height: 34px;
+        width: auto;
+    }
+
+    .container-menu button {
+        width: 42px;
+        height: 42px;
+        flex: 0 0 42px;
+    }
+
+    nav {
+        width: min(86vw, 320px);
+        max-width: 100%;
+    }
+
+    nav ul {
+        padding: 88px 14px 24px;
+    }
+
+    main {
+        margin-top: 64px;
+    }
+
+    .titulo-secao {
+        width: 100%;
+        padding-bottom: 14px;
+        font-size: 1.35rem;
+    }
+
+    .container-search,
+    .container-categorias,
+    .container-oferta,
+    .container-avaliacoes,
+    .container-tc,
+    .login,
+    .container-config {
+        width: 100%;
+    }
+
+    .container-search {
+        min-height: calc(100dvh - 64px);
+        padding: 24px 14px;
+        gap: 15px;
+    }
+
+    .container-search .titulo-busca {
+        width: 100%;
+        max-width: 360px;
+        font-size: 1.15rem;
+    }
+
+    .container-search .busca {
+        width: 100%;
+        max-width: 420px;
+        border-radius: 14px;
+    }
+
+    .container-search .busca input[type="text"] {
+        min-width: 0;
+        padding: 11px 12px;
+        font-size: 0.9rem;
+    }
+
+    .container-search .busca button {
+        flex: 0 0 48px;
+        width: 48px;
+    }
+
+    .container-categorias {
+        padding: 35px 14px;
+    }
+
+    .container-categorias .blocos-categorias {
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 14px;
+    }
+
+    .container-categorias .bloco {
+        display: grid;
+        grid-template-columns: 90px 1fr;
+        align-items: center;
+        gap: 12px;
+        padding: 12px;
+        text-align: left;
+    }
+
+    .container-categorias img {
+        width: 90px;
+        height: 70px;
+        object-fit: cover;
+    }
+
+    .container-categorias p {
+        font-size: 1rem;
+    }
+
+    .container-oferta {
+        padding: 35px 10px;
+    }
+
+    .conteudo-container-ofertas {
+        gap: 5px;
+    }
+
+    .blocos-ofertas {
+        width: calc(100% - 70px);
+        grid-auto-columns: 100%;
+        gap: 12px;
+    }
+
+    .prev-next-ofertas {
+        flex: 0 0 30px;
+        width: 30px;
+        font-size: 1.5rem;
+    }
+
+    .conteudo-oferta {
+        padding: 10px 12px 14px;
+        font-size: 1rem;
+    }
+
+    .button-oferta {
+        width: min(100%, 180px);
+        padding: 9px 16px;
+    }
+
+    .container-avaliacoes {
+        padding: 35px 12px;
+    }
+
+    .bloco-avaliacoes {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .avaliacao {
+        padding: 14px;
+    }
+
+    .header-avaliacao img {
+        width: 54px;
+        height: 54px;
+    }
+
+    .avaliacao p {
+        font-size: 0.92rem;
+    }
+
+    .container-tc {
+        min-height: calc(100dvh - 64px);
+        padding: 35px 12px;
+        gap: 25px;
+    }
+
+    .bloco-campos {
+        width: 100%;
+    }
+
+    .bloco-campos form {
+        width: 100%;
+        max-width: 100%;
+        padding: 25px 8px;
+        gap: 34px;
+    }
+
+    .campos label {
+        top: -28px;
+        left: 12px;
+        font-size: 1rem;
+    }
+
+    .campos input,
+    .campos textarea {
+        width: 100%;
+        padding: 12px 14px;
+        font-size: 1rem;
+    }
+
+    .campos input[type="file"] {
+        padding: 10px;
+        font-size: 0.85rem;
+    }
+
+    .campos input[type="file"]::file-selector-button {
+        max-width: 100%;
+        margin-right: 8px;
+        padding: 5px 8px;
+    }
+
+    .campos textarea {
+        min-height: 150px;
+        max-height: 240px;
+    }
+
+    .submit-reset {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .submit-reset input[type="submit"],
+    .submit-reset input[type="reset"] {
+        width: 100%;
+        max-width: 100%;
+        padding: 11px 16px;
+        font-size: 1rem;
+    }
+
+    .container-filtro-pedidos {
+        height: auto;
+        min-height: 0;
+        padding: 20px 10px 10px;
+    }
+
+    .container-filtro-pedidos .titulo-secao {
+        width: 100%;
+    }
+
+    .filtros-status {
+        justify-content: flex-start;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        max-width: 100%;
+        padding: 0 2px 8px;
+        scrollbar-width: none;
+    }
+
+    .filtros-status::-webkit-scrollbar {
+        display: none;
+    }
+
+    .filtro-button {
+        flex: 0 0 auto;
+        padding: 8px 13px;
+        font-size: 0.8rem;
+        white-space: nowrap;
+    }
+
+    .container-pedidos-conteudo {
+        padding: 12px;
+        gap: 12px;
+    }
+
+    .bloco-pedido {
+        width: 100%;
+        padding: 14px;
+    }
+
+    .header-pedido {
+        font-size: 0.86rem;
+    }
+
+    .main-pedido {
+        flex-direction: column;
+        border-radius: 18px;
+    }
+
+    .main-pedido img {
+        width: 100%;
+        max-width: 100%;
+        height: 150px;
+        border-right: none;
+        border-bottom: 3px solid var(--cor-base-escura);
+        object-fit: cover;
+    }
+
+    .detalhe-pedido {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    .detalhe-pedido p {
+        font-size: 1rem;
+    }
+
+    .rodape-pedido {
+        align-items: stretch;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .status {
+        width: 100%;
+        justify-content: space-between;
+        font-size: 1rem;
+    }
+
+    .button-status {
+        width: 100%;
+        max-width: none;
+        text-align: center;
+        padding: 10px 14px;
+        font-size: 0.9rem;
+    }
+
+    #exibir-mais,
+    #exibir-menos {
+        width: calc(100% - 24px);
+        margin: 0 12px 15px;
+    }
+
+    .container-config {
+        padding: 12px;
+        gap: 12px;
+    }
+
+    .container-opcoes-config {
+        width: 100%;
+        padding: 8px;
+        gap: 6px;
+    }
+
+    .container-opcoes-config button {
+        min-height: 42px;
+        padding: 9px 13px;
+        font-size: 0.86rem;
+    }
+
+    .container-detalhes-config {
+        padding: 18px 15px;
+        overflow: visible;
+    }
+
+    .secao-config h2 {
+        font-size: 1.25rem;
+    }
+
+    .secao-config p {
+        font-size: 0.95rem;
+    }
+
+    .nav-categorias {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding: 10px;
+        gap: 8px;
+        scrollbar-width: none;
+    }
+
+    .nav-categorias button {
+        flex: 0 0 auto;
+        min-height: 40px;
+        white-space: nowrap;
+        font-size: 0.86rem;
+        padding: 7px 13px;
+    }
+
+    .pag-container-categorias {
+        padding: 20px 10px 35px;
+    }
+
+    .pag-container-categorias h1,
+    .secao-categ h1 {
+        font-size: 1.55rem;
+        line-height: 1.2;
+    }
+
+    .secao-categ {
+        width: 100%;
+    }
+
+    .linha-secao-categ {
+        flex-direction: column;
+        gap: 12px;
+        padding: 12px 0;
+    }
+
+    .bloco-pratos {
+        width: 100%;
+        padding: 9px;
+    }
+
+    .bloco-pratos img {
+        aspect-ratio: 16 / 10;
+    }
+
+    .conteudo-prato {
+        padding: 9px 2px;
+        font-size: 1rem;
+    }
+
+    .loja-entrega {
+        font-size: 0.88rem;
+    }
+
+    .loja-entrega img {
+        width: 40px;
+        height: 40px;
+        flex: 0 0 40px;
+    }
+
+    .button-detalhes-prato {
+        padding: 9px 12px;
+        font-size: 0.95rem;
+    }
+
+    .login {
+        min-height: calc(100dvh - 64px);
+        padding: 25px 10px;
+    }
+
+    .login-card {
+        width: 100%;
+        padding: 6px;
+        border-radius: 14px;
+    }
+
+    .login-form {
+        width: 100%;
+        gap: 25px;
+        padding: 15px 10px 20px;
+    }
+
+    .login-header h2 {
+        font-size: 1.3rem;
+    }
+
+    .campo-login {
+        gap: 16px;
+    }
+
+    .grupo-input {
+        padding: 9px 0;
+    }
+
+    .login-options {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .login-options a,
+    .remember-me {
+        font-size: 0.88rem;
+    }
+
+    .login-banner,
+    .register-banner {
+        width: 100%;
+        gap: 20px;
+        padding: 20px 14px;
+    }
+
+    .login-banner {
+        border-radius: 14px;
+    }
+
+    .register-banner {
+        border-radius: 14px;
+    }
+
+    .banner-text {
+        font-size: 1.25rem;
+    }
+
+    .register-link a {
+        padding: 7px 12px;
+    }
+
+    .container-footer {
+        width: 100%;
+        padding: 18px 12px;
+        gap: 24px;
+    }
+
+    .info-site,
+    .midia-contato {
+        width: 100%;
+    }
+
+    footer {
+        font-size: 1.05rem;
+    }
+
+    .creditos {
+        padding: 10px 8px;
+        font-size: 0.88rem;
+        line-height: 1.4;
+    }
+}
+
+/* Celulares pequenos */
+@media (max-width: 420px) {
+    .container-categorias .bloco {
+        grid-template-columns: 76px 1fr;
+        padding: 10px;
+    }
+
+    .container-categorias img {
+        width: 76px;
+        height: 62px;
+    }
+
+    .filtro-button {
+        padding: 7px 11px;
+    }
+
+    .header-pedido h4 {
+        font-size: 0.8rem;
+    }
+
+    .detail-pedido,
+    .detalhe-pedido p {
+        font-size: 0.95rem;
+    }
+
+    .pag-container-categorias h1,
+    .secao-categ h1 {
+        font-size: 1.35rem;
+    }
+
+    .nav-categorias button {
+        font-size: 0.8rem;
+        padding: 6px 11px;
+    }
+}

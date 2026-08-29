@@ -1,540 +1,3696 @@
 {
+  "site": {
+    "nome": "Kiwa",
+    "nome_completo": "Kiwa Culinária",
+    "slogan": "O melhor da culinária para você",
+    "descricao": "Uma experiência de delivery com categorias, restaurantes, pedidos e avaliações organizados em um só lugar.",
+    "logo": "assets/imgs/logo-temp.jpg",
+    "favicon": "assets/imgs/logo-temp.jpg",
+    "idioma": "pt-BR",
+    "moeda": "BRL",
+    "locale": "pt-BR",
+    "contato": {
+      "telefone": "(11) 99999-9999",
+      "email": "contato@kiwa.com.br",
+      "endereco": "Rua Tuiuti, 9998 - São Paulo, SP"
+    },
+    "redes": {
+      "instagram": "https://instagram.com",
+      "tiktok": "https://tiktok.com",
+      "facebook": "https://facebook.com"
+    }
+  },
+  "navegacao": {
+    "itens": [
+      {
+        "id": "categorias",
+        "label": "Categorias",
+        "href": "categorias.html",
+        "icon": "fa-solid fa-table-list"
+      },
+      {
+        "id": "pedidos",
+        "label": "Pedidos",
+        "href": "pedidos.html",
+        "icon": "fa-solid fa-receipt"
+      },
+      {
+        "id": "trabalhar",
+        "label": "Trabalhe Conosco",
+        "href": "trabalhar.html",
+        "icon": "fa-solid fa-briefcase"
+      },
+      {
+        "id": "config",
+        "label": "Configurações",
+        "href": "config.html",
+        "icon": "fa-solid fa-gear"
+      },
+      {
+        "id": "cadastro",
+        "label": "Crie sua Conta",
+        "href": "criar-conta.html",
+        "icon": "fa-solid fa-user-plus"
+      },
+      {
+        "id": "login",
+        "label": "Login",
+        "href": "login.html",
+        "icon": "fa-solid fa-right-to-bracket"
+      }
+    ]
+  },
+  "footer": {
+    "titulo_site": "Site",
+    "titulo_redes": "Redes",
+    "titulo_contato": "Contato",
+    "creditos": "Desenvolvido por Ludy Mila e Matheus",
+    "links": [
+      {
+        "label": "Categorias",
+        "href": "categorias.html"
+      },
+      {
+        "label": "Pedidos",
+        "href": "pedidos.html"
+      },
+      {
+        "label": "Configurações",
+        "href": "config.html"
+      },
+      {
+        "label": "Política de Privacidade",
+        "href": "privacidade.html"
+      }
+    ]
+  },
+  "home": {
+    "hero": {
+      "titulo": "O melhor da culinária para",
+      "destaque": "você",
+      "placeholder_busca": "Busque por pratos ou restaurantes...",
+      "aria_busca": "Campo de busca",
+      "botao_aria": "Buscar"
+    },
+    "categorias_titulo": "Categorias",
+    "ofertas_titulo": "Ofertas do Dia",
+    "avaliacoes_titulo": "Melhores Avaliações",
+    "categorias_destaque": [
+      "cat-001",
+      "cat-002",
+      "cat-003",
+      "cat-004",
+      "cat-005",
+      "cat-006",
+      "cat-007",
+      "cat-008"
+    ],
+    "ofertas": [
+      {
+        "produto_id": "prod-001-02",
+        "ordem": 1,
+        "rotulo": "Oferta do dia"
+      },
+      {
+        "produto_id": "prod-002-03",
+        "ordem": 2,
+        "rotulo": "Oferta do dia"
+      },
+      {
+        "produto_id": "prod-003-01",
+        "ordem": 3,
+        "rotulo": "Oferta do dia"
+      },
+      {
+        "produto_id": "prod-004-07",
+        "ordem": 4,
+        "rotulo": "Oferta do dia"
+      },
+      {
+        "produto_id": "prod-005-09",
+        "ordem": 5,
+        "rotulo": "Oferta do dia"
+      },
+      {
+        "produto_id": "prod-006-02",
+        "ordem": 6,
+        "rotulo": "Oferta do dia"
+      },
+      {
+        "produto_id": "prod-007-06",
+        "ordem": 7,
+        "rotulo": "Oferta do dia"
+      },
+      {
+        "produto_id": "prod-008-02",
+        "ordem": 8,
+        "rotulo": "Oferta do dia"
+      },
+      {
+        "produto_id": "prod-008-08",
+        "ordem": 9,
+        "rotulo": "Oferta do dia"
+      }
+    ],
+    "avaliacoes_destaque": [
+      "avaliacao-001",
+      "avaliacao-002",
+      "avaliacao-003",
+      "avaliacao-004",
+      "avaliacao-005",
+      "avaliacao-006"
+    ]
+  },
+  "categorias": [
+    {
+      "id": "cat-001",
+      "nome": "Hambúrgueres",
+      "slug": "hamb-rgueres",
+      "descricao": "Hambúrgueres artesanais, clássicos e criativos.",
+      "imagem": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&h=600&q=80",
+      "icone": null,
+      "ordem": 1
+    },
+    {
+      "id": "cat-002",
+      "nome": "Pizzas",
+      "slug": "pizzas",
+      "descricao": "Massas artesanais, coberturas generosas e sabores para compartilhar.",
+      "imagem": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=800&h=600&q=80",
+      "icone": null,
+      "ordem": 2
+    },
+    {
+      "id": "cat-003",
+      "nome": "Comida Japonesa",
+      "slug": "comida-japonesa",
+      "descricao": "Sushis, temakis, combinados e pratos japoneses.",
+      "imagem": "https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=800&h=600&q=80",
+      "icone": null,
+      "ordem": 3
+    },
+    {
+      "id": "cat-004",
+      "nome": "Massas",
+      "slug": "massas",
+      "descricao": "Massas frescas, molhos encorpados e receitas italianas.",
+      "imagem": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&h=600&q=80",
+      "icone": null,
+      "ordem": 4
+    },
+    {
+      "id": "cat-005",
+      "nome": "Saladas e Saudáveis",
+      "slug": "saladas-e-saud-veis",
+      "descricao": "Refeições leves, coloridas e completas.",
+      "imagem": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&h=600&q=80",
+      "icone": null,
+      "ordem": 5
+    },
+    {
+      "id": "cat-006",
+      "nome": "Doces e Sobremesas",
+      "slug": "doces-e-sobremesas",
+      "descricao": "Sobremesas clássicas e criações artesanais.",
+      "imagem": "https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=800&h=600&q=80",
+      "icone": null,
+      "ordem": 6
+    },
+    {
+      "id": "cat-007",
+      "nome": "Bebidas",
+      "slug": "bebidas",
+      "descricao": "Bebidas geladas, cafés e opções para acompanhar seu pedido.",
+      "imagem": "https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=800&h=600&q=80",
+      "icone": null,
+      "ordem": 7
+    },
+    {
+      "id": "cat-008",
+      "nome": "Porções",
+      "slug": "por-es",
+      "descricao": "Porções para compartilhar, petiscar e completar a refeição.",
+      "imagem": "https://images.unsplash.com/photo-1576107232684-1279f390859f?auto=format&fit=crop&w=800&h=600&q=80",
+      "icone": null,
+      "ordem": 8
+    }
+  ],
+  "restaurantes": [
+    {
+      "id": "rest-001",
+      "nome": "Sabor Caseiro",
+      "slug": "sabor-caseiro",
+      "descricao": "Comida brasileira de conforto, feita com tempero de casa.",
+      "avaliacao_media": 4.8,
+      "imagem": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&h=600&q=80",
+      "tempo_entrega": "25-40 min",
+      "taxa_entrega": 5.9,
+      "ativo": true
+    },
+    {
+      "id": "rest-002",
+      "nome": "Cantinho do Mar",
+      "slug": "cantinho-do-mar",
+      "descricao": "Peixes, frutos do mar e receitas brasileiras com toque litorâneo.",
+      "avaliacao_media": 4.9,
+      "imagem": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&h=600&q=80",
+      "tempo_entrega": "30-45 min",
+      "taxa_entrega": 7.9,
+      "ativo": true
+    },
+    {
+      "id": "rest-003",
+      "nome": "Churrascaria Boi na Brasa",
+      "slug": "churrascaria-boi-na-brasa",
+      "descricao": "Carnes grelhadas, acompanhamentos clássicos e porções generosas.",
+      "avaliacao_media": 4.7,
+      "imagem": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&h=600&q=80",
+      "tempo_entrega": "30-50 min",
+      "taxa_entrega": 8.9,
+      "ativo": true
+    },
+    {
+      "id": "rest-004",
+      "nome": "Cantina da Nonna",
+      "slug": "cantina-da-nonna",
+      "descricao": "Massas artesanais e pratos italianos preparados na hora.",
+      "avaliacao_media": 4.9,
+      "imagem": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&h=600&q=80",
+      "tempo_entrega": "20-35 min",
+      "taxa_entrega": 4.9,
+      "ativo": true
+    },
+    {
+      "id": "rest-005",
+      "nome": "Pizzaria Bella Napoli",
+      "slug": "pizzaria-bella-napoli",
+      "descricao": "Pizzas de massa artesanal e sabores clássicos.",
+      "avaliacao_media": 4.8,
+      "imagem": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=800&h=600&q=80",
+      "tempo_entrega": "25-40 min",
+      "taxa_entrega": 6.9,
+      "ativo": true
+    },
+    {
+      "id": "rest-006",
+      "nome": "Burger House",
+      "slug": "burger-house",
+      "descricao": "Hambúrgueres artesanais, molhos da casa e batatas crocantes.",
+      "avaliacao_media": 4.8,
+      "imagem": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&h=600&q=80",
+      "tempo_entrega": "15-25 min",
+      "taxa_entrega": 3.9,
+      "ativo": true
+    },
+    {
+      "id": "rest-007",
+      "nome": "Verde Vida Saladas",
+      "slug": "verde-vida-saladas",
+      "descricao": "Opções frescas, leves e completas para todos os dias.",
+      "avaliacao_media": 4.7,
+      "imagem": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&h=600&q=80",
+      "tempo_entrega": "15-30 min",
+      "taxa_entrega": 4.5,
+      "ativo": true
+    },
+    {
+      "id": "rest-008",
+      "nome": "Doce Encanto",
+      "slug": "doce-encanto",
+      "descricao": "Sobremesas artesanais e doces para fechar o dia com chave de ouro.",
+      "avaliacao_media": 4.9,
+      "imagem": "https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=800&h=600&q=80",
+      "tempo_entrega": "20-35 min",
+      "taxa_entrega": 5.0,
+      "ativo": true
+    },
+    {
+      "id": "rest-009",
+      "nome": "Padoca Mineira",
+      "slug": "padoca-mineira",
+      "descricao": "Salgados, pães de queijo e cafés com jeitinho de padaria mineira.",
+      "avaliacao_media": 4.8,
+      "imagem": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&h=600&q=80",
+      "tempo_entrega": "15-25 min",
+      "taxa_entrega": 3.5,
+      "ativo": true
+    },
+    {
+      "id": "rest-010",
+      "nome": "Sushi Nami",
+      "slug": "sushi-nami",
+      "descricao": "Combinados, temakis e pratos japoneses com ingredientes frescos.",
+      "avaliacao_media": 4.9,
+      "imagem": "https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=800&h=600&q=80",
+      "tempo_entrega": "25-45 min",
+      "taxa_entrega": 8.5,
+      "ativo": true
+    },
+    {
+      "id": "rest-011",
+      "nome": "Smoke House BBQ",
+      "slug": "smoke-house-bbq",
+      "descricao": "Defumados, carnes ao barbecue e acompanhamentos para compartilhar.",
+      "avaliacao_media": 4.8,
+      "imagem": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&h=600&q=80",
+      "tempo_entrega": "25-40 min",
+      "taxa_entrega": 7.5,
+      "ativo": true
+    }
+  ],
+  "produtos": [
+    {
+      "id": "prod-001-01",
+      "nome": "Classic Smash",
+      "slug": "classic-smash",
+      "categoria_id": "cat-001",
+      "restaurante_id": "rest-006",
+      "descricao": "Dois discos de carne, cheddar, cebola e molho especial.",
+      "imagem": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 32.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 15,
+      "tempo_entrega_max": 25,
+      "taxa_entrega": 3.9,
+      "avaliacao_media": 4.8,
+      "quantidade_avaliacoes": 108,
+      "ativo": true,
+      "destaque": true,
+      "tags": [
+        "artesanal",
+        "brioche"
+      ]
+    },
+    {
+      "id": "prod-001-02",
+      "nome": "Duplo Bacon",
+      "slug": "duplo-bacon",
+      "categoria_id": "cat-001",
+      "restaurante_id": "rest-006",
+      "descricao": "Dois blends bovinos, cheddar, bacon crocante e molho da casa.",
+      "imagem": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 36.9,
+      "preco_promocional": 31.36,
+      "em_oferta": true,
+      "desconto_percentual": 15,
+      "tempo_entrega_min": 15,
+      "tempo_entrega_max": 25,
+      "taxa_entrega": 3.9,
+      "avaliacao_media": 4.5,
+      "quantidade_avaliacoes": 125,
+      "ativo": true,
+      "destaque": true,
+      "tags": [
+        "artesanal",
+        "brioche"
+      ]
+    },
+    {
+      "id": "prod-001-03",
+      "nome": "Picanha Burger",
+      "slug": "picanha-burger",
+      "categoria_id": "cat-001",
+      "restaurante_id": "rest-006",
+      "descricao": "Blend de picanha, queijo prato, cebola caramelizada e maionese defumada.",
+      "imagem": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 42.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 15,
+      "tempo_entrega_max": 25,
+      "taxa_entrega": 3.9,
+      "avaliacao_media": 4.8,
+      "quantidade_avaliacoes": 142,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "artesanal",
+        "brioche"
+      ]
+    },
+    {
+      "id": "prod-001-04",
+      "nome": "Crispy Chicken",
+      "slug": "crispy-chicken",
+      "categoria_id": "cat-001",
+      "restaurante_id": "rest-006",
+      "descricao": "Frango crocante, alface, tomate e molho cremoso no pão brioche.",
+      "imagem": "https://images.unsplash.com/photo-1520072959219-c595dc870360?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 34.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 15,
+      "tempo_entrega_max": 25,
+      "taxa_entrega": 3.9,
+      "avaliacao_media": 4.5,
+      "quantidade_avaliacoes": 159,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "artesanal",
+        "brioche"
+      ]
+    },
+    {
+      "id": "prod-001-05",
+      "nome": "Burger Vegetariano",
+      "slug": "burger-vegetariano",
+      "categoria_id": "cat-001",
+      "restaurante_id": "rest-006",
+      "descricao": "Hambúrguer de grão-de-bico, queijo, alface, tomate e molho verde.",
+      "imagem": "https://images.unsplash.com/photo-1520072959219-c595dc870360?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 29.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 15,
+      "tempo_entrega_max": 25,
+      "taxa_entrega": 3.9,
+      "avaliacao_media": 4.8,
+      "quantidade_avaliacoes": 176,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "artesanal",
+        "brioche"
+      ]
+    },
+    {
+      "id": "prod-001-06",
+      "nome": "Cheddar & Onion",
+      "slug": "cheddar-onion",
+      "categoria_id": "cat-001",
+      "restaurante_id": "rest-006",
+      "descricao": "Blend bovino, cheddar cremoso e cebola caramelizada.",
+      "imagem": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 35.5,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 15,
+      "tempo_entrega_max": 25,
+      "taxa_entrega": 3.9,
+      "avaliacao_media": 4.5,
+      "quantidade_avaliacoes": 193,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "artesanal",
+        "brioche"
+      ]
+    },
+    {
+      "id": "prod-001-07",
+      "nome": "Barbecue Bacon",
+      "slug": "barbecue-bacon",
+      "categoria_id": "cat-001",
+      "restaurante_id": "rest-006",
+      "descricao": "Blend bovino, bacon, queijo, cebola crispy e barbecue artesanal.",
+      "imagem": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 38.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 15,
+      "tempo_entrega_max": 25,
+      "taxa_entrega": 3.9,
+      "avaliacao_media": 4.8,
+      "quantidade_avaliacoes": 210,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "artesanal",
+        "brioche"
+      ]
+    },
+    {
+      "id": "prod-001-08",
+      "nome": "Mushroom Burger",
+      "slug": "mushroom-burger",
+      "categoria_id": "cat-001",
+      "restaurante_id": "rest-006",
+      "descricao": "Blend bovino, queijo, cogumelos salteados e molho de ervas.",
+      "imagem": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 39.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 15,
+      "tempo_entrega_max": 25,
+      "taxa_entrega": 3.9,
+      "avaliacao_media": 4.5,
+      "quantidade_avaliacoes": 227,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "artesanal",
+        "brioche"
+      ]
+    },
+    {
+      "id": "prod-001-09",
+      "nome": "Kiwa Especial",
+      "slug": "kiwa-especial",
+      "categoria_id": "cat-001",
+      "restaurante_id": "rest-006",
+      "descricao": "Blend da casa, cheddar, bacon, cebola crispy e molho Kiwa.",
+      "imagem": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 44.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 15,
+      "tempo_entrega_max": 25,
+      "taxa_entrega": 3.9,
+      "avaliacao_media": 4.8,
+      "quantidade_avaliacoes": 244,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "artesanal",
+        "brioche"
+      ]
+    },
+    {
+      "id": "prod-001-10",
+      "nome": "Mini Burger Trio",
+      "slug": "mini-burger-trio",
+      "categoria_id": "cat-001",
+      "restaurante_id": "rest-006",
+      "descricao": "Trio de mini hambúrgueres com três molhos artesanais.",
+      "imagem": "https://images.unsplash.com/photo-1520072959219-c595dc870360?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 31.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 15,
+      "tempo_entrega_max": 25,
+      "taxa_entrega": 3.9,
+      "avaliacao_media": 4.5,
+      "quantidade_avaliacoes": 261,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "artesanal",
+        "brioche"
+      ]
+    },
+    {
+      "id": "prod-002-01",
+      "nome": "Margherita",
+      "slug": "margherita",
+      "categoria_id": "cat-002",
+      "restaurante_id": "rest-005",
+      "descricao": "Molho de tomate, muçarela de búfala, manjericão e azeite.",
+      "imagem": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 52.0,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 25,
+      "tempo_entrega_max": 40,
+      "taxa_entrega": 6.9,
+      "avaliacao_media": 4.9,
+      "quantidade_avaliacoes": 119,
+      "ativo": true,
+      "destaque": true,
+      "tags": [
+        "artesanal",
+        "forno"
+      ]
+    },
+    {
+      "id": "prod-002-02",
+      "nome": "Calabresa",
+      "slug": "calabresa",
+      "categoria_id": "cat-002",
+      "restaurante_id": "rest-005",
+      "descricao": "Calabresa fatiada, cebola roxa e catupiry original.",
+      "imagem": "https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 55.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 25,
+      "tempo_entrega_max": 40,
+      "taxa_entrega": 6.9,
+      "avaliacao_media": 4.6,
+      "quantidade_avaliacoes": 136,
+      "ativo": true,
+      "destaque": true,
+      "tags": [
+        "artesanal",
+        "forno"
+      ]
+    },
+    {
+      "id": "prod-002-03",
+      "nome": "Quatro Queijos",
+      "slug": "quatro-queijos",
+      "categoria_id": "cat-002",
+      "restaurante_id": "rest-005",
+      "descricao": "Muçarela, provolone, parmesão e gorgonzola.",
+      "imagem": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 59.9,
+      "preco_promocional": 52.71,
+      "em_oferta": true,
+      "desconto_percentual": 12,
+      "tempo_entrega_min": 25,
+      "tempo_entrega_max": 40,
+      "taxa_entrega": 6.9,
+      "avaliacao_media": 4.9,
+      "quantidade_avaliacoes": 153,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "artesanal",
+        "forno"
+      ]
+    },
+    {
+      "id": "prod-002-04",
+      "nome": "Frango com Catupiry",
+      "slug": "frango-com-catupiry",
+      "categoria_id": "cat-002",
+      "restaurante_id": "rest-005",
+      "descricao": "Frango desfiado, catupiry, milho e orégano.",
+      "imagem": "https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 58.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 25,
+      "tempo_entrega_max": 40,
+      "taxa_entrega": 6.9,
+      "avaliacao_media": 4.6,
+      "quantidade_avaliacoes": 170,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "artesanal",
+        "forno"
+      ]
+    },
+    {
+      "id": "prod-002-05",
+      "nome": "Portuguesa",
+      "slug": "portuguesa",
+      "categoria_id": "cat-002",
+      "restaurante_id": "rest-005",
+      "descricao": "Presunto, ovos, cebola, azeitona, ervilha e muçarela.",
+      "imagem": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 61.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 25,
+      "tempo_entrega_max": 40,
+      "taxa_entrega": 6.9,
+      "avaliacao_media": 4.9,
+      "quantidade_avaliacoes": 187,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "artesanal",
+        "forno"
+      ]
+    },
+    {
+      "id": "prod-002-06",
+      "nome": "Pepperoni",
+      "slug": "pepperoni",
+      "categoria_id": "cat-002",
+      "restaurante_id": "rest-005",
+      "descricao": "Pepperoni, muçarela e molho de tomate artesanal.",
+      "imagem": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 63.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 25,
+      "tempo_entrega_max": 40,
+      "taxa_entrega": 6.9,
+      "avaliacao_media": 4.6,
+      "quantidade_avaliacoes": 204,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "artesanal",
+        "forno"
+      ]
+    },
+    {
+      "id": "prod-002-07",
+      "nome": "Carbonara",
+      "slug": "carbonara",
+      "categoria_id": "cat-002",
+      "restaurante_id": "rest-005",
+      "descricao": "Muçarela, pancetta, parmesão e creme de ovos inspirado na carbonara.",
+      "imagem": "https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 64.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 25,
+      "tempo_entrega_max": 40,
+      "taxa_entrega": 6.9,
+      "avaliacao_media": 4.9,
+      "quantidade_avaliacoes": 221,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "artesanal",
+        "forno"
+      ]
+    },
+    {
+      "id": "prod-002-08",
+      "nome": "Vegetariana",
+      "slug": "vegetariana",
+      "categoria_id": "cat-002",
+      "restaurante_id": "rest-005",
+      "descricao": "Abobrinha, tomate, cebola roxa, pimentão e muçarela.",
+      "imagem": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 57.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 25,
+      "tempo_entrega_max": 40,
+      "taxa_entrega": 6.9,
+      "avaliacao_media": 4.6,
+      "quantidade_avaliacoes": 238,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "artesanal",
+        "forno"
+      ]
+    },
+    {
+      "id": "prod-002-09",
+      "nome": "Brócolis com Bacon",
+      "slug": "br-colis-com-bacon",
+      "categoria_id": "cat-002",
+      "restaurante_id": "rest-005",
+      "descricao": "Brócolis, bacon, muçarela e creme de queijo.",
+      "imagem": "https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 60.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 25,
+      "tempo_entrega_max": 40,
+      "taxa_entrega": 6.9,
+      "avaliacao_media": 4.9,
+      "quantidade_avaliacoes": 255,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "artesanal",
+        "forno"
+      ]
+    },
+    {
+      "id": "prod-002-10",
+      "nome": "Chocolate com Morango",
+      "slug": "chocolate-com-morango",
+      "categoria_id": "cat-002",
+      "restaurante_id": "rest-005",
+      "descricao": "Pizza doce com chocolate cremoso e morangos frescos.",
+      "imagem": "https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 49.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 25,
+      "tempo_entrega_max": 40,
+      "taxa_entrega": 6.9,
+      "avaliacao_media": 4.6,
+      "quantidade_avaliacoes": 272,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "artesanal",
+        "forno"
+      ]
+    },
+    {
+      "id": "prod-003-01",
+      "nome": "Combinado Nami 20 peças",
+      "slug": "combinado-nami-20-pe-as",
+      "categoria_id": "cat-003",
+      "restaurante_id": "rest-010",
+      "descricao": "Seleção de niguiris, uramakis e hossomakis para compartilhar.",
+      "imagem": "https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 69.9,
+      "preco_promocional": 62.91,
+      "em_oferta": true,
+      "desconto_percentual": 10,
+      "tempo_entrega_min": 25,
+      "tempo_entrega_max": 45,
+      "taxa_entrega": 8.5,
+      "avaliacao_media": 4.4,
+      "quantidade_avaliacoes": 130,
+      "ativo": true,
+      "destaque": true,
+      "tags": [
+        "japonês",
+        "fresco"
+      ]
+    },
+    {
+      "id": "prod-003-02",
+      "nome": "Temaki Salmão",
+      "slug": "temaki-salm-o",
+      "categoria_id": "cat-003",
+      "restaurante_id": "rest-010",
+      "descricao": "Temaki de salmão, cream cheese e cebolinha.",
+      "imagem": "https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 32.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 25,
+      "tempo_entrega_max": 45,
+      "taxa_entrega": 8.5,
+      "avaliacao_media": 4.7,
+      "quantidade_avaliacoes": 147,
+      "ativo": true,
+      "destaque": true,
+      "tags": [
+        "japonês",
+        "fresco"
+      ]
+    },
+    {
+      "id": "prod-003-03",
+      "nome": "Temaki Filadélfia",
+      "slug": "temaki-filad-lfia",
+      "categoria_id": "cat-003",
+      "restaurante_id": "rest-010",
+      "descricao": "Salmão, cream cheese e gergelim em cone crocante.",
+      "imagem": "https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 31.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 25,
+      "tempo_entrega_max": 45,
+      "taxa_entrega": 8.5,
+      "avaliacao_media": 4.4,
+      "quantidade_avaliacoes": 164,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "japonês",
+        "fresco"
+      ]
+    },
+    {
+      "id": "prod-003-04",
+      "nome": "Hot Roll 10 peças",
+      "slug": "hot-roll-10-pe-as",
+      "categoria_id": "cat-003",
+      "restaurante_id": "rest-010",
+      "descricao": "Salmão empanado, cream cheese e molho tarê.",
+      "imagem": "https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 39.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 25,
+      "tempo_entrega_max": 45,
+      "taxa_entrega": 8.5,
+      "avaliacao_media": 4.7,
+      "quantidade_avaliacoes": 181,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "japonês",
+        "fresco"
+      ]
+    },
+    {
+      "id": "prod-003-05",
+      "nome": "Niguiri Salmão 6 peças",
+      "slug": "niguiri-salm-o-6-pe-as",
+      "categoria_id": "cat-003",
+      "restaurante_id": "rest-010",
+      "descricao": "Fatias de salmão sobre arroz japonês temperado.",
+      "imagem": "https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 34.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 25,
+      "tempo_entrega_max": 45,
+      "taxa_entrega": 8.5,
+      "avaliacao_media": 4.4,
+      "quantidade_avaliacoes": 198,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "japonês",
+        "fresco"
+      ]
+    },
+    {
+      "id": "prod-003-06",
+      "nome": "Yakissoba de Frango",
+      "slug": "yakissoba-de-frango",
+      "categoria_id": "cat-003",
+      "restaurante_id": "rest-010",
+      "descricao": "Macarrão oriental salteado com frango e legumes.",
+      "imagem": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 38.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 25,
+      "tempo_entrega_max": 45,
+      "taxa_entrega": 8.5,
+      "avaliacao_media": 4.7,
+      "quantidade_avaliacoes": 215,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "japonês",
+        "fresco"
+      ]
+    },
+    {
+      "id": "prod-003-07",
+      "nome": "Yakissoba Vegetariano",
+      "slug": "yakissoba-vegetariano",
+      "categoria_id": "cat-003",
+      "restaurante_id": "rest-010",
+      "descricao": "Macarrão oriental com legumes crocantes e molho especial.",
+      "imagem": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 34.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 25,
+      "tempo_entrega_max": 45,
+      "taxa_entrega": 8.5,
+      "avaliacao_media": 4.4,
+      "quantidade_avaliacoes": 232,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "japonês",
+        "fresco"
+      ]
+    },
+    {
+      "id": "prod-003-08",
+      "nome": "Guioza 8 peças",
+      "slug": "guioza-8-pe-as",
+      "categoria_id": "cat-003",
+      "restaurante_id": "rest-010",
+      "descricao": "Guiozas douradas recheadas com carne suína e legumes.",
+      "imagem": "https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 29.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 25,
+      "tempo_entrega_max": 45,
+      "taxa_entrega": 8.5,
+      "avaliacao_media": 4.7,
+      "quantidade_avaliacoes": 249,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "japonês",
+        "fresco"
+      ]
+    },
+    {
+      "id": "prod-003-09",
+      "nome": "Ceviche de Salmão",
+      "slug": "ceviche-de-salm-o",
+      "categoria_id": "cat-003",
+      "restaurante_id": "rest-010",
+      "descricao": "Salmão em cubos, limão, cebola roxa e coentro.",
+      "imagem": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 42.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 25,
+      "tempo_entrega_max": 45,
+      "taxa_entrega": 8.5,
+      "avaliacao_media": 4.4,
+      "quantidade_avaliacoes": 266,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "japonês",
+        "fresco"
+      ]
+    },
+    {
+      "id": "prod-003-10",
+      "nome": "Combo Temaki Duplo",
+      "slug": "combo-temaki-duplo",
+      "categoria_id": "cat-003",
+      "restaurante_id": "rest-010",
+      "descricao": "Dois temakis à escolha acompanhados de sunomono.",
+      "imagem": "https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 58.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 25,
+      "tempo_entrega_max": 45,
+      "taxa_entrega": 8.5,
+      "avaliacao_media": 4.7,
+      "quantidade_avaliacoes": 283,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "japonês",
+        "fresco"
+      ]
+    },
+    {
+      "id": "prod-004-01",
+      "nome": "Espaguete Carbonara",
+      "slug": "espaguete-carbonara",
+      "categoria_id": "cat-004",
+      "restaurante_id": "rest-004",
+      "descricao": "Massa ao molho cremoso de ovos, parmesão, pancetta e pimenta-do-reino.",
+      "imagem": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 41.0,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 20,
+      "tempo_entrega_max": 35,
+      "taxa_entrega": 4.9,
+      "avaliacao_media": 4.5,
+      "quantidade_avaliacoes": 141,
+      "ativo": true,
+      "destaque": true,
+      "tags": [
+        "italiana",
+        "artesanal"
+      ]
+    },
+    {
+      "id": "prod-004-02",
+      "nome": "Lasanha Bolonhesa",
+      "slug": "lasanha-bolonhesa",
+      "categoria_id": "cat-004",
+      "restaurante_id": "rest-004",
+      "descricao": "Camadas de massa fresca, molho bolonhesa e queijo gratinado.",
+      "imagem": "https://images.unsplash.com/photo-1574894709920-11b28e7367e3?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 46.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 20,
+      "tempo_entrega_max": 35,
+      "taxa_entrega": 4.9,
+      "avaliacao_media": 4.8,
+      "quantidade_avaliacoes": 158,
+      "ativo": true,
+      "destaque": true,
+      "tags": [
+        "italiana",
+        "artesanal"
+      ]
+    },
+    {
+      "id": "prod-004-03",
+      "nome": "Fettuccine Alfredo",
+      "slug": "fettuccine-alfredo",
+      "categoria_id": "cat-004",
+      "restaurante_id": "rest-004",
+      "descricao": "Fettuccine com molho cremoso de parmesão e manteiga.",
+      "imagem": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 43.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 20,
+      "tempo_entrega_max": 35,
+      "taxa_entrega": 4.9,
+      "avaliacao_media": 4.5,
+      "quantidade_avaliacoes": 175,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "italiana",
+        "artesanal"
+      ]
+    },
+    {
+      "id": "prod-004-04",
+      "nome": "Penne Arrabiata",
+      "slug": "penne-arrabiata",
+      "categoria_id": "cat-004",
+      "restaurante_id": "rest-004",
+      "descricao": "Penne com molho de tomate picante, alho e manjericão.",
+      "imagem": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 37.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 20,
+      "tempo_entrega_max": 35,
+      "taxa_entrega": 4.9,
+      "avaliacao_media": 4.8,
+      "quantidade_avaliacoes": 192,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "italiana",
+        "artesanal"
+      ]
+    },
+    {
+      "id": "prod-004-05",
+      "nome": "Ravioli de Queijo",
+      "slug": "ravioli-de-queijo",
+      "categoria_id": "cat-004",
+      "restaurante_id": "rest-004",
+      "descricao": "Ravioli artesanal recheado com queijos e molho de tomate.",
+      "imagem": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 49.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 20,
+      "tempo_entrega_max": 35,
+      "taxa_entrega": 4.9,
+      "avaliacao_media": 4.5,
+      "quantidade_avaliacoes": 209,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "italiana",
+        "artesanal"
+      ]
+    },
+    {
+      "id": "prod-004-06",
+      "nome": "Nhoque ao Sugo",
+      "slug": "nhoque-ao-sugo",
+      "categoria_id": "cat-004",
+      "restaurante_id": "rest-004",
+      "descricao": "Nhoque macio de batata com molho de tomate fresco e parmesão.",
+      "imagem": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 42.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 20,
+      "tempo_entrega_max": 35,
+      "taxa_entrega": 4.9,
+      "avaliacao_media": 4.8,
+      "quantidade_avaliacoes": 226,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "italiana",
+        "artesanal"
+      ]
+    },
+    {
+      "id": "prod-004-07",
+      "nome": "Risoto de Cogumelos",
+      "slug": "risoto-de-cogumelos",
+      "categoria_id": "cat-004",
+      "restaurante_id": "rest-004",
+      "descricao": "Arroz arbóreo cremoso com cogumelos, parmesão e ervas.",
+      "imagem": "https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 54.9,
+      "preco_promocional": 45.02,
+      "em_oferta": true,
+      "desconto_percentual": 18,
+      "tempo_entrega_min": 20,
+      "tempo_entrega_max": 35,
+      "taxa_entrega": 4.9,
+      "avaliacao_media": 4.5,
+      "quantidade_avaliacoes": 243,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "italiana",
+        "artesanal"
+      ]
+    },
+    {
+      "id": "prod-004-08",
+      "nome": "Tagliatelle ao Pesto",
+      "slug": "tagliatelle-ao-pesto",
+      "categoria_id": "cat-004",
+      "restaurante_id": "rest-004",
+      "descricao": "Massa fresca ao pesto de manjericão, castanhas e parmesão.",
+      "imagem": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 45.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 20,
+      "tempo_entrega_max": 35,
+      "taxa_entrega": 4.9,
+      "avaliacao_media": 4.8,
+      "quantidade_avaliacoes": 260,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "italiana",
+        "artesanal"
+      ]
+    },
+    {
+      "id": "prod-004-09",
+      "nome": "Ravioli de Carne",
+      "slug": "ravioli-de-carne",
+      "categoria_id": "cat-004",
+      "restaurante_id": "rest-004",
+      "descricao": "Ravioli recheado com carne assada e molho de vinho.",
+      "imagem": "https://images.unsplash.com/photo-1574894709920-11b28e7367e3?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 51.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 20,
+      "tempo_entrega_max": 35,
+      "taxa_entrega": 4.9,
+      "avaliacao_media": 4.5,
+      "quantidade_avaliacoes": 277,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "italiana",
+        "artesanal"
+      ]
+    },
+    {
+      "id": "prod-004-10",
+      "nome": "Frango à Parmegiana",
+      "slug": "frango-parmegiana",
+      "categoria_id": "cat-004",
+      "restaurante_id": "rest-004",
+      "descricao": "Filé de frango empanado, molho de tomate, queijo, arroz e fritas.",
+      "imagem": "https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 45.5,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 20,
+      "tempo_entrega_max": 35,
+      "taxa_entrega": 4.9,
+      "avaliacao_media": 4.8,
+      "quantidade_avaliacoes": 294,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "italiana",
+        "artesanal"
+      ]
+    },
+    {
+      "id": "prod-005-01",
+      "nome": "Salada Caesar",
+      "slug": "salada-caesar",
+      "categoria_id": "cat-005",
+      "restaurante_id": "rest-007",
+      "descricao": "Alface crocante, frango grelhado, parmesão e molho caesar.",
+      "imagem": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 32.5,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 15,
+      "tempo_entrega_max": 30,
+      "taxa_entrega": 4.5,
+      "avaliacao_media": 4.6,
+      "quantidade_avaliacoes": 152,
+      "ativo": true,
+      "destaque": true,
+      "tags": [
+        "leve",
+        "fresco"
+      ]
+    },
+    {
+      "id": "prod-005-02",
+      "nome": "Salada Tropical",
+      "slug": "salada-tropical",
+      "categoria_id": "cat-005",
+      "restaurante_id": "rest-007",
+      "descricao": "Mix de folhas, manga, tomate-cereja, cenoura e molho cítrico.",
+      "imagem": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 28.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 15,
+      "tempo_entrega_max": 30,
+      "taxa_entrega": 4.5,
+      "avaliacao_media": 4.9,
+      "quantidade_avaliacoes": 169,
+      "ativo": true,
+      "destaque": true,
+      "tags": [
+        "leve",
+        "fresco"
+      ]
+    },
+    {
+      "id": "prod-005-03",
+      "nome": "Bowl Mediterrâneo",
+      "slug": "bowl-mediterr-neo",
+      "categoria_id": "cat-005",
+      "restaurante_id": "rest-007",
+      "descricao": "Quinoa, grão-de-bico, pepino, tomate, azeitona e molho de iogurte.",
+      "imagem": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 35.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 15,
+      "tempo_entrega_max": 30,
+      "taxa_entrega": 4.5,
+      "avaliacao_media": 4.6,
+      "quantidade_avaliacoes": 186,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "leve",
+        "fresco"
+      ]
+    },
+    {
+      "id": "prod-005-04",
+      "nome": "Bowl Frango Teriyaki",
+      "slug": "bowl-frango-teriyaki",
+      "categoria_id": "cat-005",
+      "restaurante_id": "rest-007",
+      "descricao": "Arroz integral, frango grelhado, legumes e molho teriyaki.",
+      "imagem": "https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 39.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 15,
+      "tempo_entrega_max": 30,
+      "taxa_entrega": 4.5,
+      "avaliacao_media": 4.9,
+      "quantidade_avaliacoes": 203,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "leve",
+        "fresco"
+      ]
+    },
+    {
+      "id": "prod-005-05",
+      "nome": "Salada de Atum",
+      "slug": "salada-de-atum",
+      "categoria_id": "cat-005",
+      "restaurante_id": "rest-007",
+      "descricao": "Folhas, atum, ovos, milho, tomate e molho de limão.",
+      "imagem": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 34.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 15,
+      "tempo_entrega_max": 30,
+      "taxa_entrega": 4.5,
+      "avaliacao_media": 4.6,
+      "quantidade_avaliacoes": 220,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "leve",
+        "fresco"
+      ]
+    },
+    {
+      "id": "prod-005-06",
+      "nome": "Bowl Caprese",
+      "slug": "bowl-caprese",
+      "categoria_id": "cat-005",
+      "restaurante_id": "rest-007",
+      "descricao": "Tomate-cereja, muçarela de búfala, rúcula e pesto.",
+      "imagem": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 33.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 15,
+      "tempo_entrega_max": 30,
+      "taxa_entrega": 4.5,
+      "avaliacao_media": 4.9,
+      "quantidade_avaliacoes": 237,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "leve",
+        "fresco"
+      ]
+    },
+    {
+      "id": "prod-005-07",
+      "nome": "Bowl de Falafel",
+      "slug": "bowl-de-falafel",
+      "categoria_id": "cat-005",
+      "restaurante_id": "rest-007",
+      "descricao": "Falafel assado, homus, folhas, cenoura e molho tahine.",
+      "imagem": "https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 37.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 15,
+      "tempo_entrega_max": 30,
+      "taxa_entrega": 4.5,
+      "avaliacao_media": 4.6,
+      "quantidade_avaliacoes": 254,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "leve",
+        "fresco"
+      ]
+    },
+    {
+      "id": "prod-005-08",
+      "nome": "Salada Crocante",
+      "slug": "salada-crocante",
+      "categoria_id": "cat-005",
+      "restaurante_id": "rest-007",
+      "descricao": "Folhas, frango, castanhas, maçã verde e molho de mostarda e mel.",
+      "imagem": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 31.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 15,
+      "tempo_entrega_max": 30,
+      "taxa_entrega": 4.5,
+      "avaliacao_media": 4.9,
+      "quantidade_avaliacoes": 271,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "leve",
+        "fresco"
+      ]
+    },
+    {
+      "id": "prod-005-09",
+      "nome": "Bowl Salmon Fresh",
+      "slug": "bowl-salmon-fresh",
+      "categoria_id": "cat-005",
+      "restaurante_id": "rest-007",
+      "descricao": "Salmão grelhado, arroz, avocado, pepino e gergelim.",
+      "imagem": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 44.9,
+      "preco_promocional": 35.92,
+      "em_oferta": true,
+      "desconto_percentual": 20,
+      "tempo_entrega_min": 15,
+      "tempo_entrega_max": 30,
+      "taxa_entrega": 4.5,
+      "avaliacao_media": 4.6,
+      "quantidade_avaliacoes": 288,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "leve",
+        "fresco"
+      ]
+    },
+    {
+      "id": "prod-005-10",
+      "nome": "Wrap Integral Caesar",
+      "slug": "wrap-integral-caesar",
+      "categoria_id": "cat-005",
+      "restaurante_id": "rest-007",
+      "descricao": "Wrap integral recheado com frango, folhas, parmesão e molho caesar.",
+      "imagem": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 36.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 15,
+      "tempo_entrega_max": 30,
+      "taxa_entrega": 4.5,
+      "avaliacao_media": 4.9,
+      "quantidade_avaliacoes": 305,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "leve",
+        "fresco"
+      ]
+    },
+    {
+      "id": "prod-006-01",
+      "nome": "Pudim de Leite",
+      "slug": "pudim-de-leite",
+      "categoria_id": "cat-006",
+      "restaurante_id": "rest-008",
+      "descricao": "Pudim cremoso com calda de caramelo feita na casa.",
+      "imagem": "https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 15.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 20,
+      "tempo_entrega_max": 35,
+      "taxa_entrega": 5.0,
+      "avaliacao_media": 4.7,
+      "quantidade_avaliacoes": 163,
+      "ativo": true,
+      "destaque": true,
+      "tags": [
+        "doce",
+        "sobremesa"
+      ]
+    },
+    {
+      "id": "prod-006-02",
+      "nome": "Petit Gâteau",
+      "slug": "petit-g-teau",
+      "categoria_id": "cat-006",
+      "restaurante_id": "rest-008",
+      "descricao": "Bolinho de chocolate com centro cremoso e acompanhamento de sorvete.",
+      "imagem": "https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 22.9,
+      "preco_promocional": 19.46,
+      "em_oferta": true,
+      "desconto_percentual": 15,
+      "tempo_entrega_min": 20,
+      "tempo_entrega_max": 35,
+      "taxa_entrega": 5.0,
+      "avaliacao_media": 4.4,
+      "quantidade_avaliacoes": 180,
+      "ativo": true,
+      "destaque": true,
+      "tags": [
+        "doce",
+        "sobremesa"
+      ]
+    },
+    {
+      "id": "prod-006-03",
+      "nome": "Brigadeirão Cremoso",
+      "slug": "brigadeir-o-cremoso",
+      "categoria_id": "cat-006",
+      "restaurante_id": "rest-008",
+      "descricao": "Sobremesa de chocolate intensa, cremosa e finalizada com granulado.",
+      "imagem": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 18.5,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 20,
+      "tempo_entrega_max": 35,
+      "taxa_entrega": 5.0,
+      "avaliacao_media": 4.7,
+      "quantidade_avaliacoes": 197,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "doce",
+        "sobremesa"
+      ]
+    },
+    {
+      "id": "prod-006-04",
+      "nome": "Cheesecake de Frutas Vermelhas",
+      "slug": "cheesecake-de-frutas-vermelhas",
+      "categoria_id": "cat-006",
+      "restaurante_id": "rest-008",
+      "descricao": "Base crocante, creme de queijo e cobertura de frutas vermelhas.",
+      "imagem": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 21.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 20,
+      "tempo_entrega_max": 35,
+      "taxa_entrega": 5.0,
+      "avaliacao_media": 4.4,
+      "quantidade_avaliacoes": 214,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "doce",
+        "sobremesa"
+      ]
+    },
+    {
+      "id": "prod-006-05",
+      "nome": "Brownie com Sorvete",
+      "slug": "brownie-com-sorvete",
+      "categoria_id": "cat-006",
+      "restaurante_id": "rest-008",
+      "descricao": "Brownie de chocolate servido com sorvete de creme e calda.",
+      "imagem": "https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 23.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 20,
+      "tempo_entrega_max": 35,
+      "taxa_entrega": 5.0,
+      "avaliacao_media": 4.7,
+      "quantidade_avaliacoes": 231,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "doce",
+        "sobremesa"
+      ]
+    },
+    {
+      "id": "prod-006-06",
+      "nome": "Banoffee",
+      "slug": "banoffee",
+      "categoria_id": "cat-006",
+      "restaurante_id": "rest-008",
+      "descricao": "Banana, doce de leite, chantilly e base crocante de biscoito.",
+      "imagem": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 19.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 20,
+      "tempo_entrega_max": 35,
+      "taxa_entrega": 5.0,
+      "avaliacao_media": 4.4,
+      "quantidade_avaliacoes": 248,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "doce",
+        "sobremesa"
+      ]
+    },
+    {
+      "id": "prod-006-07",
+      "nome": "Torta de Limão",
+      "slug": "torta-de-lim-o",
+      "categoria_id": "cat-006",
+      "restaurante_id": "rest-008",
+      "descricao": "Creme de limão, merengue tostado e base amanteigada.",
+      "imagem": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 18.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 20,
+      "tempo_entrega_max": 35,
+      "taxa_entrega": 5.0,
+      "avaliacao_media": 4.7,
+      "quantidade_avaliacoes": 265,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "doce",
+        "sobremesa"
+      ]
+    },
+    {
+      "id": "prod-006-08",
+      "nome": "Mousse de Maracujá",
+      "slug": "mousse-de-maracuj",
+      "categoria_id": "cat-006",
+      "restaurante_id": "rest-008",
+      "descricao": "Mousse aerado de maracujá com calda da fruta.",
+      "imagem": "https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 14.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 20,
+      "tempo_entrega_max": 35,
+      "taxa_entrega": 5.0,
+      "avaliacao_media": 4.4,
+      "quantidade_avaliacoes": 282,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "doce",
+        "sobremesa"
+      ]
+    },
+    {
+      "id": "prod-006-09",
+      "nome": "Churros Recheados",
+      "slug": "churros-recheados",
+      "categoria_id": "cat-006",
+      "restaurante_id": "rest-008",
+      "descricao": "Churros crocantes recheados com doce de leite e açúcar com canela.",
+      "imagem": "https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 17.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 20,
+      "tempo_entrega_max": 35,
+      "taxa_entrega": 5.0,
+      "avaliacao_media": 4.7,
+      "quantidade_avaliacoes": 299,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "doce",
+        "sobremesa"
+      ]
+    },
+    {
+      "id": "prod-006-10",
+      "nome": "Copo de Morango com Chocolate",
+      "slug": "copo-de-morango-com-chocolate",
+      "categoria_id": "cat-006",
+      "restaurante_id": "rest-008",
+      "descricao": "Morangos frescos, creme de chocolate e brigadeiro no copo.",
+      "imagem": "https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 20.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 20,
+      "tempo_entrega_max": 35,
+      "taxa_entrega": 5.0,
+      "avaliacao_media": 4.4,
+      "quantidade_avaliacoes": 316,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "doce",
+        "sobremesa"
+      ]
+    },
+    {
+      "id": "prod-007-01",
+      "nome": "Limonada Siciliana",
+      "slug": "limonada-siciliana",
+      "categoria_id": "cat-007",
+      "restaurante_id": "rest-009",
+      "descricao": "Limonada com limão-siciliano, hortelã e toque de gengibre.",
+      "imagem": "https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 12.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 15,
+      "tempo_entrega_max": 25,
+      "taxa_entrega": 3.5,
+      "avaliacao_media": 4.8,
+      "quantidade_avaliacoes": 174,
+      "ativo": true,
+      "destaque": true,
+      "tags": [
+        "bebida",
+        "gelado"
+      ]
+    },
+    {
+      "id": "prod-007-02",
+      "nome": "Suco de Laranja",
+      "slug": "suco-de-laranja",
+      "categoria_id": "cat-007",
+      "restaurante_id": "rest-009",
+      "descricao": "Suco natural de laranja servido bem gelado.",
+      "imagem": "https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 11.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 15,
+      "tempo_entrega_max": 25,
+      "taxa_entrega": 3.5,
+      "avaliacao_media": 4.5,
+      "quantidade_avaliacoes": 191,
+      "ativo": true,
+      "destaque": true,
+      "tags": [
+        "bebida",
+        "gelado"
+      ]
+    },
+    {
+      "id": "prod-007-03",
+      "nome": "Suco Verde",
+      "slug": "suco-verde",
+      "categoria_id": "cat-007",
+      "restaurante_id": "rest-007",
+      "descricao": "Couve, maçã, limão, hortelã e água de coco.",
+      "imagem": "https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 14.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 15,
+      "tempo_entrega_max": 30,
+      "taxa_entrega": 4.5,
+      "avaliacao_media": 4.8,
+      "quantidade_avaliacoes": 208,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "bebida",
+        "gelado"
+      ]
+    },
+    {
+      "id": "prod-007-04",
+      "nome": "Chá Gelado de Pêssego",
+      "slug": "ch-gelado-de-p-ssego",
+      "categoria_id": "cat-007",
+      "restaurante_id": "rest-009",
+      "descricao": "Chá preto gelado com pêssego e limão.",
+      "imagem": "https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 10.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 15,
+      "tempo_entrega_max": 25,
+      "taxa_entrega": 3.5,
+      "avaliacao_media": 4.5,
+      "quantidade_avaliacoes": 225,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "bebida",
+        "gelado"
+      ]
+    },
+    {
+      "id": "prod-007-05",
+      "nome": "Café Coado Especial",
+      "slug": "caf-coado-especial",
+      "categoria_id": "cat-007",
+      "restaurante_id": "rest-009",
+      "descricao": "Café filtrado com grãos especiais e aroma intenso.",
+      "imagem": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 8.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 15,
+      "tempo_entrega_max": 25,
+      "taxa_entrega": 3.5,
+      "avaliacao_media": 4.8,
+      "quantidade_avaliacoes": 242,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "bebida",
+        "gelado"
+      ]
+    },
+    {
+      "id": "prod-007-06",
+      "nome": "Cappuccino Cremoso",
+      "slug": "cappuccino-cremoso",
+      "categoria_id": "cat-007",
+      "restaurante_id": "rest-009",
+      "descricao": "Espresso, leite vaporizado e espuma cremosa.",
+      "imagem": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 12.9,
+      "preco_promocional": 11.61,
+      "em_oferta": true,
+      "desconto_percentual": 10,
+      "tempo_entrega_min": 15,
+      "tempo_entrega_max": 25,
+      "taxa_entrega": 3.5,
+      "avaliacao_media": 4.5,
+      "quantidade_avaliacoes": 259,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "bebida",
+        "gelado"
+      ]
+    },
+    {
+      "id": "prod-007-07",
+      "nome": "Latte de Baunilha",
+      "slug": "latte-de-baunilha",
+      "categoria_id": "cat-007",
+      "restaurante_id": "rest-009",
+      "descricao": "Espresso, leite vaporizado e calda de baunilha.",
+      "imagem": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 15.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 15,
+      "tempo_entrega_max": 25,
+      "taxa_entrega": 3.5,
+      "avaliacao_media": 4.8,
+      "quantidade_avaliacoes": 276,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "bebida",
+        "gelado"
+      ]
+    },
+    {
+      "id": "prod-007-08",
+      "nome": "Chocolate Quente",
+      "slug": "chocolate-quente",
+      "categoria_id": "cat-007",
+      "restaurante_id": "rest-008",
+      "descricao": "Chocolate cremoso servido quente com espuma de leite.",
+      "imagem": "https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 14.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 20,
+      "tempo_entrega_max": 35,
+      "taxa_entrega": 5.0,
+      "avaliacao_media": 4.5,
+      "quantidade_avaliacoes": 293,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "bebida",
+        "gelado"
+      ]
+    },
+    {
+      "id": "prod-007-09",
+      "nome": "Água Mineral 500ml",
+      "slug": "gua-mineral-500ml",
+      "categoria_id": "cat-007",
+      "restaurante_id": "rest-009",
+      "descricao": "Água mineral sem gás, bem gelada.",
+      "imagem": "https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 5.5,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 15,
+      "tempo_entrega_max": 25,
+      "taxa_entrega": 3.5,
+      "avaliacao_media": 4.8,
+      "quantidade_avaliacoes": 310,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "bebida",
+        "gelado"
+      ]
+    },
+    {
+      "id": "prod-007-10",
+      "nome": "Refrigerante Lata",
+      "slug": "refrigerante-lata",
+      "categoria_id": "cat-007",
+      "restaurante_id": "rest-009",
+      "descricao": "Refrigerante gelado em lata de 350 ml.",
+      "imagem": "https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 7.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 15,
+      "tempo_entrega_max": 25,
+      "taxa_entrega": 3.5,
+      "avaliacao_media": 4.5,
+      "quantidade_avaliacoes": 327,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "bebida",
+        "gelado"
+      ]
+    },
+    {
+      "id": "prod-008-01",
+      "nome": "Batata Frita Crocante",
+      "slug": "batata-frita-crocante",
+      "categoria_id": "cat-008",
+      "restaurante_id": "rest-006",
+      "descricao": "Batatas crocantes temperadas com sal e páprica defumada.",
+      "imagem": "https://images.unsplash.com/photo-1576107232684-1279f390859f?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 18.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 15,
+      "tempo_entrega_max": 25,
+      "taxa_entrega": 3.9,
+      "avaliacao_media": 4.9,
+      "quantidade_avaliacoes": 185,
+      "ativo": true,
+      "destaque": true,
+      "tags": [
+        "porção",
+        "compartilhar"
+      ]
+    },
+    {
+      "id": "prod-008-02",
+      "nome": "Batata com Cheddar e Bacon",
+      "slug": "batata-com-cheddar-e-bacon",
+      "categoria_id": "cat-008",
+      "restaurante_id": "rest-006",
+      "descricao": "Batatas crocantes cobertas com cheddar cremoso e bacon.",
+      "imagem": "https://images.unsplash.com/photo-1576107232684-1279f390859f?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 27.9,
+      "preco_promocional": 24.55,
+      "em_oferta": true,
+      "desconto_percentual": 12,
+      "tempo_entrega_min": 15,
+      "tempo_entrega_max": 25,
+      "taxa_entrega": 3.9,
+      "avaliacao_media": 4.6,
+      "quantidade_avaliacoes": 202,
+      "ativo": true,
+      "destaque": true,
+      "tags": [
+        "porção",
+        "compartilhar"
+      ]
+    },
+    {
+      "id": "prod-008-03",
+      "nome": "Anéis de Cebola",
+      "slug": "an-is-de-cebola",
+      "categoria_id": "cat-008",
+      "restaurante_id": "rest-006",
+      "descricao": "Anéis de cebola empanados e crocantes com molho especial.",
+      "imagem": "https://images.unsplash.com/photo-1576107232684-1279f390859f?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 21.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 15,
+      "tempo_entrega_max": 25,
+      "taxa_entrega": 3.9,
+      "avaliacao_media": 4.9,
+      "quantidade_avaliacoes": 219,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "porção",
+        "compartilhar"
+      ]
+    },
+    {
+      "id": "prod-008-04",
+      "nome": "Frango a Passarinho",
+      "slug": "frango-a-passarinho",
+      "categoria_id": "cat-008",
+      "restaurante_id": "rest-003",
+      "descricao": "Pedaços de frango dourados com alho e ervas.",
+      "imagem": "https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 29.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 30,
+      "tempo_entrega_max": 50,
+      "taxa_entrega": 8.9,
+      "avaliacao_media": 4.6,
+      "quantidade_avaliacoes": 236,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "porção",
+        "compartilhar"
+      ]
+    },
+    {
+      "id": "prod-008-05",
+      "nome": "Pão de Alho",
+      "slug": "p-o-de-alho",
+      "categoria_id": "cat-008",
+      "restaurante_id": "rest-003",
+      "descricao": "Pães macios recheados com creme de alho e ervas.",
+      "imagem": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 16.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 30,
+      "tempo_entrega_max": 50,
+      "taxa_entrega": 8.9,
+      "avaliacao_media": 4.9,
+      "quantidade_avaliacoes": 253,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "porção",
+        "compartilhar"
+      ]
+    },
+    {
+      "id": "prod-008-06",
+      "nome": "Mandioca Frita",
+      "slug": "mandioca-frita",
+      "categoria_id": "cat-008",
+      "restaurante_id": "rest-003",
+      "descricao": "Mandioca frita crocante por fora e macia por dentro.",
+      "imagem": "https://images.unsplash.com/photo-1576107232684-1279f390859f?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 19.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 30,
+      "tempo_entrega_max": 50,
+      "taxa_entrega": 8.9,
+      "avaliacao_media": 4.6,
+      "quantidade_avaliacoes": 270,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "porção",
+        "compartilhar"
+      ]
+    },
+    {
+      "id": "prod-008-07",
+      "nome": "Polenta Frita",
+      "slug": "polenta-frita",
+      "categoria_id": "cat-008",
+      "restaurante_id": "rest-003",
+      "descricao": "Palitos de polenta dourados acompanhados de molho da casa.",
+      "imagem": "https://images.unsplash.com/photo-1576107232684-1279f390859f?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 18.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 30,
+      "tempo_entrega_max": 50,
+      "taxa_entrega": 8.9,
+      "avaliacao_media": 4.9,
+      "quantidade_avaliacoes": 287,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "porção",
+        "compartilhar"
+      ]
+    },
+    {
+      "id": "prod-008-08",
+      "nome": "Costelinha Barbecue",
+      "slug": "costelinha-barbecue",
+      "categoria_id": "cat-008",
+      "restaurante_id": "rest-011",
+      "descricao": "Costelinhas ao molho barbecue defumado, macias e suculentas.",
+      "imagem": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 36.9,
+      "preco_promocional": 30.63,
+      "em_oferta": true,
+      "desconto_percentual": 17,
+      "tempo_entrega_min": 25,
+      "tempo_entrega_max": 40,
+      "taxa_entrega": 7.5,
+      "avaliacao_media": 4.6,
+      "quantidade_avaliacoes": 304,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "porção",
+        "compartilhar"
+      ]
+    },
+    {
+      "id": "prod-008-09",
+      "nome": "Coxinha de Frango",
+      "slug": "coxinha-de-frango",
+      "categoria_id": "cat-008",
+      "restaurante_id": "rest-009",
+      "descricao": "Coxinhas cremosas de frango com massa crocante.",
+      "imagem": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 16.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 15,
+      "tempo_entrega_max": 25,
+      "taxa_entrega": 3.5,
+      "avaliacao_media": 4.9,
+      "quantidade_avaliacoes": 321,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "porção",
+        "compartilhar"
+      ]
+    },
+    {
+      "id": "prod-008-10",
+      "nome": "Pão de Queijo Recheado",
+      "slug": "p-o-de-queijo-recheado",
+      "categoria_id": "cat-008",
+      "restaurante_id": "rest-009",
+      "descricao": "Pão de queijo mineiro recheado com requeijão cremoso.",
+      "imagem": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&h=600&q=80",
+      "preco": 19.9,
+      "preco_promocional": null,
+      "em_oferta": false,
+      "desconto_percentual": 0,
+      "tempo_entrega_min": 15,
+      "tempo_entrega_max": 25,
+      "taxa_entrega": 3.5,
+      "avaliacao_media": 4.6,
+      "quantidade_avaliacoes": 338,
+      "ativo": true,
+      "destaque": false,
+      "tags": [
+        "porção",
+        "compartilhar"
+      ]
+    }
+  ],
+  "avaliacoes": [
+    {
+      "id": "avaliacao-001",
+      "cliente": {
+        "id": "cli-001",
+        "nome": "Mariana Costa",
+        "avatar": "https://api.dicebear.com/9.x/initials/svg?seed=Mariana%20Costa&backgroundType=gradientLinear"
+      },
+      "nota": 5,
+      "comentario": "Hambúrguer muito bem montado, saboroso e chegou quente.",
+      "produto_id": "prod-001-02",
+      "restaurante_id": "rest-006",
+      "data": "2026-02-21",
+      "destaque": true
+    },
+    {
+      "id": "avaliacao-002",
+      "cliente": {
+        "id": "cli-002",
+        "nome": "Carlos Eduardo Silva",
+        "avatar": "https://api.dicebear.com/9.x/initials/svg?seed=Carlos%20Eduardo%20Silva&backgroundType=gradientLinear"
+      },
+      "nota": 5,
+      "comentario": "Massa fina e molho muito equilibrado. Voltaria a pedir.",
+      "produto_id": "prod-002-01",
+      "restaurante_id": "rest-005",
+      "data": "2026-03-22",
+      "destaque": true
+    },
+    {
+      "id": "avaliacao-003",
+      "cliente": {
+        "id": "cli-003",
+        "nome": "Fábio Rocha",
+        "avatar": "https://api.dicebear.com/9.x/initials/svg?seed=Fabio%20Rocha&backgroundType=gradientLinear"
+      },
+      "nota": 5,
+      "comentario": "Peças frescas e muito bem apresentadas.",
+      "produto_id": "prod-003-01",
+      "restaurante_id": "rest-010",
+      "data": "2026-04-23",
+      "destaque": true
+    },
+    {
+      "id": "avaliacao-004",
+      "cliente": {
+        "id": "cli-004",
+        "nome": "Camila Freitas",
+        "avatar": "https://api.dicebear.com/9.x/initials/svg?seed=Camila%20Freitas&backgroundType=gradientLinear"
+      },
+      "nota": 5,
+      "comentario": "A carbonara estava cremosa e com sabor excelente.",
+      "produto_id": "prod-004-01",
+      "restaurante_id": "rest-004",
+      "data": "2026-05-24",
+      "destaque": true
+    },
+    {
+      "id": "avaliacao-005",
+      "cliente": {
+        "id": "cli-005",
+        "nome": "Thiago Araújo",
+        "avatar": "https://api.dicebear.com/9.x/initials/svg?seed=Thiago%20Araujo&backgroundType=gradientLinear"
+      },
+      "nota": 5,
+      "comentario": "Leve, fresca e bem servida.",
+      "produto_id": "prod-005-01",
+      "restaurante_id": "rest-007",
+      "data": "2026-06-25",
+      "destaque": true
+    },
+    {
+      "id": "avaliacao-006",
+      "cliente": {
+        "id": "cli-006",
+        "nome": "Patrícia Gomes",
+        "avatar": "https://api.dicebear.com/9.x/initials/svg?seed=Patricia%20Gomes&backgroundType=gradientLinear"
+      },
+      "nota": 5,
+      "comentario": "Petit gâteau chegou quentinho e com bastante chocolate.",
+      "produto_id": "prod-006-02",
+      "restaurante_id": "rest-008",
+      "data": "2026-07-26",
+      "destaque": true
+    },
+    {
+      "id": "avaliacao-007",
+      "cliente": {
+        "id": "cli-007",
+        "nome": "Larissa Pinto",
+        "avatar": "https://api.dicebear.com/9.x/initials/svg?seed=Larissa%20Pinto&backgroundType=gradientLinear"
+      },
+      "nota": 4,
+      "comentario": "Café muito bom e chegou rápido.",
+      "produto_id": "prod-007-06",
+      "restaurante_id": "rest-009",
+      "data": "2026-08-27",
+      "destaque": true
+    },
+    {
+      "id": "avaliacao-008",
+      "cliente": {
+        "id": "cli-008",
+        "nome": "Juliana Moura",
+        "avatar": "https://api.dicebear.com/9.x/initials/svg?seed=Juliana%20Moura&backgroundType=gradientLinear"
+      },
+      "nota": 5,
+      "comentario": "A batata com cheddar e bacon virou meu novo pedido favorito.",
+      "produto_id": "prod-008-02",
+      "restaurante_id": "rest-006",
+      "data": "2026-01-28",
+      "destaque": true
+    },
+    {
+      "id": "avaliacao-009",
+      "cliente": {
+        "id": "cli-009",
+        "nome": "Beatriz Monteiro",
+        "avatar": "https://api.dicebear.com/9.x/initials/svg?seed=Beatriz%20Monteiro&backgroundType=gradientLinear"
+      },
+      "nota": 5,
+      "comentario": "Boa opção vegetariana, tempero bem acertado.",
+      "produto_id": "prod-001-05",
+      "restaurante_id": "rest-006",
+      "data": "2026-02-28",
+      "destaque": true
+    },
+    {
+      "id": "avaliacao-010",
+      "cliente": {
+        "id": "cli-010",
+        "nome": "Ana Paula Ferreira",
+        "avatar": "https://api.dicebear.com/9.x/initials/svg?seed=Ana%20Paula%20Ferreira&backgroundType=gradientLinear"
+      },
+      "nota": 4,
+      "comentario": "Lasanha muito cremosa e com porção generosa.",
+      "produto_id": "prod-004-02",
+      "restaurante_id": "rest-004",
+      "data": "2026-03-28",
+      "destaque": true
+    },
+    {
+      "id": "avaliacao-011",
+      "cliente": {
+        "id": "cli-003",
+        "nome": "Fábio Rocha",
+        "avatar": "https://api.dicebear.com/9.x/initials/svg?seed=Fabio%20Rocha&backgroundType=gradientLinear"
+      },
+      "nota": 5,
+      "comentario": "Calabresa bem distribuída e chegou bem quente.",
+      "produto_id": "prod-002-02",
+      "restaurante_id": "rest-005",
+      "data": "2026-04-28",
+      "destaque": true
+    },
+    {
+      "id": "avaliacao-012",
+      "cliente": {
+        "id": "cli-004",
+        "nome": "Camila Freitas",
+        "avatar": "https://api.dicebear.com/9.x/initials/svg?seed=Camila%20Freitas&backgroundType=gradientLinear"
+      },
+      "nota": 5,
+      "comentario": "Bowl completo, fresco e ótimo para o almoço.",
+      "produto_id": "prod-005-09",
+      "restaurante_id": "rest-007",
+      "data": "2026-05-28",
+      "destaque": true
+    }
+  ],
+  "clientes": [
+    {
+      "id": "cli-001",
+      "nome": "Mariana Costa",
+      "avatar": "https://api.dicebear.com/9.x/initials/svg?seed=Mariana%20Costa&backgroundType=gradientLinear",
+      "email": "mariana.costa@exemplo.com"
+    },
+    {
+      "id": "cli-002",
+      "nome": "Carlos Eduardo Silva",
+      "avatar": "https://api.dicebear.com/9.x/initials/svg?seed=Carlos%20Eduardo%20Silva&backgroundType=gradientLinear",
+      "email": "carlos.silva@exemplo.com"
+    },
+    {
+      "id": "cli-003",
+      "nome": "Fábio Rocha",
+      "avatar": "https://api.dicebear.com/9.x/initials/svg?seed=Fabio%20Rocha&backgroundType=gradientLinear",
+      "email": "fabio.rocha@exemplo.com"
+    },
+    {
+      "id": "cli-004",
+      "nome": "Camila Freitas",
+      "avatar": "https://api.dicebear.com/9.x/initials/svg?seed=Camila%20Freitas&backgroundType=gradientLinear",
+      "email": "camila.freitas@exemplo.com"
+    },
+    {
+      "id": "cli-005",
+      "nome": "Thiago Araújo",
+      "avatar": "https://api.dicebear.com/9.x/initials/svg?seed=Thiago%20Araujo&backgroundType=gradientLinear",
+      "email": "thiago.araujo@exemplo.com"
+    },
+    {
+      "id": "cli-006",
+      "nome": "Patrícia Gomes",
+      "avatar": "https://api.dicebear.com/9.x/initials/svg?seed=Patricia%20Gomes&backgroundType=gradientLinear",
+      "email": "patricia.gomes@exemplo.com"
+    },
+    {
+      "id": "cli-007",
+      "nome": "Larissa Pinto",
+      "avatar": "https://api.dicebear.com/9.x/initials/svg?seed=Larissa%20Pinto&backgroundType=gradientLinear",
+      "email": "larissa.pinto@exemplo.com"
+    },
+    {
+      "id": "cli-008",
+      "nome": "Juliana Moura",
+      "avatar": "https://api.dicebear.com/9.x/initials/svg?seed=Juliana%20Moura&backgroundType=gradientLinear",
+      "email": "juliana.moura@exemplo.com"
+    },
+    {
+      "id": "cli-009",
+      "nome": "Beatriz Monteiro",
+      "avatar": "https://api.dicebear.com/9.x/initials/svg?seed=Beatriz%20Monteiro&backgroundType=gradientLinear",
+      "email": "beatriz.monteiro@exemplo.com"
+    },
+    {
+      "id": "cli-010",
+      "nome": "Ana Paula Ferreira",
+      "avatar": "https://api.dicebear.com/9.x/initials/svg?seed=Ana%20Paula%20Ferreira&backgroundType=gradientLinear",
+      "email": "ana.paula@exemplo.com"
+    }
+  ],
   "pedidos": [
     {
-      "nome": "Feijoada Completa",
-      "restaurante": "Sabor Caseiro",
-      "imagem_restaurante": "https://api.dicebear.com/9.x/initials/svg?seed=Sabor%20Caseiro&backgroundType=gradientLinear",
-      "imagem_prato": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&h=600&q=80",
-      "tempo_medio_entrega": "25-40 min",
-      "preco": "42,90",
-      "descricao": "Feijoada tradicional com carnes selecionadas, acompanhada de arroz, couve refogada, farofa crocante e laranja.",
-      "data_pedido": "2026-03-15",
-      "status_entrega": "Entregue",
-      "avaliacoes": [
+      "id": "pedido-001",
+      "numero": "826001-01",
+      "data": "2026-08-28",
+      "hora": "19:40",
+      "status": "em_preparo",
+      "status_label": "Em preparo",
+      "cliente_id": "cli-001",
+      "restaurante_id": "rest-006",
+      "itens": [
         {
-          "nome_cliente": "Carlos Eduardo Silva",
-          "feedback": "Muito saborosa e chegou bem quentinha, embalagem impecável.",
-          "nota": 5
-        },
-        {
-          "nome_cliente": "Mariana Costa",
-          "feedback": "Gostei bastante, mas achei a porção de arroz um pouco pequena.",
-          "nota": 4
-        },
-        {
-          "nome_cliente": "Rodrigo Almeida",
-          "feedback": "Sabor bem tradicional, lembrou a feijoada da minha avó.",
-          "nota": 5
+          "produto_id": "prod-001-09",
+          "quantidade": 1,
+          "preco_unitario": 44.9,
+          "subtotal": 44.9
         }
-      ]
+      ],
+      "subtotal": 44.9,
+      "taxa_entrega": 3.9,
+      "desconto": 0,
+      "total": 48.8,
+      "endereco_entrega": {
+        "id": "end-001",
+        "apelido": "Casa",
+        "logradouro": "Rua das Acácias",
+        "numero": "245",
+        "complemento": "Apto 12",
+        "bairro": "Vila Mariana",
+        "cidade": "São Paulo",
+        "estado": "SP",
+        "cep": "04115-000"
+      },
+      "pagamento": {
+        "tipo": "cartao_credito",
+        "descricao": "Cartão de crédito •••• 4821"
+      },
+      "observacoes": "Sem observações.",
+      "rastreio": [
+        {
+          "status": "recebido",
+          "titulo": "Pedido recebido",
+          "descricao": "Seu pedido foi confirmado e enviado para a cozinha.",
+          "concluido": true,
+          "data": "2026-08-28",
+          "hora": "19:40"
+        },
+        {
+          "status": "preparo",
+          "titulo": "Em preparo",
+          "descricao": "O restaurante está preparando seus itens.",
+          "concluido": true,
+          "data": "2026-08-28",
+          "hora": "19:40"
+        }
+      ],
+      "pode_cancelar": true,
+      "pode_avaliar": false,
+      "slug": "pedido-em-preparo"
     },
     {
-      "nome": "Moqueca Capixaba",
-      "restaurante": "Cantinho do Mar",
-      "imagem_restaurante": "https://api.dicebear.com/9.x/initials/svg?seed=Cantinho%20do%20Mar&backgroundType=gradientLinear",
-      "imagem_prato": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&h=600&q=80",
-      "tempo_medio_entrega": "30-45 min",
-      "preco": "68,90",
-      "descricao": "Moqueca preparada com peixe fresco, leite de coco, dendê e pimentões, servida com arroz branco e pirão.",
-      "data_pedido": "2026-05-02",
-      "status_entrega": "A caminho",
-      "avaliacoes": [
+      "id": "pedido-002",
+      "numero": "826002-02",
+      "data": "2026-08-28",
+      "hora": "18:55",
+      "status": "a_caminho",
+      "status_label": "A caminho",
+      "cliente_id": "cli-002",
+      "restaurante_id": "rest-004",
+      "itens": [
         {
-          "nome_cliente": "Fábio Rocha",
-          "feedback": "Um dos melhores pratos que já pedi, tempero equilibrado e peixe fresquinho.",
-          "nota": 5
+          "produto_id": "prod-004-01",
+          "quantidade": 1,
+          "preco_unitario": 41.0,
+          "subtotal": 41.0
+        }
+      ],
+      "subtotal": 41.0,
+      "taxa_entrega": 4.9,
+      "desconto": 0,
+      "total": 45.9,
+      "endereco_entrega": {
+        "id": "end-001",
+        "apelido": "Casa",
+        "logradouro": "Rua das Acácias",
+        "numero": "245",
+        "complemento": "Apto 12",
+        "bairro": "Vila Mariana",
+        "cidade": "São Paulo",
+        "estado": "SP",
+        "cep": "04115-000"
+      },
+      "pagamento": {
+        "tipo": "cartao_credito",
+        "descricao": "Cartão de crédito •••• 4821"
+      },
+      "observacoes": "Sem observações.",
+      "rastreio": [
+        {
+          "status": "recebido",
+          "titulo": "Pedido recebido",
+          "descricao": "Pedido confirmado pelo restaurante.",
+          "concluido": true,
+          "data": "2026-08-28",
+          "hora": "18:55"
         },
         {
-          "nome_cliente": "Elaine Souza",
-          "feedback": "Estava boa, mas achei o preço um pouco salgado para a quantidade.",
-          "nota": 3
+          "status": "preparo",
+          "titulo": "Em preparo",
+          "descricao": "Itens preparados e embalados.",
+          "concluido": true,
+          "data": "2026-08-28",
+          "hora": "18:55"
+        },
+        {
+          "status": "a_caminho",
+          "titulo": "A caminho",
+          "descricao": "O entregador saiu para realizar a entrega.",
+          "concluido": true,
+          "data": "2026-08-28",
+          "hora": "18:55"
         }
-      ]
+      ],
+      "pode_cancelar": false,
+      "pode_avaliar": false,
+      "slug": "pedido-a-caminho"
     },
     {
-      "nome": "Picanha na Chapa",
-      "restaurante": "Churrascaria Boi na Brasa",
-      "imagem_restaurante": "https://api.dicebear.com/9.x/initials/svg?seed=Churrascaria%20Boi%20na%20Brasa&backgroundType=gradientLinear",
-      "imagem_prato": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&h=600&q=80",
-      "tempo_medio_entrega": "35-50 min",
-      "preco": "89,90",
-      "descricao": "Picanha grelhada na chapa, servida com farofa crocante, vinagrete e pão de alho.",
-      "data_pedido": "2026-01-20",
-      "status_entrega": "Entregue",
-      "avaliacoes": [
+      "id": "pedido-003",
+      "numero": "826003-03",
+      "data": "2026-08-27",
+      "hora": "21:10",
+      "status": "entregue",
+      "status_label": "Entregue",
+      "cliente_id": "cli-003",
+      "restaurante_id": "rest-005",
+      "itens": [
         {
-          "nome_cliente": "Thiago Araújo",
-          "feedback": "Carne no ponto exato que pedi, chegou ainda quente. Excelente!",
-          "nota": 5
-        },
-        {
-          "nome_cliente": "Isabela Cardoso",
-          "feedback": "Muito boa, só demorou um pouco mais do que o esperado para chegar.",
-          "nota": 4
-        },
-        {
-          "nome_cliente": "Bruno Henrique Lima",
-          "feedback": "Carne um pouco dura dessa vez, mas o tempero estava ótimo.",
-          "nota": 3
+          "produto_id": "prod-002-01",
+          "quantidade": 1,
+          "preco_unitario": 52.0,
+          "subtotal": 52.0
         }
-      ]
+      ],
+      "subtotal": 52.0,
+      "taxa_entrega": 6.9,
+      "desconto": 0,
+      "total": 58.9,
+      "endereco_entrega": {
+        "id": "end-001",
+        "apelido": "Casa",
+        "logradouro": "Rua das Acácias",
+        "numero": "245",
+        "complemento": "Apto 12",
+        "bairro": "Vila Mariana",
+        "cidade": "São Paulo",
+        "estado": "SP",
+        "cep": "04115-000"
+      },
+      "pagamento": {
+        "tipo": "cartao_credito",
+        "descricao": "Cartão de crédito •••• 4821"
+      },
+      "observacoes": "Entregar na portaria.",
+      "rastreio": [
+        {
+          "status": "recebido",
+          "titulo": "Pedido recebido",
+          "descricao": "Pedido confirmado pelo restaurante.",
+          "concluido": true,
+          "data": "2026-08-27",
+          "hora": "21:10"
+        },
+        {
+          "status": "preparo",
+          "titulo": "Em preparo",
+          "descricao": "Itens preparados e embalados.",
+          "concluido": true,
+          "data": "2026-08-27",
+          "hora": "21:10"
+        },
+        {
+          "status": "a_caminho",
+          "titulo": "A caminho",
+          "descricao": "O entregador saiu para realizar a entrega.",
+          "concluido": true,
+          "data": "2026-08-27",
+          "hora": "21:10"
+        },
+        {
+          "status": "entregue",
+          "titulo": "Entregue",
+          "descricao": "Pedido entregue com sucesso.",
+          "concluido": true,
+          "data": "2026-08-27",
+          "hora": "21:10"
+        }
+      ],
+      "pode_cancelar": false,
+      "pode_avaliar": true,
+      "slug": "pedido-entregue-1"
     },
     {
-      "nome": "Frango à Parmegiana",
-      "restaurante": "Cantina da Nonna",
-      "imagem_restaurante": "https://api.dicebear.com/9.x/initials/svg?seed=Cantina%20da%20Nonna&backgroundType=gradientLinear",
-      "imagem_prato": "https://images.unsplash.com/photo-1565299507177-b0ac66763828?auto=format&fit=crop&w=800&h=600&q=80",
-      "tempo_medio_entrega": "20-35 min",
-      "preco": "45,50",
-      "descricao": "Filé de frango empanado, coberto com molho de tomate caseiro e queijo gratinado, acompanha arroz e fritas.",
-      "data_pedido": "2026-07-11",
-      "status_entrega": "Em preparo",
-      "avaliacoes": [
+      "id": "pedido-004",
+      "numero": "826004-04",
+      "data": "2026-08-27",
+      "hora": "19:30",
+      "status": "entregue",
+      "status_label": "Entregue",
+      "cliente_id": "cli-004",
+      "restaurante_id": "rest-008",
+      "itens": [
         {
-          "nome_cliente": "Patrícia Gomes",
-          "feedback": "Prato generoso e muito saboroso, queijo derretido na medida certa.",
-          "nota": 5
+          "produto_id": "prod-006-03",
+          "quantidade": 2,
+          "preco_unitario": 18.5,
+          "subtotal": 37.0
+        }
+      ],
+      "subtotal": 37.0,
+      "taxa_entrega": 5.0,
+      "desconto": 1.85,
+      "total": 40.15,
+      "endereco_entrega": {
+        "id": "end-001",
+        "apelido": "Casa",
+        "logradouro": "Rua das Acácias",
+        "numero": "245",
+        "complemento": "Apto 12",
+        "bairro": "Vila Mariana",
+        "cidade": "São Paulo",
+        "estado": "SP",
+        "cep": "04115-000"
+      },
+      "pagamento": {
+        "tipo": "cartao_credito",
+        "descricao": "Cartão de crédito •••• 4821"
+      },
+      "observacoes": "Sem observações.",
+      "rastreio": [
+        {
+          "status": "recebido",
+          "titulo": "Pedido recebido",
+          "descricao": "Pedido confirmado pelo restaurante.",
+          "concluido": true,
+          "data": "2026-08-27",
+          "hora": "19:30"
         },
         {
-          "nome_cliente": "Diego Santos",
-          "feedback": "Bom, mas as batatas fritas vieram meio murchas.",
-          "nota": 3
+          "status": "preparo",
+          "titulo": "Em preparo",
+          "descricao": "Itens preparados e embalados.",
+          "concluido": true,
+          "data": "2026-08-27",
+          "hora": "19:30"
+        },
+        {
+          "status": "a_caminho",
+          "titulo": "A caminho",
+          "descricao": "O entregador saiu para realizar a entrega.",
+          "concluido": true,
+          "data": "2026-08-27",
+          "hora": "19:30"
+        },
+        {
+          "status": "entregue",
+          "titulo": "Entregue",
+          "descricao": "Pedido entregue com sucesso.",
+          "concluido": true,
+          "data": "2026-08-27",
+          "hora": "19:30"
         }
-      ]
+      ],
+      "pode_cancelar": false,
+      "pode_avaliar": true,
+      "slug": "pedido-entregue-2"
     },
     {
-      "nome": "Pizza Margherita",
-      "restaurante": "Pizzaria Bella Napoli",
-      "imagem_restaurante": "https://api.dicebear.com/9.x/initials/svg?seed=Pizzaria%20Bella%20Napoli&backgroundType=gradientLinear",
-      "imagem_prato": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=800&h=600&q=80",
-      "tempo_medio_entrega": "25-40 min",
-      "preco": "52,00",
-      "descricao": "Massa fina artesanal, molho de tomate italiano, muçarela de búfala e manjericão fresco.",
-      "data_pedido": "2026-09-08",
-      "status_entrega": "Entregue",
-      "avaliacoes": [
+      "id": "pedido-005",
+      "numero": "826005-05",
+      "data": "2026-08-26",
+      "hora": "20:15",
+      "status": "avaliacao",
+      "status_label": "Avaliação",
+      "cliente_id": "cli-005",
+      "restaurante_id": "rest-006",
+      "itens": [
         {
-          "nome_cliente": "Camila Freitas",
-          "feedback": "Massa perfeita, fina e crocante como eu gosto.",
-          "nota": 5
+          "produto_id": "prod-001-05",
+          "quantidade": 1,
+          "preco_unitario": 29.9,
+          "subtotal": 29.9
+        }
+      ],
+      "subtotal": 29.9,
+      "taxa_entrega": 3.9,
+      "desconto": 0,
+      "total": 33.8,
+      "endereco_entrega": {
+        "id": "end-001",
+        "apelido": "Casa",
+        "logradouro": "Rua das Acácias",
+        "numero": "245",
+        "complemento": "Apto 12",
+        "bairro": "Vila Mariana",
+        "cidade": "São Paulo",
+        "estado": "SP",
+        "cep": "04115-000"
+      },
+      "pagamento": {
+        "tipo": "cartao_credito",
+        "descricao": "Cartão de crédito •••• 4821"
+      },
+      "observacoes": "Sem observações.",
+      "rastreio": [
+        {
+          "status": "recebido",
+          "titulo": "Pedido recebido",
+          "descricao": "Pedido confirmado pelo restaurante.",
+          "concluido": true,
+          "data": "2026-08-26",
+          "hora": "20:15"
         },
         {
-          "nome_cliente": "Eduardo Cavalcanti",
-          "feedback": "Boa pizza, mas poderia vir com mais manjericão.",
-          "nota": 4
+          "status": "preparo",
+          "titulo": "Em preparo",
+          "descricao": "Itens preparados e embalados.",
+          "concluido": true,
+          "data": "2026-08-26",
+          "hora": "20:15"
+        },
+        {
+          "status": "a_caminho",
+          "titulo": "A caminho",
+          "descricao": "O entregador saiu para realizar a entrega.",
+          "concluido": true,
+          "data": "2026-08-26",
+          "hora": "20:15"
+        },
+        {
+          "status": "entregue",
+          "titulo": "Entregue",
+          "descricao": "Pedido entregue com sucesso.",
+          "concluido": true,
+          "data": "2026-08-26",
+          "hora": "20:15"
+        },
+        {
+          "status": "avaliacao",
+          "titulo": "Avaliação",
+          "descricao": "Conte como foi sua experiência.",
+          "concluido": true,
+          "data": "2026-08-26",
+          "hora": "20:15"
         }
-      ]
+      ],
+      "pode_cancelar": false,
+      "pode_avaliar": true,
+      "slug": "pedido-avaliacao-1"
     },
     {
-      "nome": "Pizza Calabresa",
-      "restaurante": "Pizzaria Bella Napoli",
-      "imagem_restaurante": "https://api.dicebear.com/9.x/initials/svg?seed=Pizzaria%20Bella%20Napoli&backgroundType=gradientLinear",
-      "imagem_prato": "https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=800&h=600&q=80",
-      "tempo_medio_entrega": "25-40 min",
-      "preco": "55,90",
-      "descricao": "Pizza clássica de calabresa fatiada, cebola roxa e generosa camada de catupiry original.",
-      "data_pedido": "2026-04-27",
-      "status_entrega": "A caminho",
-      "avaliacoes": [
+      "id": "pedido-006",
+      "numero": "826006-06",
+      "data": "2026-08-25",
+      "hora": "12:40",
+      "status": "entregue",
+      "status_label": "Entregue",
+      "cliente_id": "cli-006",
+      "restaurante_id": "rest-007",
+      "itens": [
         {
-          "nome_cliente": "Larissa Pinto",
-          "feedback": "Sempre peço essa, nunca decepciona!",
-          "nota": 5
-        },
-        {
-          "nome_cliente": "Marcelo Vieira",
-          "feedback": "Estava gostosa, mas achei a quantidade de calabresa mediana.",
-          "nota": 3
-        },
-        {
-          "nome_cliente": "Yasmin Farias",
-          "feedback": "Chegou rápido e quentinha, recomendo.",
-          "nota": 5
+          "produto_id": "prod-005-01",
+          "quantidade": 1,
+          "preco_unitario": 32.5,
+          "subtotal": 32.5
         }
-      ]
+      ],
+      "subtotal": 32.5,
+      "taxa_entrega": 4.5,
+      "desconto": 1.62,
+      "total": 35.38,
+      "endereco_entrega": {
+        "id": "end-001",
+        "apelido": "Casa",
+        "logradouro": "Rua das Acácias",
+        "numero": "245",
+        "complemento": "Apto 12",
+        "bairro": "Vila Mariana",
+        "cidade": "São Paulo",
+        "estado": "SP",
+        "cep": "04115-000"
+      },
+      "pagamento": {
+        "tipo": "cartao_credito",
+        "descricao": "Cartão de crédito •••• 4821"
+      },
+      "observacoes": "Entregar na portaria.",
+      "rastreio": [
+        {
+          "status": "recebido",
+          "titulo": "Pedido recebido",
+          "descricao": "Pedido confirmado pelo restaurante.",
+          "concluido": true,
+          "data": "2026-08-25",
+          "hora": "12:40"
+        },
+        {
+          "status": "preparo",
+          "titulo": "Em preparo",
+          "descricao": "Itens preparados e embalados.",
+          "concluido": true,
+          "data": "2026-08-25",
+          "hora": "12:40"
+        },
+        {
+          "status": "a_caminho",
+          "titulo": "A caminho",
+          "descricao": "O entregador saiu para realizar a entrega.",
+          "concluido": true,
+          "data": "2026-08-25",
+          "hora": "12:40"
+        },
+        {
+          "status": "entregue",
+          "titulo": "Entregue",
+          "descricao": "Pedido entregue com sucesso.",
+          "concluido": true,
+          "data": "2026-08-25",
+          "hora": "12:40"
+        }
+      ],
+      "pode_cancelar": false,
+      "pode_avaliar": true,
+      "slug": "pedido-entregue-3"
     },
     {
-      "nome": "Burger Duplo Bacon",
-      "restaurante": "Burger House",
-      "imagem_restaurante": "https://api.dicebear.com/9.x/initials/svg?seed=Burger%20House&backgroundType=gradientLinear",
-      "imagem_prato": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&h=600&q=80",
-      "tempo_medio_entrega": "15-25 min",
-      "preco": "34,90",
-      "descricao": "Dois blends de carne 100% bovina, queijo cheddar, bacon crocante e molho especial da casa no pão brioche.",
-      "data_pedido": "2026-06-14",
-      "status_entrega": "Entregue",
-      "avaliacoes": [
+      "id": "pedido-007",
+      "numero": "826007-07",
+      "data": "2026-08-24",
+      "hora": "13:05",
+      "status": "a_caminho",
+      "status_label": "A caminho",
+      "cliente_id": "cli-007",
+      "restaurante_id": "rest-010",
+      "itens": [
         {
-          "nome_cliente": "William Duarte",
-          "feedback": "Hambúrguer suculento, um dos melhores da região.",
-          "nota": 5
+          "produto_id": "prod-003-06",
+          "quantidade": 1,
+          "preco_unitario": 38.9,
+          "subtotal": 38.9
+        }
+      ],
+      "subtotal": 38.9,
+      "taxa_entrega": 8.5,
+      "desconto": 0,
+      "total": 47.4,
+      "endereco_entrega": {
+        "id": "end-001",
+        "apelido": "Casa",
+        "logradouro": "Rua das Acácias",
+        "numero": "245",
+        "complemento": "Apto 12",
+        "bairro": "Vila Mariana",
+        "cidade": "São Paulo",
+        "estado": "SP",
+        "cep": "04115-000"
+      },
+      "pagamento": {
+        "tipo": "cartao_credito",
+        "descricao": "Cartão de crédito •••• 4821"
+      },
+      "observacoes": "Sem observações.",
+      "rastreio": [
+        {
+          "status": "recebido",
+          "titulo": "Pedido recebido",
+          "descricao": "Pedido confirmado pelo restaurante.",
+          "concluido": true,
+          "data": "2026-08-24",
+          "hora": "13:05"
         },
         {
-          "nome_cliente": "Sabrina Lopes",
-          "feedback": "Muito bom, mas o pão estava um pouco amassado ao chegar.",
-          "nota": 4
+          "status": "preparo",
+          "titulo": "Em preparo",
+          "descricao": "Itens preparados e embalados.",
+          "concluido": true,
+          "data": "2026-08-24",
+          "hora": "13:05"
+        },
+        {
+          "status": "a_caminho",
+          "titulo": "A caminho",
+          "descricao": "O entregador saiu para realizar a entrega.",
+          "concluido": true,
+          "data": "2026-08-24",
+          "hora": "13:05"
         }
-      ]
+      ],
+      "pode_cancelar": false,
+      "pode_avaliar": false,
+      "slug": "pedido-a-caminho-2"
     },
     {
-      "nome": "Burger Vegetariano",
-      "restaurante": "Burger House",
-      "imagem_restaurante": "https://api.dicebear.com/9.x/initials/svg?seed=Burger%20House&backgroundType=gradientLinear",
-      "imagem_prato": "https://images.unsplash.com/photo-1520072959219-c595dc870360?auto=format&fit=crop&w=800&h=600&q=80",
-      "tempo_medio_entrega": "15-25 min",
-      "preco": "29,90",
-      "descricao": "Blend vegetariano de grão-de-bico e especiarias, queijo, alface e tomate no pão integral.",
-      "data_pedido": "2026-02-09",
-      "status_entrega": "Em preparo",
-      "avaliacoes": [
+      "id": "pedido-008",
+      "numero": "826008-08",
+      "data": "2026-08-23",
+      "hora": "20:50",
+      "status": "entregue",
+      "status_label": "Entregue",
+      "cliente_id": "cli-008",
+      "restaurante_id": "rest-004",
+      "itens": [
         {
-          "nome_cliente": "Beatriz Monteiro",
-          "feedback": "Surpreendente! Não senti falta da carne, muito bem temperado.",
-          "nota": 5
+          "produto_id": "prod-004-02",
+          "quantidade": 1,
+          "preco_unitario": 46.9,
+          "subtotal": 46.9
+        }
+      ],
+      "subtotal": 46.9,
+      "taxa_entrega": 4.9,
+      "desconto": 0,
+      "total": 51.8,
+      "endereco_entrega": {
+        "id": "end-001",
+        "apelido": "Casa",
+        "logradouro": "Rua das Acácias",
+        "numero": "245",
+        "complemento": "Apto 12",
+        "bairro": "Vila Mariana",
+        "cidade": "São Paulo",
+        "estado": "SP",
+        "cep": "04115-000"
+      },
+      "pagamento": {
+        "tipo": "cartao_credito",
+        "descricao": "Cartão de crédito •••• 4821"
+      },
+      "observacoes": "Sem observações.",
+      "rastreio": [
+        {
+          "status": "recebido",
+          "titulo": "Pedido recebido",
+          "descricao": "Pedido confirmado pelo restaurante.",
+          "concluido": true,
+          "data": "2026-08-23",
+          "hora": "20:50"
         },
         {
-          "nome_cliente": "Otávio Pereira",
-          "feedback": "Gostei, mas achei a textura um pouco seca.",
-          "nota": 3
+          "status": "preparo",
+          "titulo": "Em preparo",
+          "descricao": "Itens preparados e embalados.",
+          "concluido": true,
+          "data": "2026-08-23",
+          "hora": "20:50"
+        },
+        {
+          "status": "a_caminho",
+          "titulo": "A caminho",
+          "descricao": "O entregador saiu para realizar a entrega.",
+          "concluido": true,
+          "data": "2026-08-23",
+          "hora": "20:50"
+        },
+        {
+          "status": "entregue",
+          "titulo": "Entregue",
+          "descricao": "Pedido entregue com sucesso.",
+          "concluido": true,
+          "data": "2026-08-23",
+          "hora": "20:50"
         }
-      ]
+      ],
+      "pode_cancelar": false,
+      "pode_avaliar": true,
+      "slug": "pedido-entregue-4"
     },
     {
-      "nome": "Espaguete Carbonara",
-      "restaurante": "Cantina da Nonna",
-      "imagem_restaurante": "https://api.dicebear.com/9.x/initials/svg?seed=Cantina%20da%20Nonna&backgroundType=gradientLinear",
-      "imagem_prato": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&h=600&q=80",
-      "tempo_medio_entrega": "20-35 min",
-      "preco": "41,00",
-      "descricao": "Massa italiana ao molho cremoso de ovos, queijo parmesão, pancetta crocante e pimenta-do-reino.",
-      "data_pedido": "2026-08-19",
-      "status_entrega": "A caminho",
-      "avaliacoes": [
+      "id": "pedido-009",
+      "numero": "826009-09",
+      "data": "2026-08-22",
+      "hora": "18:20",
+      "status": "em_preparo",
+      "status_label": "Em preparo",
+      "cliente_id": "cli-009",
+      "restaurante_id": "rest-009",
+      "itens": [
         {
-          "nome_cliente": "Juliana Moura",
-          "feedback": "Cremosidade perfeita, sabor autêntico.",
-          "nota": 5
+          "produto_id": "prod-008-09",
+          "quantidade": 2,
+          "preco_unitario": 16.9,
+          "subtotal": 33.8
+        }
+      ],
+      "subtotal": 33.8,
+      "taxa_entrega": 3.5,
+      "desconto": 0,
+      "total": 37.3,
+      "endereco_entrega": {
+        "id": "end-001",
+        "apelido": "Casa",
+        "logradouro": "Rua das Acácias",
+        "numero": "245",
+        "complemento": "Apto 12",
+        "bairro": "Vila Mariana",
+        "cidade": "São Paulo",
+        "estado": "SP",
+        "cep": "04115-000"
+      },
+      "pagamento": {
+        "tipo": "cartao_credito",
+        "descricao": "Cartão de crédito •••• 4821"
+      },
+      "observacoes": "Entregar na portaria.",
+      "rastreio": [
+        {
+          "status": "recebido",
+          "titulo": "Pedido recebido",
+          "descricao": "Seu pedido foi confirmado e enviado para a cozinha.",
+          "concluido": true,
+          "data": "2026-08-22",
+          "hora": "18:20"
         },
         {
-          "nome_cliente": "Felipe Batista",
-          "feedback": "Estava bom, mas achei um pouco salgado.",
-          "nota": 3
+          "status": "preparo",
+          "titulo": "Em preparo",
+          "descricao": "O restaurante está preparando seus itens.",
+          "concluido": true,
+          "data": "2026-08-22",
+          "hora": "18:20"
         }
-      ]
+      ],
+      "pode_cancelar": true,
+      "pode_avaliar": false,
+      "slug": "pedido-em-preparo-2"
     },
     {
-      "nome": "Lasanha Bolonhesa",
-      "restaurante": "Cantina da Nonna",
-      "imagem_restaurante": "https://api.dicebear.com/9.x/initials/svg?seed=Cantina%20da%20Nonna&backgroundType=gradientLinear",
-      "imagem_prato": "https://images.unsplash.com/photo-1574894709920-11b28e7367e3?auto=format&fit=crop&w=800&h=600&q=80",
-      "tempo_medio_entrega": "20-35 min",
-      "preco": "46,90",
-      "descricao": "Camadas de massa fresca, molho bolonhesa encorpado e queijo gratinado no forno.",
-      "data_pedido": "2026-11-03",
-      "status_entrega": "Entregue",
-      "avaliacoes": [
+      "id": "pedido-010",
+      "numero": "826010-10",
+      "data": "2026-08-21",
+      "hora": "15:10",
+      "status": "avaliacao",
+      "status_label": "Avaliação",
+      "cliente_id": "cli-010",
+      "restaurante_id": "rest-008",
+      "itens": [
         {
-          "nome_cliente": "Ana Paula Ferreira",
-          "feedback": "Chegou borbulhando de quente, uma delícia!",
-          "nota": 5
-        },
-        {
-          "nome_cliente": "Henrique Barbosa",
-          "feedback": "Muito boa, porção generosa para o preço.",
-          "nota": 5
-        },
-        {
-          "nome_cliente": "Nathalia Ribeiro",
-          "feedback": "Boa, mas o molho estava um pouco mais líquido do que o normal.",
-          "nota": 3
+          "produto_id": "prod-006-02",
+          "quantidade": 1,
+          "preco_unitario": 19.46,
+          "subtotal": 19.46
         }
-      ]
+      ],
+      "subtotal": 19.46,
+      "taxa_entrega": 5.0,
+      "desconto": 0.97,
+      "total": 23.49,
+      "endereco_entrega": {
+        "id": "end-001",
+        "apelido": "Casa",
+        "logradouro": "Rua das Acácias",
+        "numero": "245",
+        "complemento": "Apto 12",
+        "bairro": "Vila Mariana",
+        "cidade": "São Paulo",
+        "estado": "SP",
+        "cep": "04115-000"
+      },
+      "pagamento": {
+        "tipo": "cartao_credito",
+        "descricao": "Cartão de crédito •••• 4821"
+      },
+      "observacoes": "Sem observações.",
+      "rastreio": [
+        {
+          "status": "recebido",
+          "titulo": "Pedido recebido",
+          "descricao": "Pedido confirmado pelo restaurante.",
+          "concluido": true,
+          "data": "2026-08-21",
+          "hora": "15:10"
+        },
+        {
+          "status": "preparo",
+          "titulo": "Em preparo",
+          "descricao": "Itens preparados e embalados.",
+          "concluido": true,
+          "data": "2026-08-21",
+          "hora": "15:10"
+        },
+        {
+          "status": "a_caminho",
+          "titulo": "A caminho",
+          "descricao": "O entregador saiu para realizar a entrega.",
+          "concluido": true,
+          "data": "2026-08-21",
+          "hora": "15:10"
+        },
+        {
+          "status": "entregue",
+          "titulo": "Entregue",
+          "descricao": "Pedido entregue com sucesso.",
+          "concluido": true,
+          "data": "2026-08-21",
+          "hora": "15:10"
+        },
+        {
+          "status": "avaliacao",
+          "titulo": "Avaliação",
+          "descricao": "Conte como foi sua experiência.",
+          "concluido": true,
+          "data": "2026-08-21",
+          "hora": "15:10"
+        }
+      ],
+      "pode_cancelar": false,
+      "pode_avaliar": true,
+      "slug": "pedido-avaliacao-2"
     },
     {
-      "nome": "Salada Caesar",
-      "restaurante": "Verde Vida Saladas",
-      "imagem_restaurante": "https://api.dicebear.com/9.x/initials/svg?seed=Verde%20Vida%20Saladas&backgroundType=gradientLinear",
-      "imagem_prato": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&h=600&q=80",
-      "tempo_medio_entrega": "15-25 min",
-      "preco": "32,50",
-      "descricao": "Mix de folhas verdes, frango grelhado, croutons, lascas de parmesão e molho caesar tradicional.",
-      "data_pedido": "2026-05-25",
-      "status_entrega": "Em preparo",
-      "avaliacoes": [
+      "id": "pedido-011",
+      "numero": "826011-11",
+      "data": "2026-08-20",
+      "hora": "12:25",
+      "status": "entregue",
+      "status_label": "Entregue",
+      "cliente_id": "cli-001",
+      "restaurante_id": "rest-009",
+      "itens": [
         {
-          "nome_cliente": "Vanessa Correia",
-          "feedback": "Leve, saborosa e bem montada. Virou meu pedido favorito.",
-          "nota": 5
+          "produto_id": "prod-007-06",
+          "quantidade": 2,
+          "preco_unitario": 11.61,
+          "subtotal": 23.22
+        }
+      ],
+      "subtotal": 23.22,
+      "taxa_entrega": 3.5,
+      "desconto": 0,
+      "total": 26.72,
+      "endereco_entrega": {
+        "id": "end-001",
+        "apelido": "Casa",
+        "logradouro": "Rua das Acácias",
+        "numero": "245",
+        "complemento": "Apto 12",
+        "bairro": "Vila Mariana",
+        "cidade": "São Paulo",
+        "estado": "SP",
+        "cep": "04115-000"
+      },
+      "pagamento": {
+        "tipo": "cartao_credito",
+        "descricao": "Cartão de crédito •••• 4821"
+      },
+      "observacoes": "Sem observações.",
+      "rastreio": [
+        {
+          "status": "recebido",
+          "titulo": "Pedido recebido",
+          "descricao": "Pedido confirmado pelo restaurante.",
+          "concluido": true,
+          "data": "2026-08-20",
+          "hora": "12:25"
         },
         {
-          "nome_cliente": "Lucas Martins",
-          "feedback": "Boa opção saudável, mas achei pouco molho.",
-          "nota": 4
+          "status": "preparo",
+          "titulo": "Em preparo",
+          "descricao": "Itens preparados e embalados.",
+          "concluido": true,
+          "data": "2026-08-20",
+          "hora": "12:25"
+        },
+        {
+          "status": "a_caminho",
+          "titulo": "A caminho",
+          "descricao": "O entregador saiu para realizar a entrega.",
+          "concluido": true,
+          "data": "2026-08-20",
+          "hora": "12:25"
+        },
+        {
+          "status": "entregue",
+          "titulo": "Entregue",
+          "descricao": "Pedido entregue com sucesso.",
+          "concluido": true,
+          "data": "2026-08-20",
+          "hora": "12:25"
         }
-      ]
+      ],
+      "pode_cancelar": false,
+      "pode_avaliar": true,
+      "slug": "pedido-entregue-5"
     },
     {
-      "nome": "Salada Tropical",
-      "restaurante": "Verde Vida Saladas",
-      "imagem_restaurante": "https://api.dicebear.com/9.x/initials/svg?seed=Verde%20Vida%20Saladas&backgroundType=gradientLinear",
-      "imagem_prato": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&h=600&q=80",
-      "tempo_medio_entrega": "15-25 min",
-      "preco": "28,90",
-      "descricao": "Quinoa, folhas verdes, manga fresca, castanhas e vinagrete cítrico.",
-      "data_pedido": "2026-10-12",
-      "status_entrega": "Entregue",
-      "avaliacoes": [
+      "id": "pedido-012",
+      "numero": "826012-12",
+      "data": "2026-08-19",
+      "hora": "19:45",
+      "status": "a_caminho",
+      "status_label": "A caminho",
+      "cliente_id": "cli-002",
+      "restaurante_id": "rest-011",
+      "itens": [
         {
-          "nome_cliente": "Karina Dias",
-          "feedback": "Combinação refrescante e diferente, adorei!",
-          "nota": 5
+          "produto_id": "prod-008-08",
+          "quantidade": 1,
+          "preco_unitario": 30.63,
+          "subtotal": 30.63
+        }
+      ],
+      "subtotal": 30.63,
+      "taxa_entrega": 7.5,
+      "desconto": 0,
+      "total": 38.13,
+      "endereco_entrega": {
+        "id": "end-001",
+        "apelido": "Casa",
+        "logradouro": "Rua das Acácias",
+        "numero": "245",
+        "complemento": "Apto 12",
+        "bairro": "Vila Mariana",
+        "cidade": "São Paulo",
+        "estado": "SP",
+        "cep": "04115-000"
+      },
+      "pagamento": {
+        "tipo": "cartao_credito",
+        "descricao": "Cartão de crédito •••• 4821"
+      },
+      "observacoes": "Entregar na portaria.",
+      "rastreio": [
+        {
+          "status": "recebido",
+          "titulo": "Pedido recebido",
+          "descricao": "Pedido confirmado pelo restaurante.",
+          "concluido": true,
+          "data": "2026-08-19",
+          "hora": "19:45"
         },
         {
-          "nome_cliente": "João Pedro Nunes",
-          "feedback": "Gostoso, mas esperava uma porção um pouco maior pelo preço.",
-          "nota": 3
+          "status": "preparo",
+          "titulo": "Em preparo",
+          "descricao": "Itens preparados e embalados.",
+          "concluido": true,
+          "data": "2026-08-19",
+          "hora": "19:45"
+        },
+        {
+          "status": "a_caminho",
+          "titulo": "A caminho",
+          "descricao": "O entregador saiu para realizar a entrega.",
+          "concluido": true,
+          "data": "2026-08-19",
+          "hora": "19:45"
         }
-      ]
+      ],
+      "pode_cancelar": false,
+      "pode_avaliar": false,
+      "slug": "pedido-a-caminho-3"
+    }
+  ],
+  "autenticacao": {
+    "login": {
+      "titulo": "Faça seu login",
+      "subtitulo": "Entre para acessar sua conta.",
+      "email_label": "E-mail",
+      "email_placeholder": "seuemail@provedor.com",
+      "senha_label": "Senha",
+      "senha_placeholder": "Insira sua senha",
+      "lembrar_label": "Lembrar de mim",
+      "esqueceu_texto": "Esqueceu a senha?",
+      "botao": "Entrar",
+      "banner_titulo": "Bem-vindo de volta",
+      "banner_subtitulo": "Insira suas informações",
+      "cadastro_texto": "Ainda não possui uma conta?",
+      "cadastro_link": "Criar agora",
+      "cadastro_href": "criar-conta.html",
+      "mensagem_sucesso": "Login demonstrativo enviado. Em uma aplicação real, a autenticação seria feita pelo backend."
+    },
+    "cadastro": {
+      "titulo": "Crie sua conta",
+      "subtitulo": "Preencha os dados para começar.",
+      "nome_placeholder": "Nome completo",
+      "email_placeholder": "seuemail@provedor.com",
+      "senha_placeholder": "Crie uma senha",
+      "confirmar_placeholder": "Confirme sua senha",
+      "botao": "Criar conta",
+      "banner_titulo": "Possui uma conta?",
+      "banner_subtitulo": "Faça login para continuar.",
+      "banner_texto": "Entre com suas credenciais.",
+      "banner_link": "Entrar",
+      "banner_href": "login.html",
+      "regras": [
+        "Mínimo de 8 caracteres",
+        "Pelo menos 1 letra maiúscula",
+        "Pelo menos 1 letra minúscula",
+        "Pelo menos 1 número",
+        "Pelo menos 1 caractere especial"
+      ],
+      "senha_diferente": "As senhas não coincidem",
+      "mensagem_sucesso": "Conta criada em modo demonstração. Conecte um backend para persistência real."
+    }
+  },
+  "trabalhe_conosco": {
+    "titulo": "Trabalhe Conosco",
+    "campos": [
+      {
+        "id": "nome",
+        "label": "Nome",
+        "placeholder": "Digite seu nome completo",
+        "tipo": "text",
+        "obrigatorio": true
+      },
+      {
+        "id": "email",
+        "label": "Email",
+        "placeholder": "seuemail@provedor.com",
+        "tipo": "email",
+        "obrigatorio": true
+      },
+      {
+        "id": "curriculo",
+        "label": "Currículo",
+        "placeholder": "Selecione seu currículo",
+        "tipo": "file",
+        "accept": ".pdf,.doc,.docx",
+        "obrigatorio": true
+      },
+      {
+        "id": "adicionais",
+        "label": "Adicionais (Opcional)",
+        "placeholder": "Conte-nos um pouco sobre suas experiências profissionais anteriores...",
+        "tipo": "textarea",
+        "obrigatorio": false
+      }
+    ],
+    "botao_enviar": "Enviar",
+    "botao_limpar": "Limpar",
+    "mensagem_sucesso": "Seu currículo foi preparado para envio. Em uma aplicação real, ele seria encaminhado ao time de recrutamento."
+  },
+  "configuracoes": {
+    "secoes": [
+      {
+        "id": "perfil",
+        "titulo": "Perfil",
+        "descricao": "Gerencie suas informações pessoais.",
+        "icone": "fa-regular fa-user",
+        "campos": [
+          [
+            "Nome completo",
+            "Mariana Costa"
+          ],
+          [
+            "E-mail",
+            "mariana.costa@exemplo.com"
+          ],
+          [
+            "Telefone",
+            "(11) 98888-7744"
+          ]
+        ]
+      },
+      {
+        "id": "endereco",
+        "titulo": "Endereço",
+        "descricao": "Adicione ou edite seus endereços de entrega.",
+        "icone": "fa-solid fa-location-dot",
+        "campos": [
+          [
+            "Apelido",
+            "Casa"
+          ],
+          [
+            "Endereço",
+            "Rua das Acácias, 245"
+          ],
+          [
+            "Complemento",
+            "Apto 12"
+          ],
+          [
+            "Bairro",
+            "Vila Mariana"
+          ],
+          [
+            "Cidade",
+            "São Paulo - SP"
+          ],
+          [
+            "CEP",
+            "04115-000"
+          ]
+        ]
+      },
+      {
+        "id": "pagamento",
+        "titulo": "Pagamento",
+        "descricao": "Gerencie seus métodos de pagamento.",
+        "icone": "fa-regular fa-credit-card",
+        "campos": [
+          [
+            "Cartão principal",
+            "Visa •••• 4821"
+          ],
+          [
+            "Forma alternativa",
+            "Pix"
+          ],
+          [
+            "Pagamento padrão",
+            "Cartão de crédito"
+          ]
+        ]
+      },
+      {
+        "id": "notificacoes",
+        "titulo": "Notificações",
+        "descricao": "Configure suas preferências de notificação.",
+        "icone": "fa-regular fa-bell",
+        "campos": [
+          [
+            "Pedidos",
+            "Avisos sobre preparo e entrega"
+          ],
+          [
+            "Ofertas",
+            "Receber ofertas selecionadas"
+          ],
+          [
+            "Avaliações",
+            "Lembretes para avaliar pedidos"
+          ]
+        ]
+      },
+      {
+        "id": "seguranca",
+        "titulo": "Segurança",
+        "descricao": "Altere sua senha e configurações de segurança.",
+        "icone": "fa-solid fa-shield-halved",
+        "campos": [
+          [
+            "Senha",
+            "Última alteração há 32 dias"
+          ],
+          [
+            "Sessões",
+            "1 dispositivo ativo"
+          ],
+          [
+            "Verificação",
+            "Proteção básica ativada"
+          ]
+        ]
+      },
+      {
+        "id": "aparencia",
+        "titulo": "Aparência",
+        "descricao": "Personalize a aparência do site.",
+        "icone": "fa-solid fa-palette",
+        "campos": [
+          [
+            "Tema",
+            "Claro"
+          ],
+          [
+            "Animações",
+            "Ativadas"
+          ],
+          [
+            "Densidade",
+            "Confortável"
+          ]
+        ]
+      },
+      {
+        "id": "idioma",
+        "titulo": "Idioma",
+        "descricao": "Selecione o idioma de preferência.",
+        "icone": "fa-solid fa-language",
+        "campos": [
+          [
+            "Idioma",
+            "Português (Brasil)"
+          ],
+          [
+            "Formato de data",
+            "DD/MM/AAAA"
+          ],
+          [
+            "Moeda",
+            "Real brasileiro (BRL)"
+          ]
+        ]
+      }
+    ]
+  },
+  "detalhes_pedido": {
+    "titulo": "Detalhes do Pedido",
+    "voltar_texto": "Voltar para pedidos",
+    "status_titulo": "Acompanhamento",
+    "resumo_titulo": "Resumo do pedido",
+    "itens_titulo": "Itens do pedido",
+    "endereco_titulo": "Entrega",
+    "pagamento_titulo": "Pagamento",
+    "observacoes_titulo": "Observações"
+  },
+  "privacidade": {
+    "titulo": "Política de Privacidade",
+    "introducao": "Esta política explica, em linguagem simples, como uma versão demonstrativa do Kiwa organiza informações de conta, pedidos e preferências.",
+    "secoes": [
+      {
+        "titulo": "1. Dados coletados",
+        "conteudo": "Podemos tratar nome, e-mail, telefone, endereço de entrega, histórico de pedidos e preferências informadas pelo usuário."
+      },
+      {
+        "titulo": "2. Finalidade do uso",
+        "conteudo": "Os dados são utilizados para demonstrar funcionalidades como autenticação, pedidos, entrega, atendimento e personalização da experiência."
+      },
+      {
+        "titulo": "3. Compartilhamento",
+        "conteudo": "Em uma aplicação real, dados necessários poderiam ser compartilhados com parceiros responsáveis por pagamento, entrega e operação do pedido, sempre conforme a finalidade informada."
+      },
+      {
+        "titulo": "4. Segurança",
+        "conteudo": "A aplicação definitiva deverá aplicar controles de acesso, criptografia, armazenamento seguro e boas práticas de proteção de dados."
+      },
+      {
+        "titulo": "5. Direitos do usuário",
+        "conteudo": "O usuário deve poder solicitar acesso, correção, atualização ou exclusão de seus dados, conforme a legislação aplicável."
+      },
+      {
+        "titulo": "6. Contato",
+        "conteudo": "Para dúvidas sobre privacidade, utilize o canal contato@kiwa.com.br."
+      }
+    ]
+  },
+  "mensagens": {
+    "carregando": "Carregando dados...",
+    "erro_carregamento": "Não foi possível carregar os dados do Kiwa.",
+    "sem_resultados": "Nenhum resultado encontrado.",
+    "sem_pedidos": "Nenhum pedido encontrado para este filtro.",
+    "form_demo": "Este formulário está configurado como demonstração no front-end."
+  },
+  "formatacao": {
+    "moeda": "BRL",
+    "locale": "pt-BR",
+    "data": "dd/MM/yyyy"
+  },
+  "status_pedidos": [
+    {
+      "id": "todos",
+      "label": "Todos",
+      "icon": "fa-solid fa-list",
+      "classe": "filtro-todos"
     },
     {
-      "nome": "Salmão ao Maracujá",
-      "restaurante": "Cantinho do Mar",
-      "imagem_restaurante": "https://api.dicebear.com/9.x/initials/svg?seed=Cantinho%20do%20Mar&backgroundType=gradientLinear",
-      "imagem_prato": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=800&h=600&q=80",
-      "tempo_medio_entrega": "30-45 min",
-      "preco": "72,90",
-      "descricao": "Filé de salmão grelhado no ponto, coberto com molho agridoce de maracujá, acompanha arroz e legumes salteados.",
-      "data_pedido": "2026-03-30",
-      "status_entrega": "A caminho",
-      "avaliacoes": [
-        {
-          "nome_cliente": "Gabriela Alves",
-          "feedback": "Salmão no ponto perfeito e o molho de maracujá é maravilhoso.",
-          "nota": 5
-        },
-        {
-          "nome_cliente": "Rafael Teixeira",
-          "feedback": "Muito bom, mas achei o preço elevado para a porção.",
-          "nota": 3
-        }
-      ]
+      "id": "em_preparo",
+      "label": "Em Preparo",
+      "icon": "fa-solid fa-fire-burner",
+      "classe": "filtro-preparo"
     },
     {
-      "nome": "Costela Barbecue",
-      "restaurante": "Smoke House BBQ",
-      "imagem_restaurante": "https://api.dicebear.com/9.x/initials/svg?seed=Smoke%20House%20BBQ&backgroundType=gradientLinear",
-      "imagem_prato": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&h=600&q=80",
-      "tempo_medio_entrega": "30-45 min",
-      "preco": "65,00",
-      "descricao": "Costela cozida lentamente até desmanchar, ao molho barbecue defumado, acompanha purê de batata.",
-      "data_pedido": "2026-06-30",
-      "status_entrega": "Entregue",
-      "avaliacoes": [
-        {
-          "nome_cliente": "Priscila Andrade",
-          "feedback": "Carne desmanchando, sabor incrível de churrasco americano.",
-          "nota": 5
-        },
-        {
-          "nome_cliente": "Vinícius Ramos",
-          "feedback": "Ótimo prato, só achei o purê um pouco frio ao chegar.",
-          "nota": 4
-        }
-      ]
+      "id": "a_caminho",
+      "label": "A Caminho",
+      "icon": "fa-solid fa-truck",
+      "classe": "filtro-caminho"
     },
     {
-      "nome": "Strogonoff de Frango",
-      "restaurante": "Sabor Caseiro",
-      "imagem_restaurante": "https://api.dicebear.com/9.x/initials/svg?seed=Sabor%20Caseiro&backgroundType=gradientLinear",
-      "imagem_prato": "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=800&h=600&q=80",
-      "tempo_medio_entrega": "25-40 min",
-      "preco": "38,90",
-      "descricao": "Frango cremoso ao molho strogonoff, servido com arroz branco e batata palha crocante.",
-      "data_pedido": "2026-01-05",
-      "status_entrega": "Em preparo",
-      "avaliacoes": [
-        {
-          "nome_cliente": "Renata Barros",
-          "feedback": "Clássico que nunca falha, cremoso na medida certa.",
-          "nota": 5
-        },
-        {
-          "nome_cliente": "Gustavo Nogueira",
-          "feedback": "Bom, mas a batata palha veio meio mole por causa da embalagem.",
-          "nota": 3
-        }
-      ]
+      "id": "entregue",
+      "label": "Entregue",
+      "icon": "fa-solid fa-check-circle",
+      "classe": "filtro-entregue"
     },
     {
-      "nome": "Camarão na Moranga",
-      "restaurante": "Cantinho do Mar",
-      "imagem_restaurante": "https://api.dicebear.com/9.x/initials/svg?seed=Cantinho%20do%20Mar&backgroundType=gradientLinear",
-      "imagem_prato": "https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?auto=format&fit=crop&w=800&h=600&q=80",
-      "tempo_medio_entrega": "30-45 min",
-      "preco": "78,90",
-      "descricao": "Camarões ao molho cremoso de catupiry e requeijão, servidos dentro de uma moranga assada.",
-      "data_pedido": "2026-09-21",
-      "status_entrega": "A caminho",
-      "avaliacoes": [
-        {
-          "nome_cliente": "Cecília Franco",
-          "feedback": "Apresentação linda e sabor à altura, superou minhas expectativas.",
-          "nota": 5
-        },
-        {
-          "nome_cliente": "Leandro Prado",
-          "feedback": "Muito gostoso, mas achei poucos camarões para o preço cobrado.",
-          "nota": 3
-        },
-        {
-          "nome_cliente": "Débora Castro",
-          "feedback": "Chegou quentinho e bem embalado, recomendo demais.",
-          "nota": 5
-        }
-      ]
-    },
-    {
-      "nome": "Risoto de Cogumelos",
-      "restaurante": "Cantina da Nonna",
-      "imagem_restaurante": "https://api.dicebear.com/9.x/initials/svg?seed=Cantina%20da%20Nonna&backgroundType=gradientLinear",
-      "imagem_prato": "https://images.unsplash.com/photo-1476124369491-e7addf5db371?auto=format&fit=crop&w=800&h=600&q=80",
-      "tempo_medio_entrega": "20-35 min",
-      "preco": "54,90",
-      "descricao": "Arroz arbóreo cremoso com mix de cogumelos frescos, finalizado com parmesão e ervas.",
-      "data_pedido": "2026-11-17",
-      "status_entrega": "Entregue",
-      "avaliacoes": [
-        {
-          "nome_cliente": "Alexandre Souza",
-          "feedback": "Cremosidade impecável, sabor sofisticado.",
-          "nota": 5
-        },
-        {
-          "nome_cliente": "Fernanda Lima",
-          "feedback": "Muito bom, mas na minha opinião faltou um pouco de sal.",
-          "nota": 4
-        }
-      ]
-    },
-    {
-      "nome": "Pudim de Leite",
-      "restaurante": "Doce Encanto",
-      "imagem_restaurante": "https://api.dicebear.com/9.x/initials/svg?seed=Doce%20Encanto&backgroundType=gradientLinear",
-      "imagem_prato": "https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=800&h=600&q=80",
-      "tempo_medio_entrega": "10-20 min",
-      "preco": "15,90",
-      "descricao": "Pudim caseiro cremoso com calda de caramelo, sobremesa clássica brasileira.",
-      "data_pedido": "2026-02-28",
-      "status_entrega": "Entregue",
-      "avaliacoes": [
-        {
-          "nome_cliente": "Bianca Rezende",
-          "feedback": "Igualzinho ao da minha vó, simplesmente perfeito.",
-          "nota": 5
-        },
-        {
-          "nome_cliente": "Pedro Henrique Melo",
-          "feedback": "Bom, mas achei a calda um pouco doce demais.",
-          "nota": 4
-        }
-      ]
-    },
-    {
-      "nome": "Petit Gâteau",
-      "restaurante": "Doce Encanto",
-      "imagem_restaurante": "https://api.dicebear.com/9.x/initials/svg?seed=Doce%20Encanto&backgroundType=gradientLinear",
-      "imagem_prato": "https://images.unsplash.com/photo-1563805042-7684c019e11b?auto=format&fit=crop&w=800&h=600&q=80",
-      "tempo_medio_entrega": "10-20 min",
-      "preco": "22,90",
-      "descricao": "Bolinho de chocolate quente com recheio derretido, acompanhado de bola de sorvete de creme.",
-      "data_pedido": "2026-07-04",
-      "status_entrega": "A caminho",
-      "avaliacoes": [
-        {
-          "nome_cliente": "Aline Barreto",
-          "feedback": "Perfeito, recheio derretendo na hora certa.",
-          "nota": 5
-        },
-        {
-          "nome_cliente": "Matheus Cunha",
-          "feedback": "O sorvete chegou já meio derretido, mas o bolo estava ótimo.",
-          "nota": 3
-        }
-      ]
-    },
-    {
-      "nome": "Brigadeirão Cremoso",
-      "restaurante": "Doce Encanto",
-      "imagem_restaurante": "https://api.dicebear.com/9.x/initials/svg?seed=Doce%20Encanto&backgroundType=gradientLinear",
-      "imagem_prato": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&h=600&q=80",
-      "tempo_medio_entrega": "10-20 min",
-      "preco": "18,50",
-      "descricao": "Sobremesa cremosa de chocolate no formato de brigadeiro gigante, coberta com granulado.",
-      "data_pedido": "2026-04-09",
-      "status_entrega": "Em preparo",
-      "avaliacoes": [
-        {
-          "nome_cliente": "Tatiana Farias",
-          "feedback": "Muito cremoso e não é enjoativo, adorei.",
-          "nota": 5
-        },
-        {
-          "nome_cliente": "Douglas Pires",
-          "feedback": "Gostoso, porção poderia ser um pouco maior.",
-          "nota": 4
-        }
-      ]
-    },
-    {
-      "nome": "Pão de Queijo Recheado",
-      "restaurante": "Padoca Mineira",
-      "imagem_restaurante": "https://api.dicebear.com/9.x/initials/svg?seed=Padoca%20Mineira&backgroundType=gradientLinear",
-      "imagem_prato": "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&h=600&q=80",
-      "tempo_medio_entrega": "10-20 min",
-      "preco": "19,90",
-      "descricao": "Porção de pães de queijo quentinhos recheados com catupiry cremoso, feitos na hora.",
-      "data_pedido": "2026-12-01",
-      "status_entrega": "Entregue",
-      "avaliacoes": [
-        {
-          "nome_cliente": "Simone Teixeira",
-          "feedback": "Chegaram quentinhos e o recheio estava generoso, adorei!",
-          "nota": 5
-        },
-        {
-          "nome_cliente": "Ricardo Nascimento",
-          "feedback": "Muito bons, mas vieram um pouco menos do que o esperado.",
-          "nota": 3
-        }
-      ]
-    },
-    {
-      "nome": "Coxinha de Frango",
-      "restaurante": "Padoca Mineira",
-      "imagem_restaurante": "https://api.dicebear.com/9.x/initials/svg?seed=Padoca%20Mineira&backgroundType=gradientLinear",
-      "imagem_prato": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=800&h=600&q=80",
-      "tempo_medio_entrega": "10-20 min",
-      "preco": "16,90",
-      "descricao": "Coxinhas artesanais com recheio cremoso de frango desfiado, empanadas e fritas na hora.",
-      "data_pedido": "2026-08-30",
-      "status_entrega": "A caminho",
-      "avaliacoes": [
-        {
-          "nome_cliente": "Amanda Vasconcelos",
-          "feedback": "Crocante por fora e cremosa por dentro, perfeita!",
-          "nota": 5
-        },
-        {
-          "nome_cliente": "Bruno Cardoso",
-          "feedback": "Boas, mas chegaram um pouco frias.",
-          "nota": 3
-        },
-        {
-          "nome_cliente": "Letícia Moraes",
-          "feedback": "Sempre peço, nunca decepciona.",
-          "nota": 5
-        }
-      ]
+      "id": "avaliacao",
+      "label": "Avaliação",
+      "icon": "fa-solid fa-star",
+      "classe": "filtro-avaliacao"
     }
   ]
 }
